@@ -11,6 +11,12 @@
 		97E11D522817381100B2AB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D512817381100B2AB32 /* ContentView.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
 		97E11D572817381200B2AB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D562817381200B2AB32 /* Preview Assets.xcassets */; };
+		97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */; };
+		97E11DF028176A0D00B2AB32 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */; };
+		97E11DF528176B8900B2AB32 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11DF428176B8900B2AB32 /* Flower.swift */; };
+		97E11E012817791B00B2AB32 /* FlyingFlower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E002817791B00B2AB32 /* FlyingFlower.swift */; };
+		97E11E0328177BE000B2AB32 /* Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E0228177BE000B2AB32 /* Sky.swift */; };
+		97E11E0528177E7E00B2AB32 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E0428177E7E00B2AB32 /* Fire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		97E11D512817381100B2AB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97E11D532817381200B2AB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E11D562817381200B2AB32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingSymbol.swift; sourceTree = "<group>"; };
+		97E11DF428176B8900B2AB32 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		97E11E002817791B00B2AB32 /* FlyingFlower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingFlower.swift; sourceTree = "<group>"; };
+		97E11E0228177BE000B2AB32 /* Sky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sky.swift; sourceTree = "<group>"; };
+		97E11E0428177E7E00B2AB32 /* Fire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E11DF028176A0D00B2AB32 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +65,8 @@
 			children = (
 				97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */,
 				97E11D512817381100B2AB32 /* ContentView.swift */,
+				97E11DF328176B1900B2AB32 /* FlyingFlower */,
+				97E11E082817A71300B2AB32 /* Util */,
 				97E11D532817381200B2AB32 /* Assets.xcassets */,
 				97E11D552817381200B2AB32 /* Preview Content */,
 			);
@@ -65,6 +79,25 @@
 				97E11D562817381200B2AB32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97E11DF328176B1900B2AB32 /* FlyingFlower */ = {
+			isa = PBXGroup;
+			children = (
+				97E11E002817791B00B2AB32 /* FlyingFlower.swift */,
+				97E11DF428176B8900B2AB32 /* Flower.swift */,
+				97E11E0428177E7E00B2AB32 /* Fire.swift */,
+				97E11E0228177BE000B2AB32 /* Sky.swift */,
+			);
+			path = FlyingFlower;
+			sourceTree = "<group>";
+		};
+		97E11E082817A71300B2AB32 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,9 @@
 			dependencies = (
 			);
 			name = SFSymbolsArtCollection;
+			packageProductDependencies = (
+				97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */,
+			);
 			productName = SFSymbolsArtCollection;
 			productReference = 97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 97E11D432817381100B2AB32;
+			packageReferences = (
+				97E11DEE28176A0D00B2AB32 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */,
+			);
 			productRefGroup = 97E11D4D2817381100B2AB32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				97E11D522817381100B2AB32 /* ContentView.swift in Sources */,
+				97E11DF528176B8900B2AB32 /* Flower.swift in Sources */,
+				97E11E0528177E7E00B2AB32 /* Fire.swift in Sources */,
 				97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */,
+				97E11E012817791B00B2AB32 /* FlyingFlower.swift in Sources */,
+				97E11E0328177BE000B2AB32 /* Sky.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97E11DEE28176A0D00B2AB32 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/littleossa/SFUserFriendlySymbols.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97E11DEE28176A0D00B2AB32 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */;
+			productName = SFUserFriendlySymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97E11D442817381100B2AB32 /* Project object */;
 }

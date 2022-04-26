@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sfuserfriendlysymbols",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/littleossa/SFUserFriendlySymbols.git",
+      "state" : {
+        "revision" : "9d003e1c818de1dbe34a36b197ce11d9524a54d9",
+        "version" : "0.4.0"
+      }
+    }
+  ],
+  "version" : 2
+}

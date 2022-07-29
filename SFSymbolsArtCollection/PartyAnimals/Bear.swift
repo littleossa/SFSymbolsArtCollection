@@ -10,7 +10,8 @@ import SwiftUI
 struct Bear: View {
     var body: some View {
         ZStack {
-            BearOutline()
+            AnimalOutline(faceColor: .brown,
+                        earColor: .palePink)
             
             AnimalEye(eyeColor: .darkBrown)
                 .offset(x: 30, y: -16)
@@ -18,7 +19,8 @@ struct Bear: View {
             AnimalEye(eyeColor: .darkBrown)
                 .offset(x: -30, y: -16)
             
-            BearNose()
+            AnimalNose(noseTipColor: .red,
+                     mouthColor: .black)
                 .offset(x: 0, y: 15)
         }
     }

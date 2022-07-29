@@ -7,18 +7,22 @@
 
 import SwiftUI
 
-struct BearOutline: View {
+struct AnimalOutline: View {
+    
+    let faceColor: Color
+    let earColor: Color
+    
     var body: some View {
         ZStack {
             DrawingSymbol(.circleFill,
-                          color: .brown,
+                          color: faceColor,
                           width: 60,
                           height: 60,
                           offsetX: 50,
                           offsetY: -60)
             
             DrawingSymbol(.rectangleRoundedtopFill,
-                          color: .palePink,
+                          color: earColor,
                           width: 30,
                           height: 20,
                           rotationDegrees: -20,
@@ -26,14 +30,14 @@ struct BearOutline: View {
                           offsetY: -60)
             
             DrawingSymbol(.circleFill,
-                          color: .brown,
+                          color: faceColor,
                           width: 60,
                           height: 60,
                           offsetX: -50,
                           offsetY: -60)
             
             DrawingSymbol(.rectangleRoundedtopFill,
-                          color: .palePink,
+                          color: earColor,
                           width: 30,
                           height: 20,
                           rotationDegrees: 20,
@@ -41,14 +45,15 @@ struct BearOutline: View {
                           offsetY: -60)
             
             DrawingSymbol(.ovalFill,
-                          color: .brown,
+                          color: faceColor,
                           width: 160, height: 120)
         }
     }
 }
 
-struct BearOutline_Previews: PreviewProvider {
+struct AnimalOutline_Previews: PreviewProvider {
     static var previews: some View {
-        BearOutline()
+        AnimalOutline(faceColor: .brown,
+                    earColor: .palePink)
     }
 }

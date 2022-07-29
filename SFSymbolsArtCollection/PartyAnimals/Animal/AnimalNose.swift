@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-struct BearNose: View {
+struct AnimalNose: View {
+    
+    let noseTipColor: Color
+    let mouthColor: Color
+    
     var body: some View {
         ZStack {
             DrawingSymbol(.circleFill,
@@ -16,6 +20,7 @@ struct BearNose: View {
                           height: 50)
             
             DrawingSymbol(.arrowDown,
+                          color: mouthColor,
                           width: 30,
                           height: 30,
                           offsetY: 5)
@@ -27,7 +32,7 @@ struct BearNose: View {
             offsetY: -4)
             
             DrawingSymbol(.moonCircleFill,
-                          color: .red,
+                          color: noseTipColor,
                           width: 20,
                           height: 20,
                           lineWeight: .bold,
@@ -37,13 +42,14 @@ struct BearNose: View {
     }
 }
 
-struct BearNose_Previews: PreviewProvider {
+struct AnimalNose_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Rectangle()
                 .fill(.brown)
                 .ignoresSafeArea()
-            BearNose()
+            AnimalNose(noseTipColor: .red,
+                     mouthColor: .black)
         }
     }
 }

@@ -17,9 +17,12 @@
 		9748BE272893BE7B006DF0BE /* AlphabeticalWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE262893BE7B006DF0BE /* AlphabeticalWorld.swift */; };
 		9748BE292893BFE3006DF0BE /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE282893BFE3006DF0BE /* Earth.swift */; };
 		9748BE2C2893C428006DF0BE /* Bear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE2B2893C428006DF0BE /* Bear.swift */; };
-		9748BE2E2893C688006DF0BE /* BearOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE2D2893C688006DF0BE /* BearOutline.swift */; };
-		9748BE302893C706006DF0BE /* BearNose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE2F2893C706006DF0BE /* BearNose.swift */; };
+		9748BE2E2893C688006DF0BE /* AnimalOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE2D2893C688006DF0BE /* AnimalOutline.swift */; };
+		9748BE302893C706006DF0BE /* AnimalNose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE2F2893C706006DF0BE /* AnimalNose.swift */; };
 		9748BE322893C91F006DF0BE /* AnimalEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE312893C91F006DF0BE /* AnimalEye.swift */; };
+		9748BE352893CB67006DF0BE /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE342893CB67006DF0BE /* Lion.swift */; };
+		9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE362893D064006DF0BE /* PartyAnimals.swift */; };
+		9748BE3A2893D0E3006DF0BE /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE392893D0E3006DF0BE /* Frog.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
 		97E11D522817381100B2AB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D512817381100B2AB32 /* ContentView.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
@@ -53,9 +56,12 @@
 		9748BE262893BE7B006DF0BE /* AlphabeticalWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticalWorld.swift; sourceTree = "<group>"; };
 		9748BE282893BFE3006DF0BE /* Earth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earth.swift; sourceTree = "<group>"; };
 		9748BE2B2893C428006DF0BE /* Bear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear.swift; sourceTree = "<group>"; };
-		9748BE2D2893C688006DF0BE /* BearOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearOutline.swift; sourceTree = "<group>"; };
-		9748BE2F2893C706006DF0BE /* BearNose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearNose.swift; sourceTree = "<group>"; };
+		9748BE2D2893C688006DF0BE /* AnimalOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalOutline.swift; sourceTree = "<group>"; };
+		9748BE2F2893C706006DF0BE /* AnimalNose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalNose.swift; sourceTree = "<group>"; };
 		9748BE312893C91F006DF0BE /* AnimalEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEye.swift; sourceTree = "<group>"; };
+		9748BE342893CB67006DF0BE /* Lion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
+		9748BE362893D064006DF0BE /* PartyAnimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimals.swift; sourceTree = "<group>"; };
+		9748BE392893D0E3006DF0BE /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsArtCollectionApp.swift; sourceTree = "<group>"; };
 		97E11D512817381100B2AB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,20 +128,23 @@
 		9748BE2A2893C406006DF0BE /* PartyAnimals */ = {
 			isa = PBXGroup;
 			children = (
-				9748BE312893C91F006DF0BE /* AnimalEye.swift */,
-				9748BE332893CB32006DF0BE /* Bear */,
+				9748BE362893D064006DF0BE /* PartyAnimals.swift */,
+				9748BE382893D079006DF0BE /* Animal */,
+				9748BE342893CB67006DF0BE /* Lion.swift */,
+				9748BE392893D0E3006DF0BE /* Frog.swift */,
+				9748BE2B2893C428006DF0BE /* Bear.swift */,
 			);
 			path = PartyAnimals;
 			sourceTree = "<group>";
 		};
-		9748BE332893CB32006DF0BE /* Bear */ = {
+		9748BE382893D079006DF0BE /* Animal */ = {
 			isa = PBXGroup;
 			children = (
-				9748BE2B2893C428006DF0BE /* Bear.swift */,
-				9748BE2F2893C706006DF0BE /* BearNose.swift */,
-				9748BE2D2893C688006DF0BE /* BearOutline.swift */,
+				9748BE312893C91F006DF0BE /* AnimalEye.swift */,
+				9748BE2D2893C688006DF0BE /* AnimalOutline.swift */,
+				9748BE2F2893C706006DF0BE /* AnimalNose.swift */,
 			);
-			path = Bear;
+			path = Animal;
 			sourceTree = "<group>";
 		};
 		97E11D432817381100B2AB32 = {
@@ -303,7 +312,9 @@
 			files = (
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
 				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
+				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
 				97E11E33281971E200B2AB32 /* CrayonHair.swift in Sources */,
+				9748BE3A2893D0E3006DF0BE /* Frog.swift in Sources */,
 				9748BE2028939B04006DF0BE /* FlipType.swift in Sources */,
 				9748BE15289338A3006DF0BE /* Magician.swift in Sources */,
 				97E11E35281971E200B2AB32 /* CrayonMouth.swift in Sources */,
@@ -311,7 +322,7 @@
 				97E11E3D281971ED00B2AB32 /* CrayonEyelid.swift in Sources */,
 				9748BE292893BFE3006DF0BE /* Earth.swift in Sources */,
 				97E11E3E281971ED00B2AB32 /* CrayonEyebrow.swift in Sources */,
-				9748BE2E2893C688006DF0BE /* BearOutline.swift in Sources */,
+				9748BE2E2893C688006DF0BE /* AnimalOutline.swift in Sources */,
 				9748BE322893C91F006DF0BE /* AnimalEye.swift in Sources */,
 				97E11E3C281971ED00B2AB32 /* CrayonEye.swift in Sources */,
 				9748BE1D289399CF006DF0BE /* SFAlphabet.swift in Sources */,
@@ -323,6 +334,7 @@
 				9748BE2C2893C428006DF0BE /* Bear.swift in Sources */,
 				97E11E462819734700B2AB32 /* CrayonBoy.swift in Sources */,
 				97E11E3B281971ED00B2AB32 /* CrayonEyes.swift in Sources */,
+				9748BE352893CB67006DF0BE /* Lion.swift in Sources */,
 				97E11E0528177E7E00B2AB32 /* Fire.swift in Sources */,
 				97E11E442819729B00B2AB32 /* Color+Extensions.swift in Sources */,
 				97E11E34281971E200B2AB32 /* CrayonFace.swift in Sources */,
@@ -330,7 +342,7 @@
 				9748BE1A289341BE006DF0BE /* MagicianFace.swift in Sources */,
 				97E11E012817791B00B2AB32 /* FlyingFlower.swift in Sources */,
 				97E11E0328177BE000B2AB32 /* Sky.swift in Sources */,
-				9748BE302893C706006DF0BE /* BearNose.swift in Sources */,
+				9748BE302893C706006DF0BE /* AnimalNose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

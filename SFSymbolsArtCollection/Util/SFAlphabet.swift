@@ -13,7 +13,6 @@ extension SFAlphabet {
     init(_ alphabet: Alphabet,
          color: Color = .black,
          frameColor: Color = .white,
-         shadowColor: Color? = nil,
          width: CGFloat,
          height: CGFloat,
          lineWeight: Font.Weight = .regular,
@@ -24,7 +23,6 @@ extension SFAlphabet {
         self.alphabet = alphabet
         self.color = color
         self.frameColor = frameColor
-        self.shadowColor = shadowColor
         self.width = width
         self.height = height
         self.lineWeight = lineWeight
@@ -75,7 +73,6 @@ struct SFAlphabet: View {
     private let color: Color
     /// Circle-frame color
     private let frameColor: Color
-    private let shadowColor: Color?
     private let width: CGFloat
     private let height: CGFloat
     private let lineWeight: Font.Weight
@@ -83,24 +80,9 @@ struct SFAlphabet: View {
     private let rotationDegrees: CGFloat
     private let offsetX: CGFloat
     private let offsetY: CGFloat
-    
-    private var isShadowed: Bool {
-        return shadowColor != nil
-    }
         
     var body: some View {
         ZStack {
-            if isShadowed {
-                DrawingSymbol(alphabet.symbolInCircle,
-                              color: shadowColor ?? .gray,
-                              width: width,
-                              height: height,
-                              lineWeight: lineWeight,
-                              flipType: flipType,
-                              rotationDegrees: rotationDegrees,
-                              offsetX: offsetX + 4,
-                              offsetY: offsetY)
-            }
             
             DrawingSymbol(alphabet.symbolInCircle,
                           color: color,
@@ -116,8 +98,8 @@ struct SFAlphabet: View {
             Group {
                 DrawingSymbol(.circle,
                               color: frameColor,
-                              width: width * 1.04,
-                              height: height * 1.04,
+                              width: width * 1.13,
+                              height: height * 1.13,
                               lineWeight: lineWeight,
                               flipType: flipType,
                               rotationDegrees: rotationDegrees,
@@ -136,24 +118,12 @@ struct SFAlphabet: View {
                 
                 DrawingSymbol(.circle,
                               color: frameColor,
-                              width: width * 0.96,
-                              height: height * 0.96,
+                              width: width * 0.87,
+                              height: height * 0.87,
                               lineWeight: lineWeight,
                               flipType: flipType,
                               rotationDegrees: rotationDegrees,
                               offsetX: offsetX,
-                              offsetY: offsetY)
-            }
-            
-            if isShadowed {
-                DrawingSymbol(.circle,
-                              color: frameColor,
-                              width: width,
-                              height: height,
-                              lineWeight: lineWeight,
-                              flipType: flipType,
-                              rotationDegrees: rotationDegrees,
-                              offsetX: offsetX + 6,
                               offsetY: offsetY)
             }
         }
@@ -163,9 +133,17 @@ struct SFAlphabet: View {
 struct SFCharacter_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
+            SFAlphabet(.a, width: 200, height: 200, lineWeight: .black)
+            
             SFAlphabet(.a, width: 100, height: 100, lineWeight: .black)
             
-            SFAlphabet(.a, shadowColor: .gray, width: 100, height: 100, lineWeight: .black)
+            SFAlphabet(.a, width: 50, height: 50, lineWeight: .black)
+            
+            SFAlphabet(.a, width: 25, height: 25, lineWeight: .black)
+            
+            SFAlphabet(.a, width: 10, height: 10, lineWeight: .black)
+            
+            SFAlphabet(.a, width: 1, height: 1, lineWeight: .black)
         }
     }
 }

@@ -96,10 +96,21 @@ struct SFAlphabet: View {
             
             // Hide Circle-Frame
             Group {
+                
                 DrawingSymbol(.circle,
                               color: frameColor,
-                              width: width * 1.13,
-                              height: height * 1.13,
+                              width: width * 1.1,
+                              height: height * 1.1,
+                              lineWeight: lineWeight,
+                              flipType: flipType,
+                              rotationDegrees: rotationDegrees,
+                              offsetX: offsetX,
+                              offsetY: offsetY)
+                
+                DrawingSymbol(.circle,
+                              color: frameColor,
+                              width: width * 1.05,
+                              height: height * 1.05,
                               lineWeight: lineWeight,
                               flipType: flipType,
                               rotationDegrees: rotationDegrees,
@@ -118,8 +129,18 @@ struct SFAlphabet: View {
                 
                 DrawingSymbol(.circle,
                               color: frameColor,
-                              width: width * 0.87,
-                              height: height * 0.87,
+                              width: width * 0.95,
+                              height: height * 0.95,
+                              lineWeight: lineWeight,
+                              flipType: flipType,
+                              rotationDegrees: rotationDegrees,
+                              offsetX: offsetX,
+                              offsetY: offsetY)
+                
+                DrawingSymbol(.circle,
+                              color: frameColor,
+                              width: width * 0.9,
+                              height: height * 0.9,
                               lineWeight: lineWeight,
                               flipType: flipType,
                               rotationDegrees: rotationDegrees,
@@ -133,11 +154,11 @@ struct SFAlphabet: View {
 struct SFCharacter_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            SFAlphabet(.a, width: 200, height: 200, lineWeight: .black)
+            SFAlphabet(.a, width: 200, height: 200)
             
-            SFAlphabet(.a, width: 100, height: 100, lineWeight: .black)
+            SFAlphabet(.h, width: 100, height: 100)
             
-            SFAlphabet(.a, width: 50, height: 50, lineWeight: .black)
+            SFAlphabet(.h, width: 50, height: 50)
             
             SFAlphabet(.a, width: 25, height: 25, lineWeight: .black)
             

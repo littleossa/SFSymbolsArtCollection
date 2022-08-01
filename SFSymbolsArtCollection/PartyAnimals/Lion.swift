@@ -33,23 +33,20 @@ struct Lion: View {
             AnimalEye(eyeColor: .darkBrown)
                 .offset(x: 30, y: -1)
             
+            AnimalWhiskers(color: .darkBrown,
+                           backgroundColor: .yellow)
+            .offset(x: -20, y: 30)
+            
+            AnimalWhiskers(color: .darkBrown,
+                           backgroundColor: .yellow)
+            .offset(x: -20, y: 30)
+            .rotation3DEffect(.degrees(180),
+                              axis: FlipType.horizontal.axis,
+                              anchorZ: 1)
+            
             AnimalNose(noseTipColor: .darkBrown,
                        mouthColor: .darkBrown)
             .offset(x: 0, y: 30)
-            
-            DrawingSymbol(.line3Horizontal,
-                          color: .darkBrown,
-                          width: 30,
-                          height: 20,
-                          lineWeight: .regular)
-            .offset(x: -50, y: 30)
-            
-            DrawingSymbol(.line3Horizontal,
-                          color: .darkBrown,
-                          width: 30,
-                          height: 20,
-                          lineWeight: .regular)
-            .offset(x: 50, y: 30)
         }
     }
 }

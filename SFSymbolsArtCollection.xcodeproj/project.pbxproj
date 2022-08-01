@@ -23,6 +23,7 @@
 		9748BE352893CB67006DF0BE /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE342893CB67006DF0BE /* Lion.swift */; };
 		9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE362893D064006DF0BE /* PartyAnimals.swift */; };
 		9748BE3A2893D0E3006DF0BE /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE392893D0E3006DF0BE /* Frog.swift */; };
+		9748BE3C2897AA28006DF0BE /* AnimalWhiskers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE3B2897AA28006DF0BE /* AnimalWhiskers.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
 		97E11D522817381100B2AB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D512817381100B2AB32 /* ContentView.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		9748BE342893CB67006DF0BE /* Lion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 		9748BE362893D064006DF0BE /* PartyAnimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimals.swift; sourceTree = "<group>"; };
 		9748BE392893D0E3006DF0BE /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
+		9748BE3B2897AA28006DF0BE /* AnimalWhiskers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalWhiskers.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsArtCollectionApp.swift; sourceTree = "<group>"; };
 		97E11D512817381100B2AB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				9748BE312893C91F006DF0BE /* AnimalEye.swift */,
 				9748BE2D2893C688006DF0BE /* AnimalOutline.swift */,
 				9748BE2F2893C706006DF0BE /* AnimalNose.swift */,
+				9748BE3B2897AA28006DF0BE /* AnimalWhiskers.swift */,
 			);
 			path = Animal;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				9748BE3A2893D0E3006DF0BE /* Frog.swift in Sources */,
 				9748BE2028939B04006DF0BE /* FlipType.swift in Sources */,
 				9748BE15289338A3006DF0BE /* Magician.swift in Sources */,
+				9748BE3C2897AA28006DF0BE /* AnimalWhiskers.swift in Sources */,
 				97E11E35281971E200B2AB32 /* CrayonMouth.swift in Sources */,
 				9748BE272893BE7B006DF0BE /* AlphabeticalWorld.swift in Sources */,
 				97E11E3D281971ED00B2AB32 /* CrayonEyelid.swift in Sources */,

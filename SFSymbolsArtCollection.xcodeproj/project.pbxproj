@@ -24,6 +24,9 @@
 		9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE362893D064006DF0BE /* PartyAnimals.swift */; };
 		9748BE3A2893D0E3006DF0BE /* Frog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE392893D0E3006DF0BE /* Frog.swift */; };
 		9748BE3C2897AA28006DF0BE /* AnimalWhiskers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE3B2897AA28006DF0BE /* AnimalWhiskers.swift */; };
+		9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE3E2897AE68006DF0BE /* ArmHair.swift */; };
+		9748BE412897CD6C006DF0BE /* Arm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE402897CD6C006DF0BE /* Arm.swift */; };
+		9748BE4328980C4D006DF0BE /* Hair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4228980C4D006DF0BE /* Hair.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
 		97E11D522817381100B2AB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D512817381100B2AB32 /* ContentView.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 		9748BE362893D064006DF0BE /* PartyAnimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimals.swift; sourceTree = "<group>"; };
 		9748BE392893D0E3006DF0BE /* Frog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frog.swift; sourceTree = "<group>"; };
 		9748BE3B2897AA28006DF0BE /* AnimalWhiskers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalWhiskers.swift; sourceTree = "<group>"; };
+		9748BE3E2897AE68006DF0BE /* ArmHair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmHair.swift; sourceTree = "<group>"; };
+		9748BE402897CD6C006DF0BE /* Arm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arm.swift; sourceTree = "<group>"; };
+		9748BE4228980C4D006DF0BE /* Hair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hair.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsArtCollectionApp.swift; sourceTree = "<group>"; };
 		97E11D512817381100B2AB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,6 +156,16 @@
 			path = Animal;
 			sourceTree = "<group>";
 		};
+		9748BE3D2897ADBD006DF0BE /* ArmHair */ = {
+			isa = PBXGroup;
+			children = (
+				9748BE3E2897AE68006DF0BE /* ArmHair.swift */,
+				9748BE402897CD6C006DF0BE /* Arm.swift */,
+				9748BE4228980C4D006DF0BE /* Hair.swift */,
+			);
+			path = ArmHair;
+			sourceTree = "<group>";
+		};
 		97E11D432817381100B2AB32 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +187,7 @@
 			children = (
 				97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */,
 				97E11D512817381100B2AB32 /* ContentView.swift */,
+				9748BE3D2897ADBD006DF0BE /* ArmHair */,
 				9748BE2A2893C406006DF0BE /* PartyAnimals */,
 				9748BE212893B2CD006DF0BE /* WorldPeace */,
 				9748BE16289338C9006DF0BE /* Magician */,
@@ -331,8 +348,11 @@
 				97E11E3C281971ED00B2AB32 /* CrayonEye.swift in Sources */,
 				9748BE1D289399CF006DF0BE /* SFAlphabet.swift in Sources */,
 				9748BE252893BD97006DF0BE /* AlphabeticalPeace.swift in Sources */,
+				9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */,
 				97E11D522817381100B2AB32 /* ContentView.swift in Sources */,
+				9748BE412897CD6C006DF0BE /* Arm.swift in Sources */,
 				97E11DF528176B8900B2AB32 /* Flower.swift in Sources */,
+				9748BE4328980C4D006DF0BE /* Hair.swift in Sources */,
 				9748BE1828933E40006DF0BE /* MagicianHat.swift in Sources */,
 				97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */,
 				9748BE2C2893C428006DF0BE /* Bear.swift in Sources */,

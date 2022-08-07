@@ -15,6 +15,30 @@ struct Fireworks: View {
                 .fill(Color.midnightNavy)
                 .ignoresSafeArea()
             
+            // Background fireworks
+            Group {
+                DrawingSymbol(.timelapse,
+                              color: .pink,
+                              width: 50,
+                              height: 50,
+                              offsetX: -90,
+                              offsetY: 50)
+                
+                DrawingSymbol(.timelapse,
+                              color: .lemonYellow,
+                              width: 50,
+                              height: 50,
+                              offsetX: -30,
+                              offsetY: 100)
+                
+                DrawingSymbol(.timelapse,
+                              color: .green,
+                              width: 50,
+                              height: 50,
+                              offsetX: 60,
+                              offsetY: 80)
+            }
+            
             Firework(color: Color(uiColor: .red),
                      dotColor: .white)
             .offset(x: -40, y: -100)
@@ -36,7 +60,8 @@ struct Fireworks: View {
             VStack {
                 Spacer()
                 
-                Building(color: .gray, lightColor: .yellow)
+                Building(color: .gray,
+                         lightColor: .yellow)
             }
             
             VStack {

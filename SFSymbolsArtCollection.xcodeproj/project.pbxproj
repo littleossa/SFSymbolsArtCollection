@@ -35,6 +35,11 @@
 		9748BE50289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4F289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift */; };
 		9748BE52289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE51289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift */; };
 		9748BE54289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE53289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift */; };
+		9748BE57289DCBB0006DF0BE /* Firework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE56289DCBB0006DF0BE /* Firework.swift */; };
+		9748BE59289DCE17006DF0BE /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE58289DCE17006DF0BE /* Fireworks.swift */; };
+		9748BE5D289DD696006DF0BE /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5C289DD696006DF0BE /* Building.swift */; };
+		9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5E289F194E006DF0BE /* RocketFirework.swift */; };
+		9748BE61289F1D15006DF0BE /* SmallFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE60289F1D15006DF0BE /* SmallFirework.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
 		97E11D522817381100B2AB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D512817381100B2AB32 /* ContentView.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
@@ -86,6 +91,11 @@
 		9748BE4F289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricMagneticWaveLeftHand.swift; sourceTree = "<group>"; };
 		9748BE51289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricMagneticWaveManMagnet.swift; sourceTree = "<group>"; };
 		9748BE53289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroMagneticWaveClub.swift; sourceTree = "<group>"; };
+		9748BE56289DCBB0006DF0BE /* Firework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firework.swift; sourceTree = "<group>"; };
+		9748BE58289DCE17006DF0BE /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
+		9748BE5C289DD696006DF0BE /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		9748BE5E289F194E006DF0BE /* RocketFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFirework.swift; sourceTree = "<group>"; };
+		9748BE60289F1D15006DF0BE /* SmallFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFirework.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsArtCollectionApp.swift; sourceTree = "<group>"; };
 		97E11D512817381100B2AB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,6 +207,18 @@
 			path = ElectroMagneticWaveClub;
 			sourceTree = "<group>";
 		};
+		9748BE55289DCB82006DF0BE /* Fireworks */ = {
+			isa = PBXGroup;
+			children = (
+				9748BE58289DCE17006DF0BE /* Fireworks.swift */,
+				9748BE56289DCBB0006DF0BE /* Firework.swift */,
+				9748BE60289F1D15006DF0BE /* SmallFirework.swift */,
+				9748BE5E289F194E006DF0BE /* RocketFirework.swift */,
+				9748BE5C289DD696006DF0BE /* Building.swift */,
+			);
+			path = Fireworks;
+			sourceTree = "<group>";
+		};
 		97E11D432817381100B2AB32 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +238,7 @@
 		97E11D4E2817381100B2AB32 /* SFSymbolsArtCollection */ = {
 			isa = PBXGroup;
 			children = (
+				9748BE55289DCB82006DF0BE /* Fireworks */,
 				97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */,
 				97E11D512817381100B2AB32 /* ContentView.swift */,
 				9748BE4428980FE4006DF0BE /* ElectroMagneticWaveClub */,
@@ -364,6 +387,7 @@
 			files = (
 				9748BE52289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift in Sources */,
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
+				9748BE57289DCBB0006DF0BE /* Firework.swift in Sources */,
 				9748BE4828981096006DF0BE /* ElectroMagneticWaveManFace.swift in Sources */,
 				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
@@ -373,13 +397,17 @@
 				9748BE15289338A3006DF0BE /* Magician.swift in Sources */,
 				9748BE3C2897AA28006DF0BE /* AnimalWhiskers.swift in Sources */,
 				97E11E35281971E200B2AB32 /* CrayonMouth.swift in Sources */,
+				9748BE61289F1D15006DF0BE /* SmallFirework.swift in Sources */,
 				9748BE272893BE7B006DF0BE /* AlphabeticalWorld.swift in Sources */,
 				97E11E3D281971ED00B2AB32 /* CrayonEyelid.swift in Sources */,
 				9748BE292893BFE3006DF0BE /* Earth.swift in Sources */,
 				97E11E3E281971ED00B2AB32 /* CrayonEyebrow.swift in Sources */,
+				9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */,
 				9748BE2E2893C688006DF0BE /* AnimalOutline.swift in Sources */,
 				9748BE322893C91F006DF0BE /* AnimalEye.swift in Sources */,
+				9748BE59289DCE17006DF0BE /* Fireworks.swift in Sources */,
 				97E11E3C281971ED00B2AB32 /* CrayonEye.swift in Sources */,
+				9748BE5D289DD696006DF0BE /* Building.swift in Sources */,
 				9748BE1D289399CF006DF0BE /* SFAlphabet.swift in Sources */,
 				9748BE54289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift in Sources */,
 				9748BE252893BD97006DF0BE /* AlphabeticalPeace.swift in Sources */,

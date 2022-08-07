@@ -15,7 +15,7 @@ struct Fireworks: View {
                 .fill(Color.midnightNavy)
                 .ignoresSafeArea()
             
-            // Background fireworks
+            // Small fireworks
             Group {
                 DrawingSymbol(.timelapse,
                               color: .pink,

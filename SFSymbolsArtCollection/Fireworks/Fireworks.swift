@@ -53,7 +53,7 @@ struct Fireworks: View {
             RocketFirework(color: .white)
                 .offset(x: -80, y: 200)
             
-            SmallFirework(color: .lemonYellow,
+            mediumFirework(color: .lemonYellow,
                           dotColor: .red)
             .offset(x: 90, y: 30)
             

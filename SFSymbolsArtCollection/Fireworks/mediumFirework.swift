@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SmallFirework: View {
+struct mediumFirework: View {
     
     let color: Color
     let dotColor: Color
@@ -32,8 +32,8 @@ struct SmallFirework: View {
     }
 }
 
-struct SmallFirework_Previews: PreviewProvider {
+struct mediumFirework_Previews: PreviewProvider {
     static var previews: some View {
-        SmallFirework(color: .lemonYellow, dotColor: .red)
+        mediumFirework(color: .lemonYellow, dotColor: .red)
     }
 }

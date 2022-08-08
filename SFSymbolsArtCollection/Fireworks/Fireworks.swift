@@ -11,9 +11,16 @@ struct Fireworks: View {
     var body: some View {
         
         ZStack {
-            Rectangle()
-                .fill(Color.midnightNavy)
+            
+            GeometryReader { proxy in
+                DrawingSymbol(.rectangleFill,
+                              color: .midnightNavy,
+                              width: proxy.size.width * 2,
+                              height: proxy.size.height * 2,
+                              offsetX: -proxy.size.width / 2,
+                              offsetY: -proxy.size.height / 10)
                 .ignoresSafeArea()
+            }
             
             // Small fireworks
             Group {
@@ -54,7 +61,7 @@ struct Fireworks: View {
                 .offset(x: -80, y: 200)
             
             mediumFirework(color: .lemonYellow,
-                          dotColor: .red)
+                           dotColor: .red)
             .offset(x: 90, y: 30)
             
             VStack {

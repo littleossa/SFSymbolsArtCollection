@@ -16,7 +16,6 @@ struct ContentView: View {
             ForEach(ArtWork.allCases) { artwork in
                 Button {
                     selectedArtWork = artwork
-                    print("Button押下時", selectedArtWork)
                     isPresented = true
                 } label: {
                     Text(artwork.title)
@@ -24,7 +23,6 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $isPresented, content: {
-            let _ = print("sheet表示前", $selectedArtWork)
             ArtWorkView(artwork: $selectedArtWork)
         })
     }

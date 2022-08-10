@@ -40,6 +40,8 @@
 		9748BE5D289DD696006DF0BE /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5C289DD696006DF0BE /* Building.swift */; };
 		9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5E289F194E006DF0BE /* RocketFirework.swift */; };
 		9748BE61289F1D15006DF0BE /* mediumFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE60289F1D15006DF0BE /* mediumFirework.swift */; };
+		9748BE6428A3936E006DF0BE /* ArtWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE6328A3936E006DF0BE /* ArtWorkView.swift */; };
+		9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE6528A395D5006DF0BE /* ArtWork.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
 		97E11D522817381100B2AB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D512817381100B2AB32 /* ContentView.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
@@ -97,6 +99,8 @@
 		9748BE5E289F194E006DF0BE /* RocketFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFirework.swift; sourceTree = "<group>"; };
 		9748BE60289F1D15006DF0BE /* mediumFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mediumFirework.swift; sourceTree = "<group>"; };
 		9748BE62289F4BFB006DF0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9748BE6328A3936E006DF0BE /* ArtWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkView.swift; sourceTree = "<group>"; };
+		9748BE6528A395D5006DF0BE /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsArtCollectionApp.swift; sourceTree = "<group>"; };
 		97E11D512817381100B2AB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				9748BE62289F4BFB006DF0BE /* Info.plist */,
 				97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */,
 				97E11D512817381100B2AB32 /* ContentView.swift */,
+				9748BE6328A3936E006DF0BE /* ArtWorkView.swift */,
+				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
 				9748BE55289DCB82006DF0BE /* Fireworks */,
 				9748BE4428980FE4006DF0BE /* ElectroMagneticWaveClub */,
 				9748BE3D2897ADBD006DF0BE /* ArmHair */,
@@ -400,6 +406,7 @@
 				9748BE3C2897AA28006DF0BE /* AnimalWhiskers.swift in Sources */,
 				97E11E35281971E200B2AB32 /* CrayonMouth.swift in Sources */,
 				9748BE61289F1D15006DF0BE /* mediumFirework.swift in Sources */,
+				9748BE6428A3936E006DF0BE /* ArtWorkView.swift in Sources */,
 				9748BE272893BE7B006DF0BE /* AlphabeticalWorld.swift in Sources */,
 				97E11E3D281971ED00B2AB32 /* CrayonEyelid.swift in Sources */,
 				9748BE292893BFE3006DF0BE /* Earth.swift in Sources */,
@@ -412,6 +419,7 @@
 				9748BE5D289DD696006DF0BE /* Building.swift in Sources */,
 				9748BE1D289399CF006DF0BE /* SFAlphabet.swift in Sources */,
 				9748BE54289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift in Sources */,
+				9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */,
 				9748BE252893BD97006DF0BE /* AlphabeticalPeace.swift in Sources */,
 				9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */,
 				97E11D522817381100B2AB32 /* ContentView.swift in Sources */,

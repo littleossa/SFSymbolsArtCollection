@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MediumFirework: View {
     
-    let size: CGFloat
+    let baseLength: CGFloat
     let color: Color
     let dotColor: Color
     
@@ -18,23 +18,23 @@ struct MediumFirework: View {
         ZStack {
             Image(symbol: .helm)
                 .arrangeShape(color: color,
-                              fontSize: size * 0.25)
+                              fontSize: baseLength * 0.25)
             
             Image(symbol: .circleDotted)
                 .arrangeShape(color: dotColor,
-                              fontSize: size * 0.30)
+                              fontSize: baseLength * 0.30)
             
             Image(symbol: .circleFill)
                 .arrangeShape(color: dotColor,
-                              fontSize: size * 0.037)
+                              fontSize: baseLength * 0.037)
         }
     }
 }
 
 struct FMediumFirework_Previews: PreviewProvider {
     static var previews: some View {
-        MediumFirework(size: 400,
-                      color: .red,
-                      dotColor: .lemonYellow)
+        MediumFirework(baseLength: 400,
+                       color: .red,
+                       dotColor: .lemonYellow)
     }
 }

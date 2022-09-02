@@ -10,29 +10,29 @@ import SwiftUI
 // MARK: -  Initializer
 extension LargeFirework {
     
-    init(size: CGFloat, color: Color, dotColor: Color) {
+    init(baseLength: CGFloat, color: Color, dotColor: Color) {
         
-        self.size = size
+        self.baseLength = baseLength
         self.color = color
         self.dotColor = dotColor
         
         radioWaveAppearances = [
             RadioWaveAppearances(flipType: .none,
                                  rotationDegrees: 0,
-                                 offset: Offset(x: size * 0.095,
+                                 offset: Offset(x: baseLength * 0.095,
                                                 y: 0)),
             RadioWaveAppearances(flipType: .horizontal,
                                  rotationDegrees: 0,
-                                 offset: Offset(x: size * -0.095,
+                                 offset: Offset(x: baseLength * -0.095,
                                                 y: 0)),
             RadioWaveAppearances(flipType: .none,
-                                 rotationDegrees: size * 0.225,
+                                 rotationDegrees: baseLength * 0.225,
                                  offset: Offset(x: 0,
-                                                y: size * -0.095)),
+                                                y: baseLength * -0.095)),
             RadioWaveAppearances(flipType: .none,
-                                 rotationDegrees: size * -0.225,
+                                 rotationDegrees: baseLength * -0.225,
                                  offset: Offset(x: 0,
-                                                y: size * 0.095))
+                                                y: baseLength * 0.095))
         ]
     }
     
@@ -46,7 +46,7 @@ extension LargeFirework {
 
 struct LargeFirework: View {
     
-    let size: CGFloat
+    let baseLength: CGFloat
     let color: Color
     let dotColor: Color
     let radioWaveAppearances: [RadioWaveAppearances]
@@ -58,7 +58,7 @@ struct LargeFirework: View {
             ForEach(radioWaveAppearances, id: \.self) { appearance in
                 Image(symbol: .dotRadiowavesRight)
                     .arrangeShape(color: color,
-                                  fontSize: size * 0.25,
+                                  fontSize: baseLength * 0.25,
                                   fontWeight: .bold,
                                   flipType: appearance.flipType,
                                   rotationDegrees: appearance.rotationDegrees,
@@ -68,20 +68,20 @@ struct LargeFirework: View {
             
             Image(symbol: .circleDotted)
                 .arrangeShape(color: dotColor,
-                              fontSize: size * 0.55,
+                              fontSize: baseLength * 0.55,
                               fontWeight: .ultraLight,
-                              rotationDegrees: size * 0.225)
+                              rotationDegrees: baseLength * 0.225)
             
             Image(symbol: .circleFill)
                 .arrangeShape(color: dotColor,
-                              fontSize: size * 0.085)
+                              fontSize: baseLength * 0.085)
         }
     }
 }
 
 struct Firework_Previews: PreviewProvider {
     static var previews: some View {
-        LargeFirework(size: 400,
+        LargeFirework(baseLength: 400,
                       color: .red,
                       dotColor: .yellow)
     }

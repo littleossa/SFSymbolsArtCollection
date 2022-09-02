@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */; };
+		973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */; };
+		973B2CA728C26850006ED5F0 /* Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA628C26850006ED5F0 /* Offset.swift */; };
 		9748BE15289338A3006DF0BE /* Magician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE14289338A3006DF0BE /* Magician.swift */; };
 		9748BE1828933E40006DF0BE /* MagicianHat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE1728933E40006DF0BE /* MagicianHat.swift */; };
 		9748BE1A289341BE006DF0BE /* MagicianFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE19289341BE006DF0BE /* MagicianFace.swift */; };
@@ -35,7 +38,7 @@
 		9748BE50289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4F289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift */; };
 		9748BE52289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE51289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift */; };
 		9748BE54289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE53289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift */; };
-		9748BE57289DCBB0006DF0BE /* Firework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE56289DCBB0006DF0BE /* Firework.swift */; };
+		9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE56289DCBB0006DF0BE /* LargeFirework.swift */; };
 		9748BE59289DCE17006DF0BE /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE58289DCE17006DF0BE /* Fireworks.swift */; };
 		9748BE5D289DD696006DF0BE /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5C289DD696006DF0BE /* Building.swift */; };
 		9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5E289F194E006DF0BE /* RocketFirework.swift */; };
@@ -67,6 +70,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithFont.swift; sourceTree = "<group>"; };
+		973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithWidthAndHeight.swift; sourceTree = "<group>"; };
+		973B2CA628C26850006ED5F0 /* Offset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offset.swift; sourceTree = "<group>"; };
 		9748BE14289338A3006DF0BE /* Magician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magician.swift; sourceTree = "<group>"; };
 		9748BE1728933E40006DF0BE /* MagicianHat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianHat.swift; sourceTree = "<group>"; };
 		9748BE19289341BE006DF0BE /* MagicianFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianFace.swift; sourceTree = "<group>"; };
@@ -95,7 +101,7 @@
 		9748BE4F289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricMagneticWaveLeftHand.swift; sourceTree = "<group>"; };
 		9748BE51289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricMagneticWaveManMagnet.swift; sourceTree = "<group>"; };
 		9748BE53289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroMagneticWaveClub.swift; sourceTree = "<group>"; };
-		9748BE56289DCBB0006DF0BE /* Firework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firework.swift; sourceTree = "<group>"; };
+		9748BE56289DCBB0006DF0BE /* LargeFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFirework.swift; sourceTree = "<group>"; };
 		9748BE58289DCE17006DF0BE /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
 		9748BE5C289DD696006DF0BE /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		9748BE5E289F194E006DF0BE /* RocketFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFirework.swift; sourceTree = "<group>"; };
@@ -139,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		973B2CA228C2584F006ED5F0 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */,
+				973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		9748BE16289338C9006DF0BE /* Magician */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				9748BE58289DCE17006DF0BE /* Fireworks.swift */,
-				9748BE56289DCBB0006DF0BE /* Firework.swift */,
+				9748BE56289DCBB0006DF0BE /* LargeFirework.swift */,
 				9748BE60289F1D15006DF0BE /* mediumFirework.swift */,
 				9748BE5E289F194E006DF0BE /* RocketFirework.swift */,
 				9748BE5C289DD696006DF0BE /* Building.swift */,
@@ -270,6 +285,7 @@
 				97E11E402819720900B2AB32 /* CrayonBoy */,
 				97E11DF328176B1900B2AB32 /* FlyingFlower */,
 				97E11E082817A71300B2AB32 /* Util */,
+				973B2CA228C2584F006ED5F0 /* ViewModifiers */,
 				9748BE1E28939AE5006DF0BE /* Enum */,
 				97E11E412819727A00B2AB32 /* Extensions */,
 				97E11D532817381200B2AB32 /* Assets.xcassets */,
@@ -303,6 +319,7 @@
 			children = (
 				97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */,
 				9748BE1C289399CF006DF0BE /* SFAlphabet.swift */,
+				973B2CA628C26850006ED5F0 /* Offset.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -409,8 +426,9 @@
 			files = (
 				9748BE52289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift in Sources */,
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
-				9748BE57289DCBB0006DF0BE /* Firework.swift in Sources */,
+				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
 				9748BE4828981096006DF0BE /* ElectroMagneticWaveManFace.swift in Sources */,
+				973B2CA728C26850006ED5F0 /* Offset.swift in Sources */,
 				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
 				97E11E33281971E200B2AB32 /* CrayonHair.swift in Sources */,
@@ -436,6 +454,7 @@
 				9748BE54289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift in Sources */,
 				9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */,
 				9748BE252893BD97006DF0BE /* AlphabeticalPeace.swift in Sources */,
+				973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */,
 				9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */,
 				97E11D522817381100B2AB32 /* ContentView.swift in Sources */,
 				9748BE412897CD6C006DF0BE /* Arm.swift in Sources */,
@@ -446,6 +465,7 @@
 				9748BE4E289AAE39006DF0BE /* ElectricMagneticWaveManRightHand.swift in Sources */,
 				97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */,
 				9748BE2C2893C428006DF0BE /* Bear.swift in Sources */,
+				973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */,
 				97E11E462819734700B2AB32 /* CrayonBoy.swift in Sources */,
 				97E11E3B281971ED00B2AB32 /* CrayonEyes.swift in Sources */,
 				9748BE352893CB67006DF0BE /* Lion.swift in Sources */,

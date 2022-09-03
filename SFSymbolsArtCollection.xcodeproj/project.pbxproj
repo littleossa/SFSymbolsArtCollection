@@ -45,6 +45,7 @@
 		9748BE6428A3936E006DF0BE /* ArtWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE6328A3936E006DF0BE /* ArtWorkView.swift */; };
 		9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE6528A395D5006DF0BE /* ArtWork.swift */; };
 		97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2928C2BC9A004E1720 /* MediumFirework.swift */; };
+		97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2B28C2DDAA004E1720 /* Buildings.swift */; };
 		97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */; };
 		97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
@@ -109,6 +110,7 @@
 		9748BE6328A3936E006DF0BE /* ArtWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkView.swift; sourceTree = "<group>"; };
 		9748BE6528A395D5006DF0BE /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
 		97624C2928C2BC9A004E1720 /* MediumFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumFirework.swift; sourceTree = "<group>"; };
+		97624C2B28C2DDAA004E1720 /* Buildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Symbol.swift; sourceTree = "<group>"; };
 		97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Logo.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,9 +240,18 @@
 				9748BE56289DCBB0006DF0BE /* LargeFirework.swift */,
 				97624C2928C2BC9A004E1720 /* MediumFirework.swift */,
 				9748BE5E289F194E006DF0BE /* RocketFirework.swift */,
-				9748BE5C289DD696006DF0BE /* Building.swift */,
+				97624C2D28C2E43C004E1720 /* Buildings */,
 			);
 			path = Fireworks;
+			sourceTree = "<group>";
+		};
+		97624C2D28C2E43C004E1720 /* Buildings */ = {
+			isa = PBXGroup;
+			children = (
+				97624C2B28C2DDAA004E1720 /* Buildings.swift */,
+				9748BE5C289DD696006DF0BE /* Building.swift */,
+			);
+			path = Buildings;
 			sourceTree = "<group>";
 		};
 		97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */ = {
@@ -469,6 +480,7 @@
 				97E11E462819734700B2AB32 /* CrayonBoy.swift in Sources */,
 				97E11E3B281971ED00B2AB32 /* CrayonEyes.swift in Sources */,
 				9748BE352893CB67006DF0BE /* Lion.swift in Sources */,
+				97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */,
 				97E11E0528177E7E00B2AB32 /* Fire.swift in Sources */,
 				97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */,
 				97E11E442819729B00B2AB32 /* Color+Extensions.swift in Sources */,

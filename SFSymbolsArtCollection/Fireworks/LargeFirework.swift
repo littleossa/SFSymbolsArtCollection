@@ -63,13 +63,9 @@ struct LargeFirework: View {
 
 struct Firework_Previews: PreviewProvider {
     static var previews: some View {
-        
-        GeometryReader { proxy in
-            let length = proxy.size.width
-            
-            LargeFirework(baseLength: length,
+                    
+            LargeFirework(baseLength: 400,
                           color: .red,
                           dotColor: .yellow)
-        }
     }
 }

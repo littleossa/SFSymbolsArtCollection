@@ -12,9 +12,9 @@ extension GeometryProxy {
     var baseLength: CGFloat {
         
         let width = self.size.width
-        let height = self.size.height
+        let halfHeight = self.size.height / 2
         
-        let baseLength = width < height ? width : height
+        let baseLength = width < halfHeight ? width : halfHeight
         return baseLength
     }
 }

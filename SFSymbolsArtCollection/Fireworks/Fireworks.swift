@@ -51,13 +51,13 @@ struct Fireworks: View {
                                   color: Color(uiColor: .red),
                                   dotColor: .white)
                     .offset(x: baseLength * -0.1,
-                            y: baseLength * -0.19)
+                            y: baseLength * -0.3)
                     
                     LargeFirework(baseLength: baseLength,
                                   color: .white,
                                   dotColor: .yellow)
                     .offset(x: baseLength * 0.1,
-                            y: baseLength * -0.39)
+                            y: baseLength * -0.5)
                 }
                 
                 // RocketFireworks
@@ -108,5 +108,6 @@ struct Fireworks: View {
 struct Fireworks_Previews: PreviewProvider {
     static var previews: some View {
         Fireworks()
+            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }

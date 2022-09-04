@@ -8,80 +8,97 @@
 import SwiftUI
 
 struct Fireworks: View {
+    
     var body: some View {
         
-        ZStack {
+        GeometryReader { proxy in
             
-            GeometryReader { proxy in
-                DrawingSymbol(.rectangleFill,
-                              color: .midnightNavy,
-                              width: proxy.size.width * 2,
-                              height: proxy.size.height * 2,
-                              offsetX: -proxy.size.width / 2,
-                              offsetY: -proxy.size.height / 10)
-                .ignoresSafeArea()
+            let baseLength = proxy.size.width
+            
+            // Background
+            ZStack {
+                Image(symbol: .rectangleFill)
+                    .arrangeShape(color: .midnightNavy,
+                                  width: proxy.size.width * 2,
+                                  height: proxy.size.height * 2,
+                                  offsetX: -proxy.size.width * 0.1,
+                                  offsetY: -proxy.size.height * 0.1)
             }
             
-            // Small fireworks
-            Group {
-                DrawingSymbol(.timelapse,
-                              color: .pink,
-                              width: 50,
-                              height: 50,
-                              offsetX: -90,
-                              offsetY: 50)
+            ZStack {
                 
-                DrawingSymbol(.timelapse,
-                              color: .lemonYellow,
-                              width: 50,
-                              height: 50,
-                              offsetX: -30,
-                              offsetY: 100)
-                
-                DrawingSymbol(.timelapse,
-                              color: .green,
-                              width: 50,
-                              height: 50,
-                              offsetX: 60,
-                              offsetY: 80)
-            }
-            
-            Firework(color: Color(uiColor: .red),
-                     dotColor: .white)
-            .offset(x: -40, y: -100)
-            
-            Firework(color: .white,
-                     dotColor: .yellow)
-            .offset(x: 40, y: -180)
-            
-            RocketFirework(color: .yellow)
-                .offset(x: 10, y: 130)
-            
-            RocketFirework(color: .white)
-                .offset(x: -80, y: 200)
-            
-            mediumFirework(color: .lemonYellow,
-                           dotColor: .red)
-            .offset(x: 90, y: 30)
-            
-            VStack {
-                Spacer()
-                
-                Building(color: .gray,
-                         lightColor: .yellow)
-            }
-            
-            VStack {
-                Spacer()
-                
-                HStack(spacing: 0) {
-                    DrawingSymbol(.person3SequenceFill, width: 100, height: 50)
+                // SmallFireworks
+                Group {
+                    SmallFirework(color: .pink,
+                                  fontSize: baseLength * 0.125,
+                                  offsetX: baseLength * -0.225,
+                                  offsetY: baseLength * 0.125)
                     
-                    DrawingSymbol(.person3SequenceFill, width: 100, height: 50)
+                    SmallFirework(color: .lemonYellow,
+                                  fontSize: baseLength * 0.125,
+                                  offsetX: baseLength * -0.075,
+                                  offsetY: baseLength * 0.25)
                     
-                    DrawingSymbol(.person3SequenceFill, width: 100, height: 50)
+                    SmallFirework(color: .green,
+                                  fontSize: baseLength * 0.125,
+                                  offsetX: baseLength * 0.15,
+                                  offsetY: baseLength * 0.2)
+                }
+                
+                // LargeFireworks
+                Group {
+                    LargeFirework(baseLength: baseLength,
+                                  color: Color(uiColor: .red),
+                                  dotColor: .white)
+                    .offset(x: baseLength * -0.1,
+                            y: baseLength * -0.19)
                     
-                    DrawingSymbol(.person3SequenceFill, width: 100, height: 50)
+                    LargeFirework(baseLength: baseLength,
+                                  color: .white,
+                                  dotColor: .yellow)
+                    .offset(x: baseLength * 0.1,
+                            y: baseLength * -0.39)
+                }
+                
+                // RocketFireworks
+                Group {
+                    RocketFirework(baseLength: baseLength,
+                                   color: .yellow)
+                    .offset(x: baseLength * 0.0025,
+                            y: baseLength * 0.325)
+                    
+                    RocketFirework(baseLength: baseLength,
+                                   color: .white)
+                    .offset(x: baseLength * -0.2,
+                            y: baseLength * 0.5)
+                }
+                
+                MediumFirework(baseLength: baseLength,
+                               color: .lemonYellow,
+                               dotColor: .red)
+                .offset(x: baseLength * 0.225,
+                        y: baseLength * 0.075)
+                
+                VStack {
+                    Spacer()
+                    
+                    Buildings(baseLength: baseLength * 0.77,
+                              color: .gray,
+                              lightColor: .yellow)
+                }
+                
+                VStack {
+                    Spacer()
+                    
+                    HStack(spacing: 0) {
+                        
+                        // Audience
+                        ForEach(0..<4) { _ in
+                            DrawingSymbol(.person3SequenceFill,
+                                          width: baseLength * 0.25,
+                                          height: baseLength * 0.125)
+                        }
+                    }
                 }
             }
         }

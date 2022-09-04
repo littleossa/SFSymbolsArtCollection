@@ -46,6 +46,8 @@
 		9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE6528A395D5006DF0BE /* ArtWork.swift */; };
 		97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2928C2BC9A004E1720 /* MediumFirework.swift */; };
 		97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2B28C2DDAA004E1720 /* Buildings.swift */; };
+		97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2E28C2E608004E1720 /* SmallFirework.swift */; };
+		97624C3128C4DF49004E1720 /* SymbolArrangementAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3028C4DF49004E1720 /* SymbolArrangementAppearance.swift */; };
 		97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */; };
 		97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
@@ -111,6 +113,8 @@
 		9748BE6528A395D5006DF0BE /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
 		97624C2928C2BC9A004E1720 /* MediumFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumFirework.swift; sourceTree = "<group>"; };
 		97624C2B28C2DDAA004E1720 /* Buildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
+		97624C2E28C2E608004E1720 /* SmallFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFirework.swift; sourceTree = "<group>"; };
+		97624C3028C4DF49004E1720 /* SymbolArrangementAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolArrangementAppearance.swift; sourceTree = "<group>"; };
 		97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Symbol.swift; sourceTree = "<group>"; };
 		97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Logo.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +243,7 @@
 				9748BE58289DCE17006DF0BE /* Fireworks.swift */,
 				9748BE56289DCBB0006DF0BE /* LargeFirework.swift */,
 				97624C2928C2BC9A004E1720 /* MediumFirework.swift */,
+				97624C2E28C2E608004E1720 /* SmallFirework.swift */,
 				9748BE5E289F194E006DF0BE /* RocketFirework.swift */,
 				97624C2D28C2E43C004E1720 /* Buildings */,
 			);
@@ -331,6 +336,7 @@
 				97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */,
 				9748BE1C289399CF006DF0BE /* SFAlphabet.swift */,
 				973B2CA628C26850006ED5F0 /* Offset.swift */,
+				97624C3028C4DF49004E1720 /* SymbolArrangementAppearance.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -436,10 +442,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9748BE52289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift in Sources */,
+				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
 				9748BE4828981096006DF0BE /* ElectroMagneticWaveManFace.swift in Sources */,
 				973B2CA728C26850006ED5F0 /* Offset.swift in Sources */,
+				97624C3128C4DF49004E1720 /* SymbolArrangementAppearance.swift in Sources */,
 				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
 				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,

@@ -13,7 +13,7 @@ struct Fireworks: View {
         
         GeometryReader { proxy in
             
-            let baseLength = proxy.size.width
+            let baseLength = proxy.baseLength
             
             // Background
             ZStack {

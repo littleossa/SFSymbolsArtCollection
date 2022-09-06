@@ -32,8 +32,8 @@ struct DemonWrestler: View {
                 .offset(x: baseLength * -0.1875,
                         y: baseLength * -0.465)
             }
-            .offset(x: proxy.frame(in: .local).midX / 2.5,
-                    y: proxy.frame(in: .local).midY / 1.6 )
+            .position(x: proxy.frame(in: .local).midX,
+                      y: proxy.frame(in: .local).midY)
         }
     }
 }

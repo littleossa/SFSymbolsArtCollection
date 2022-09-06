@@ -19,11 +19,11 @@ struct Fireworks: View {
             ZStack {
                 Image(symbol: .rectangleFill)
                     .arrangeShape(color: .midnightNavy,
-                                  width: proxy.size.width * 2,
-                                  height: proxy.size.height * 2,
-                                  offsetX: -proxy.size.width * 0.1,
-                                  offsetY: -proxy.size.height * 0.1)
+                                  width: proxy.size.width * 1.5,
+                                  height: proxy.size.height * 1.5)
             }
+            .position(x: proxy.frame(in: .local).midX,
+                      y: proxy.frame(in: .local).midY)
             
             ZStack {
                 

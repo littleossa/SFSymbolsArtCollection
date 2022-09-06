@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct Hair: View {
+    
+    let baseLength: CGFloat
+    
     var body: some View {
-        DrawingSymbol(.alternatingcurrent,
-                      width: 30,
-                      height: 10,
-                      lineWeight: .thin,
-                      rotationDegrees: 100)
+        
+        Image(symbol: .alternatingcurrent)
+            .arrangeShape(fontSize: baseLength * 0.0825,
+                          fontWeight: .thin,
+                          rotationDegrees: 100)
     }
 }
 
 struct Hair_Previews: PreviewProvider {
     static var previews: some View {
-        Hair()
+        Hair(baseLength: 400)
     }
 }

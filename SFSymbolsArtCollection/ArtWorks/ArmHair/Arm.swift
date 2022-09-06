@@ -8,42 +8,47 @@
 import SwiftUI
 
 struct Arm: View {
+    
+    let baseLength: CGFloat
+    let skinColor: Color = .paleOrange
+    
     var body: some View {
         HStack(spacing: 0) {
             
+            // Arm
             ZStack {
-                DrawingSymbol(.rectangleFill,
-                              color: .paleOrange,
-                              width: 200, height: 50,
-                              lineWeight: .light)
+                Image(symbol: .rectangleFill)
+                    .arrangeShape(color: skinColor,
+                                  width: baseLength * 0.5,
+                                  height: baseLength * 0.125,
+                                  fontWeight: .light)
                 
-                DrawingSymbol(.rectangle,
-                              width: 200,
-                              height: 50,
-                              lineWeight: .thin)
+                Image(symbol: .rectangle)
+                    .arrangeShape(width: baseLength * 0.5,
+                                  height: baseLength * 0.125,
+                                  fontWeight: .thin)
             }
             
             ZStack {
-                ZStack {
-                    DrawingSymbol(.handRaisedFill,
-                                  color: .paleOrange,
-                                  width: 80,
-                                  height: 80,
-                                  rotationDegrees: -90)
-                    
-                    DrawingSymbol(.handRaised,
-                                  width: 80,
-                                  height: 80,
-                                  lineWeight: .light,
-                                  rotationDegrees: -90)
-                }
-                .offset(x: -8, y: 5)
                 
-                DrawingSymbol(.rectangleFill,
-                              color: .paleOrange,
-                              width: 19,
-                              height: 39,
-                              offsetX: -45)
+                // Hand
+                ZStack {
+                    Image(symbol: .handRaisedFill)
+                        .arrangeShape(color: skinColor,
+                                      fontSize: baseLength * 0.225,
+                                      rotationDegrees: -90)
+                    
+                    Image(symbol: .handRaised)
+                        .arrangeShape(fontSize: baseLength * 0.25,
+                                      fontWeight: .light,
+                                      rotationDegrees: -90)
+                }
+                .offset(x: -20, y: 5)
+                
+                Image(symbol: .rectangleFill)
+                    .arrangeShape(color: skinColor,
+                                  fontSize: baseLength * 0.1,
+                                  offsetX: baseLength * -0.125)
             }
         }
     }
@@ -51,6 +56,6 @@ struct Arm: View {
 
 struct Arm_Previews: PreviewProvider {
     static var previews: some View {
-        Arm()
+        Arm(baseLength: 400)
     }
 }

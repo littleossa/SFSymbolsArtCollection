@@ -9,14 +9,20 @@ import SwiftUI
 
 struct ArmHair: View {
     var body: some View {
-        ZStack {
-            Arm()
+        
+        GeometryReader { proxy in
             
-            ForEach(0..<250) { _ in
-                Hair()
-                    .offset(x: CGFloat(Int.random(in: -120...50)),
-                            y: CGFloat(Int.random(in: -30...8)))
+            ZStack {
+                Arm(baseLength: 400)
+                
+                ForEach(0..<250) { _ in
+                    Hair(baseLength: 400)
+                        .offset(x: CGFloat(Int.random(in: -140...40)),
+                                y: CGFloat(Int.random(in: -30...8)))
+                }
             }
+            .position(x: proxy.frame(in: .local).midX,
+                      y: proxy.frame(in: .local).midY)
         }
     }
 }

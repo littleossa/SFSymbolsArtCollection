@@ -264,6 +264,23 @@
 			path = Body;
 			sourceTree = "<group>";
 		};
+		97624C3628C74AA0004E1720 /* ArtWorks */ = {
+			isa = PBXGroup;
+			children = (
+				9748BE6328A3936E006DF0BE /* ArtWorkView.swift */,
+				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
+				9748BE55289DCB82006DF0BE /* Fireworks */,
+				9748BE4428980FE4006DF0BE /* DemonWrestler */,
+				9748BE3D2897ADBD006DF0BE /* ArmHair */,
+				9748BE2A2893C406006DF0BE /* PartyAnimals */,
+				9748BE212893B2CD006DF0BE /* WorldPeace */,
+				9748BE16289338C9006DF0BE /* Magician */,
+				97E11E402819720900B2AB32 /* CrayonBoy */,
+				97E11DF328176B1900B2AB32 /* FlyingFlower */,
+			);
+			path = ArtWorks;
+			sourceTree = "<group>";
+		};
 		97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,16 +312,7 @@
 				9748BE62289F4BFB006DF0BE /* Info.plist */,
 				97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */,
 				97E11D512817381100B2AB32 /* ContentView.swift */,
-				9748BE6328A3936E006DF0BE /* ArtWorkView.swift */,
-				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
-				9748BE55289DCB82006DF0BE /* Fireworks */,
-				9748BE4428980FE4006DF0BE /* DemonWrestler */,
-				9748BE3D2897ADBD006DF0BE /* ArmHair */,
-				9748BE2A2893C406006DF0BE /* PartyAnimals */,
-				9748BE212893B2CD006DF0BE /* WorldPeace */,
-				9748BE16289338C9006DF0BE /* Magician */,
-				97E11E402819720900B2AB32 /* CrayonBoy */,
-				97E11DF328176B1900B2AB32 /* FlyingFlower */,
+				97624C3628C74AA0004E1720 /* ArtWorks */,
 				97E11E082817A71300B2AB32 /* Util */,
 				973B2CA228C2584F006ED5F0 /* ViewModifiers */,
 				9748BE1E28939AE5006DF0BE /* Enum */,

@@ -14,7 +14,7 @@ enum ArtWork: Identifiable, CaseIterable {
     case worldPeace
     case partyAnimals
     case armHair
-    case electroMagneticWaveClub
+    case demonWrestler
     case fireworks
     
     var title: String {
@@ -31,8 +31,8 @@ enum ArtWork: Identifiable, CaseIterable {
             return "Party Animals"
         case .armHair:
             return "Arm Hair"
-        case .electroMagneticWaveClub:
-            return "Electro Magnetic Wave Club"
+        case .demonWrestler:
+            return "Demon Wrestler"
         case .fireworks:
             return "Fireworks"
         }

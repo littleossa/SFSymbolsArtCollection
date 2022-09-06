@@ -29,14 +29,11 @@
 		9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE3E2897AE68006DF0BE /* ArmHair.swift */; };
 		9748BE412897CD6C006DF0BE /* Arm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE402897CD6C006DF0BE /* Arm.swift */; };
 		9748BE4328980C4D006DF0BE /* Hair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4228980C4D006DF0BE /* Hair.swift */; };
-		9748BE4628981011006DF0BE /* ElectroMagneticWaveMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4528981011006DF0BE /* ElectroMagneticWaveMan.swift */; };
-		9748BE4828981096006DF0BE /* ElectroMagneticWaveManFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4728981096006DF0BE /* ElectroMagneticWaveManFace.swift */; };
-		9748BE4A28995877006DF0BE /* ElectroMagneticWaveOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4928995877006DF0BE /* ElectroMagneticWaveOutline.swift */; };
-		9748BE4C28995A43006DF0BE /* ElectricMagneticWaveManBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4B28995A43006DF0BE /* ElectricMagneticWaveManBody.swift */; };
-		9748BE4E289AAE39006DF0BE /* ElectricMagneticWaveManRightHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4D289AAE39006DF0BE /* ElectricMagneticWaveManRightHand.swift */; };
-		9748BE50289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4F289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift */; };
-		9748BE52289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE51289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift */; };
-		9748BE54289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE53289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift */; };
+		9748BE4628981011006DF0BE /* DemonWrestler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4528981011006DF0BE /* DemonWrestler.swift */; };
+		9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4728981096006DF0BE /* DemonWrestlerFace.swift */; };
+		9748BE4A28995877006DF0BE /* DemonWrestlerOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4928995877006DF0BE /* DemonWrestlerOutline.swift */; };
+		9748BE4C28995A43006DF0BE /* DemonWrestlerBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4B28995A43006DF0BE /* DemonWrestlerBody.swift */; };
+		9748BE50289AB439006DF0BE /* DemonWrestlerHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4F289AB439006DF0BE /* DemonWrestlerHand.swift */; };
 		9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE56289DCBB0006DF0BE /* LargeFirework.swift */; };
 		9748BE59289DCE17006DF0BE /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE58289DCE17006DF0BE /* Fireworks.swift */; };
 		9748BE5D289DD696006DF0BE /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5C289DD696006DF0BE /* Building.swift */; };
@@ -94,14 +91,11 @@
 		9748BE3E2897AE68006DF0BE /* ArmHair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmHair.swift; sourceTree = "<group>"; };
 		9748BE402897CD6C006DF0BE /* Arm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arm.swift; sourceTree = "<group>"; };
 		9748BE4228980C4D006DF0BE /* Hair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hair.swift; sourceTree = "<group>"; };
-		9748BE4528981011006DF0BE /* ElectroMagneticWaveMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroMagneticWaveMan.swift; sourceTree = "<group>"; };
-		9748BE4728981096006DF0BE /* ElectroMagneticWaveManFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroMagneticWaveManFace.swift; sourceTree = "<group>"; };
-		9748BE4928995877006DF0BE /* ElectroMagneticWaveOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroMagneticWaveOutline.swift; sourceTree = "<group>"; };
-		9748BE4B28995A43006DF0BE /* ElectricMagneticWaveManBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricMagneticWaveManBody.swift; sourceTree = "<group>"; };
-		9748BE4D289AAE39006DF0BE /* ElectricMagneticWaveManRightHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricMagneticWaveManRightHand.swift; sourceTree = "<group>"; };
-		9748BE4F289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricMagneticWaveLeftHand.swift; sourceTree = "<group>"; };
-		9748BE51289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricMagneticWaveManMagnet.swift; sourceTree = "<group>"; };
-		9748BE53289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroMagneticWaveClub.swift; sourceTree = "<group>"; };
+		9748BE4528981011006DF0BE /* DemonWrestler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestler.swift; sourceTree = "<group>"; };
+		9748BE4728981096006DF0BE /* DemonWrestlerFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestlerFace.swift; sourceTree = "<group>"; };
+		9748BE4928995877006DF0BE /* DemonWrestlerOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestlerOutline.swift; sourceTree = "<group>"; };
+		9748BE4B28995A43006DF0BE /* DemonWrestlerBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestlerBody.swift; sourceTree = "<group>"; };
+		9748BE4F289AB439006DF0BE /* DemonWrestlerHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestlerHand.swift; sourceTree = "<group>"; };
 		9748BE56289DCBB0006DF0BE /* LargeFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFirework.swift; sourceTree = "<group>"; };
 		9748BE58289DCE17006DF0BE /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
 		9748BE5C289DD696006DF0BE /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
@@ -220,19 +214,14 @@
 			path = ArmHair;
 			sourceTree = "<group>";
 		};
-		9748BE4428980FE4006DF0BE /* ElectroMagneticWaveClub */ = {
+		9748BE4428980FE4006DF0BE /* DemonWrestler */ = {
 			isa = PBXGroup;
 			children = (
-				9748BE53289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift */,
-				9748BE4528981011006DF0BE /* ElectroMagneticWaveMan.swift */,
-				9748BE4728981096006DF0BE /* ElectroMagneticWaveManFace.swift */,
-				9748BE4928995877006DF0BE /* ElectroMagneticWaveOutline.swift */,
-				9748BE4B28995A43006DF0BE /* ElectricMagneticWaveManBody.swift */,
-				9748BE4D289AAE39006DF0BE /* ElectricMagneticWaveManRightHand.swift */,
-				9748BE4F289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift */,
-				9748BE51289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift */,
+				9748BE4528981011006DF0BE /* DemonWrestler.swift */,
+				97624C3428C74A41004E1720 /* Face */,
+				97624C3528C74A50004E1720 /* Body */,
 			);
-			path = ElectroMagneticWaveClub;
+			path = DemonWrestler;
 			sourceTree = "<group>";
 		};
 		9748BE55289DCB82006DF0BE /* Fireworks */ = {
@@ -255,6 +244,24 @@
 				9748BE5C289DD696006DF0BE /* Building.swift */,
 			);
 			path = Buildings;
+			sourceTree = "<group>";
+		};
+		97624C3428C74A41004E1720 /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				9748BE4728981096006DF0BE /* DemonWrestlerFace.swift */,
+				9748BE4928995877006DF0BE /* DemonWrestlerOutline.swift */,
+			);
+			path = Face;
+			sourceTree = "<group>";
+		};
+		97624C3528C74A50004E1720 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				9748BE4B28995A43006DF0BE /* DemonWrestlerBody.swift */,
+				9748BE4F289AB439006DF0BE /* DemonWrestlerHand.swift */,
+			);
+			path = Body;
 			sourceTree = "<group>";
 		};
 		97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */ = {
@@ -291,7 +298,7 @@
 				9748BE6328A3936E006DF0BE /* ArtWorkView.swift */,
 				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
 				9748BE55289DCB82006DF0BE /* Fireworks */,
-				9748BE4428980FE4006DF0BE /* ElectroMagneticWaveClub */,
+				9748BE4428980FE4006DF0BE /* DemonWrestler */,
 				9748BE3D2897ADBD006DF0BE /* ArmHair */,
 				9748BE2A2893C406006DF0BE /* PartyAnimals */,
 				9748BE212893B2CD006DF0BE /* WorldPeace */,
@@ -438,11 +445,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9748BE52289AB89B006DF0BE /* ElectricMagneticWaveManMagnet.swift in Sources */,
 				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
-				9748BE4828981096006DF0BE /* ElectroMagneticWaveManFace.swift in Sources */,
+				9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */,
 				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
 				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,
@@ -465,7 +471,6 @@
 				97E11E3C281971ED00B2AB32 /* CrayonEye.swift in Sources */,
 				9748BE5D289DD696006DF0BE /* Building.swift in Sources */,
 				9748BE1D289399CF006DF0BE /* SFAlphabet.swift in Sources */,
-				9748BE54289CCFEB006DF0BE /* ElectroMagneticWaveClub.swift in Sources */,
 				9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */,
 				9748BE252893BD97006DF0BE /* AlphabeticalPeace.swift in Sources */,
 				973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */,
@@ -476,8 +481,7 @@
 				9748BE4328980C4D006DF0BE /* Hair.swift in Sources */,
 				97624C3328C4F43F004E1720 /* GeometryProxy+Extensions.swift in Sources */,
 				9748BE1828933E40006DF0BE /* MagicianHat.swift in Sources */,
-				9748BE50289AB439006DF0BE /* ElectricMagneticWaveLeftHand.swift in Sources */,
-				9748BE4E289AAE39006DF0BE /* ElectricMagneticWaveManRightHand.swift in Sources */,
+				9748BE50289AB439006DF0BE /* DemonWrestlerHand.swift in Sources */,
 				97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */,
 				9748BE2C2893C428006DF0BE /* Bear.swift in Sources */,
 				973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */,
@@ -488,12 +492,12 @@
 				97E11E0528177E7E00B2AB32 /* Fire.swift in Sources */,
 				97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */,
 				97E11E442819729B00B2AB32 /* Color+Extensions.swift in Sources */,
-				9748BE4A28995877006DF0BE /* ElectroMagneticWaveOutline.swift in Sources */,
+				9748BE4A28995877006DF0BE /* DemonWrestlerOutline.swift in Sources */,
 				97E11E34281971E200B2AB32 /* CrayonFace.swift in Sources */,
-				9748BE4C28995A43006DF0BE /* ElectricMagneticWaveManBody.swift in Sources */,
+				9748BE4C28995A43006DF0BE /* DemonWrestlerBody.swift in Sources */,
 				97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */,
 				9748BE1A289341BE006DF0BE /* MagicianFace.swift in Sources */,
-				9748BE4628981011006DF0BE /* ElectroMagneticWaveMan.swift in Sources */,
+				9748BE4628981011006DF0BE /* DemonWrestler.swift in Sources */,
 				97E11E012817791B00B2AB32 /* FlyingFlower.swift in Sources */,
 				97E11E0328177BE000B2AB32 /* Sky.swift in Sources */,
 				9748BE302893C706006DF0BE /* AnimalNose.swift in Sources */,

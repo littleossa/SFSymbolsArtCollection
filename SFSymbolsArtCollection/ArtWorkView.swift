@@ -26,8 +26,8 @@ struct ArtWorkView: View {
             PartyAnimals()
         case .armHair:
             ArmHair()
-        case .electroMagneticWaveClub:
-            ElectroMagneticWaveClub()
+        case .demonWrestler:
+            DemonWrestler()
         case .fireworks:
             Fireworks()
         }

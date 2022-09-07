@@ -154,6 +154,16 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		971D9DE628C93EB500136A36 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				973B2CA228C2584F006ED5F0 /* ViewModifiers */,
+				9748BE1E28939AE5006DF0BE /* Enum */,
+				97E11E412819727A00B2AB32 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		973B2CA228C2584F006ED5F0 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,9 +344,7 @@
 				97E11D512817381100B2AB32 /* ContentView.swift */,
 				97624C3628C74AA0004E1720 /* ArtWorks */,
 				97E11E082817A71300B2AB32 /* Util */,
-				973B2CA228C2584F006ED5F0 /* ViewModifiers */,
-				9748BE1E28939AE5006DF0BE /* Enum */,
-				97E11E412819727A00B2AB32 /* Extensions */,
+				971D9DE628C93EB500136A36 /* Common */,
 				97E11D532817381200B2AB32 /* Assets.xcassets */,
 				97E11D552817381200B2AB32 /* Preview Content */,
 				97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */,

@@ -9,35 +9,35 @@ import SwiftUI
 
 struct AnimalNose: View {
     
+    let baseLength: CGFloat
     let noseTipColor: Color
     let mouthColor: Color
     
     var body: some View {
         ZStack {
-            DrawingSymbol(.circleFill,
-                          color: .white,
-                          width: 50,
-                          height: 50)
+            Image(symbol: .circleFill)
+                .arrangeShape(color: .white,
+                              fontSize: baseLength * 0.125)
             
-            DrawingSymbol(.arrowDown,
-                          color: mouthColor,
-                          width: 30,
-                          height: 30,
-                          offsetY: 5)
+            Image(symbol: .arrowDown)
+                .arrangeShape(color: mouthColor,
+                              fontSize: baseLength * 0.09,
+                              offsetY: baseLength * 0.0125)
             
-            DrawingSymbol(.circleFill,
-                          color: .white,
-                          width: 20,
-                          height: 20,
-            offsetY: -4)
-            
-            DrawingSymbol(.moonCircleFill,
-                          color: noseTipColor,
-                          width: 20,
-                          height: 20,
-                          lineWeight: .bold,
-                          flipType: .horizontalAndVertical,
-            offsetY: -4)
+            // Nose tip
+            Group {
+                Image(symbol: .circleFill)
+                    .arrangeShape(color: .white,
+                                  fontSize: baseLength * 0.05,
+                                  offsetY: baseLength * -0.01)
+                
+                Image(symbol: .moonCircleFill)
+                    .arrangeShape(color: noseTipColor,
+                                  fontSize: baseLength * 0.05,
+                                  fontWeight: .bold,
+                                  flipType: .horizontalAndVertical,
+                                  offsetY: baseLength * -0.01)
+            }
         }
     }
 }
@@ -48,8 +48,10 @@ struct AnimalNose_Previews: PreviewProvider {
             Rectangle()
                 .fill(.brown)
                 .ignoresSafeArea()
-            AnimalNose(noseTipColor: .red,
-                     mouthColor: .black)
+            
+            AnimalNose(baseLength: 400,
+                       noseTipColor: .red,
+                       mouthColor: .black)
         }
     }
 }

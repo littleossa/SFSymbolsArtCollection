@@ -9,50 +9,61 @@ import SwiftUI
 
 struct PartyAnimals: View {
     var body: some View {
-        VStack {
-            HStack {
-                VStack {
-                    DrawingSymbol(.pawprintFill,
-                                  color: .red,
-                                  width: 40,
-                                  height: 40,
-                                  rotationDegrees: 20,
-                                  offsetY: -10)
-                    
-                    DrawingSymbol(.pawprintFill,
-                                  color: .blue,
-                                  width: 40,
-                                  height: 40,
-                                  rotationDegrees: -15,
-                                  offsetX: -20,
-                                  offsetY: -10)
-                }
-                Bear()
-            }
+        
+        GeometryReader { proxy in
             
-            HStack {
-                Frog()
-                
-                VStack {
-                    DrawingSymbol(.pawprintFill,
-                                  color: .orange,
-                                  width: 40,
-                                  height: 40,
-                                  rotationDegrees: 15,
-                                  offsetY: -10)
-                    
-                    DrawingSymbol(.pawprintFill,
-                                  color: .cyan,
-                                  width: 40,
-                                  height: 40,
-                                  rotationDegrees: -15,
-                                  offsetX: 20,
-                                  offsetY: -10)
+            let baseLength = proxy.baseLength
+            
+            VStack {
+                                
+                HStack {
+                    VStack {
+                        Image(symbol: .pawprintFill)
+                            .arrangeShape(color: .red,
+                                          fontSize: baseLength * 0.15,
+                                          fontWeight: .regular,
+                                          rotationDegrees: 20,
+                                          offsetY: baseLength * -0.025)
+                        
+                        Image(symbol: .pawprintFill)
+                            .arrangeShape(color: .blue,
+                                          fontSize: baseLength * 0.15,
+                                          fontWeight: .regular,
+                                          rotationDegrees: -15,
+                                          offsetX: baseLength * -0.05,
+                                          offsetY: baseLength * -0.025)
+                    }
+                    Bear(baseLength: baseLength)
                 }
+                
+                HStack {
+                    Frog(baseLength: baseLength)
+                    
+                    VStack {
+                        
+                        Image(symbol: .pawprintFill)
+                            .arrangeShape(color: .orange,
+                                          fontSize: baseLength * 0.15,
+                                          fontWeight: .regular,
+                                          rotationDegrees: 15,
+                                          offsetY: baseLength * -0.025)
+                        
+                        Image(symbol: .pawprintFill)
+                            .arrangeShape(color: .cyan,
+                                          fontSize: baseLength * 0.15,
+                                          fontWeight: .regular,
+                                          rotationDegrees: -15,
+                                          offsetX: baseLength * 0.05,
+                                          offsetY: baseLength * -0.025)
+                    }
+                }
+                .offset(x: 0,
+                        y: baseLength * 0.025)
+                
+                Lion(baseLength: baseLength)
             }
-            .offset(x: 0, y: 10)
-
-            Lion()
+            .position(x: proxy.frame(in: .local).midX,
+                      y: proxy.frame(in: .local).midY)
         }
     }
 }

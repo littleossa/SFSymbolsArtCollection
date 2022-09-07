@@ -9,51 +9,49 @@ import SwiftUI
 
 struct AnimalOutline: View {
     
+    let baseLength: CGFloat
     let faceColor: Color
     let earColor: Color
     
     var body: some View {
         ZStack {
-            DrawingSymbol(.circleFill,
-                          color: faceColor,
-                          width: 60,
-                          height: 60,
-                          offsetX: 50,
-                          offsetY: -60)
+            Image(symbol: .circleFill)
+                .arrangeShape(color: faceColor,
+                              fontSize: baseLength * 0.15,
+                              offsetX: baseLength * 0.125,
+                              offsetY: baseLength * -0.15)
             
-            DrawingSymbol(.rectangleRoundedtopFill,
-                          color: earColor,
-                          width: 30,
-                          height: 20,
-                          rotationDegrees: -20,
-                          offsetX: 50,
-                          offsetY: -60)
+            Image(symbol: .rectangleRoundedtopFill)
+                .arrangeShape(color: earColor,
+                              fontSize: baseLength * 0.06,
+                              rotationDegrees: -20,
+                              offsetX: baseLength * 0.125,
+                              offsetY: baseLength * -0.15)
             
-            DrawingSymbol(.circleFill,
-                          color: faceColor,
-                          width: 60,
-                          height: 60,
-                          offsetX: -50,
-                          offsetY: -60)
+            Image(symbol: .circleFill)
+                .arrangeShape(color: faceColor,
+                              fontSize: baseLength * 0.15,
+                              offsetX: baseLength * -0.125,
+                              offsetY: baseLength * -0.15)
             
-            DrawingSymbol(.rectangleRoundedtopFill,
-                          color: earColor,
-                          width: 30,
-                          height: 20,
-                          rotationDegrees: 20,
-                          offsetX: -50,
-                          offsetY: -60)
+            Image(symbol: .rectangleRoundedtopFill)
+                .arrangeShape(color: earColor,
+                              fontSize: baseLength * 0.06,
+                              rotationDegrees: 20,
+                              offsetX: baseLength * -0.125,
+                              offsetY: baseLength * -0.15)
             
-            DrawingSymbol(.ovalFill,
-                          color: faceColor,
-                          width: 160, height: 120)
+            Image(symbol: .ovalFill)
+                .arrangeShape(color: faceColor,
+                              fontSize: baseLength * 0.325)
         }
     }
 }
 
 struct AnimalOutline_Previews: PreviewProvider {
     static var previews: some View {
-        AnimalOutline(faceColor: .brown,
-                    earColor: .palePink)
+        AnimalOutline(baseLength: 400,
+                      faceColor: .brown,
+                      earColor: .palePink)
     }
 }

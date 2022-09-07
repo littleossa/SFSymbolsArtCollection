@@ -185,10 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				9748BE362893D064006DF0BE /* PartyAnimals.swift */,
+				97624C3728C81E90004E1720 /* Animals */,
 				9748BE382893D079006DF0BE /* Animal */,
-				9748BE342893CB67006DF0BE /* Lion.swift */,
-				9748BE392893D0E3006DF0BE /* Frog.swift */,
-				9748BE2B2893C428006DF0BE /* Bear.swift */,
 			);
 			path = PartyAnimals;
 			sourceTree = "<group>";
@@ -279,6 +277,16 @@
 				97E11DF328176B1900B2AB32 /* FlyingFlower */,
 			);
 			path = ArtWorks;
+			sourceTree = "<group>";
+		};
+		97624C3728C81E90004E1720 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				9748BE342893CB67006DF0BE /* Lion.swift */,
+				9748BE392893D0E3006DF0BE /* Frog.swift */,
+				9748BE2B2893C428006DF0BE /* Bear.swift */,
+			);
+			path = Animals;
 			sourceTree = "<group>";
 		};
 		97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */ = {

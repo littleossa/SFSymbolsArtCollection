@@ -13,9 +13,8 @@ extension SFAlphabet {
     init(_ alphabet: Alphabet,
          color: Color = .black,
          frameColor: Color = .white,
-         width: CGFloat,
-         height: CGFloat,
-         lineWeight: Font.Weight = .regular,
+         fontSize: CGFloat,
+         fontWeight: Font.Weight = .regular,
          flipType: FlipType = .none,
          rotationDegrees: CGFloat = 0,
          offsetX: CGFloat = 0,
@@ -23,9 +22,8 @@ extension SFAlphabet {
         self.alphabet = alphabet
         self.color = color
         self.frameColor = frameColor
-        self.width = width
-        self.height = height
-        self.lineWeight = lineWeight
+        self.fontSize = fontSize
+        self.fontWeight = fontWeight
         self.flipType = flipType
         self.rotationDegrees = rotationDegrees
         self.offsetX = offsetX
@@ -73,9 +71,8 @@ struct SFAlphabet: View {
     private let color: Color
     /// Circle-frame color
     private let frameColor: Color
-    private let width: CGFloat
-    private let height: CGFloat
-    private let lineWeight: Font.Weight
+    private let fontSize: CGFloat
+    private let fontWeight: Font.Weight
     private let flipType: FlipType
     private let rotationDegrees: CGFloat
     private let offsetX: CGFloat
@@ -84,68 +81,62 @@ struct SFAlphabet: View {
     var body: some View {
         ZStack {
             
-            DrawingSymbol(alphabet.symbolInCircle,
-                          color: color,
-                          width: width,
-                          height: height,
-                          lineWeight: lineWeight,
-                          flipType: flipType,
-                          rotationDegrees: rotationDegrees,
-                          offsetX: offsetX,
-                          offsetY: offsetY)
+            Image(symbol: alphabet.symbolInCircle)
+                .arrangeShape(color: color,
+                              fontSize: fontSize,
+                              fontWeight: fontWeight,
+                              flipType: flipType,
+                              rotationDegrees: rotationDegrees,
+                              offsetX: offsetX,
+                              offsetY: offsetY)
             
             // Hide Circle-Frame
             Group {
                 
-                DrawingSymbol(.circle,
-                              color: frameColor,
-                              width: width * 1.1,
-                              height: height * 1.1,
-                              lineWeight: lineWeight,
-                              flipType: flipType,
-                              rotationDegrees: rotationDegrees,
-                              offsetX: offsetX,
-                              offsetY: offsetY)
+                Image(symbol: .circle)
+                    .arrangeShape(color: frameColor,
+                                  fontSize: fontSize * 1.1,
+                                  fontWeight: fontWeight,
+                                  flipType: flipType,
+                                  rotationDegrees: rotationDegrees,
+                                  offsetX: offsetX,
+                                  offsetY: offsetY)
                 
-                DrawingSymbol(.circle,
-                              color: frameColor,
-                              width: width * 1.05,
-                              height: height * 1.05,
-                              lineWeight: lineWeight,
-                              flipType: flipType,
-                              rotationDegrees: rotationDegrees,
-                              offsetX: offsetX,
-                              offsetY: offsetY)
+                Image(symbol: .circle)
+                    .arrangeShape(color: frameColor,
+                                  fontSize: fontSize * 1.05,
+                                  fontWeight: fontWeight,
+                                  flipType: flipType,
+                                  rotationDegrees: rotationDegrees,
+                                  offsetX: offsetX,
+                                  offsetY: offsetY)
                 
-                DrawingSymbol(.circle,
-                              color: frameColor,
-                              width: width,
-                              height: height,
-                              lineWeight: lineWeight,
-                              flipType: flipType,
-                              rotationDegrees: rotationDegrees,
-                              offsetX: offsetX,
-                              offsetY: offsetY)
+                Image(symbol: .circle)
+                    .arrangeShape(color: frameColor,
+                                  fontSize: fontSize,
+                                  fontWeight: fontWeight,
+                                  flipType: flipType,
+                                  rotationDegrees: rotationDegrees,
+                                  offsetX: offsetX,
+                                  offsetY: offsetY)
                 
-                DrawingSymbol(.circle,
-                              color: frameColor,
-                              width: width * 0.95,
-                              height: height * 0.95,
-                              lineWeight: lineWeight,
-                              flipType: flipType,
-                              rotationDegrees: rotationDegrees,
-                              offsetX: offsetX,
-                              offsetY: offsetY)
+                Image(symbol: .circle)
+                    .arrangeShape(color: frameColor,
+                                  fontSize: fontSize * 0.95,
+                                  fontWeight: fontWeight,
+                                  flipType: flipType,
+                                  rotationDegrees: rotationDegrees,
+                                  offsetX: offsetX,
+                                  offsetY: offsetY)
                 
-                DrawingSymbol(.circle,
-                              color: frameColor,
-                              width: width * 0.9,
-                              height: height * 0.9,
-                              lineWeight: lineWeight,
-                              flipType: flipType,
-                              rotationDegrees: rotationDegrees,
-                              offsetX: offsetX,
-                              offsetY: offsetY)
+                Image(symbol: .circle)
+                    .arrangeShape(color: frameColor,
+                                  fontSize: fontSize * 0.9,
+                                  fontWeight: fontWeight,
+                                  flipType: flipType,
+                                  rotationDegrees: rotationDegrees,
+                                  offsetX: offsetX,
+                                  offsetY: offsetY)
             }
         }
     }
@@ -154,17 +145,11 @@ struct SFAlphabet: View {
 struct SFCharacter_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            SFAlphabet(.a, width: 200, height: 200)
-            
-            SFAlphabet(.h, width: 100, height: 100)
-            
-            SFAlphabet(.h, width: 50, height: 50)
-            
-            SFAlphabet(.a, width: 25, height: 25, lineWeight: .black)
-            
-            SFAlphabet(.a, width: 10, height: 10, lineWeight: .black)
-            
-            SFAlphabet(.a, width: 1, height: 1, lineWeight: .black)
+            SFAlphabet(.a, fontSize: 200)
+            SFAlphabet(.h, fontSize: 100)
+            SFAlphabet(.a, fontSize: 25, fontWeight: .black)
+            SFAlphabet(.a, fontSize: 10, fontWeight: .black)
+            SFAlphabet(.a, fontSize: 1, fontWeight: .black)
         }
     }
 }

@@ -12,36 +12,31 @@ struct AlphabeticalPeace: View {
         ZStack {
             HStack(spacing: 0) {
                 SFAlphabet(.p,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetY: 2)
                 
                 SFAlphabet(.e,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetX: -20,
                            offsetY: 2)
                 
                 SFAlphabet(.a,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetX: -40,
                            offsetY: 2)
                 
                 SFAlphabet(.c,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetX: -60,
                            offsetY: 2)
                 
                 SFAlphabet(.e,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetX: -80,
                            offsetY: 2)
             }
@@ -50,38 +45,33 @@ struct AlphabeticalPeace: View {
             HStack(spacing: 0) {
                 SFAlphabet(.p,
                            color: .cyan,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold)
+                           fontSize: 70,
+                           fontWeight: .bold)
                 
                 SFAlphabet(.e,
                            color: .pink,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetX: -20)
                 
                 SFAlphabet(.a,
                            color: .mint,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetX: -40,
                            offsetY: 2)
                 
                 SFAlphabet(.c,
                            color: .indigo,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetX: -60,
                            offsetY: 2)
                 
                 SFAlphabet(.e,
                            color: .orange,
-                           width: 70,
-                           height: 70,
-                           lineWeight: .bold,
+                           fontSize: 70,
+                           fontWeight: .bold,
                            offsetX: -80,
                            offsetY: 2)
             }

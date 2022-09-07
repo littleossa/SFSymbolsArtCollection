@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var isPresented = false
-    @State private var selectedArtWork: ArtWork = .flyingFlower
+    @State private var selectedArtWork: ArtWork = .crayonBoy
     
     var body: some View {
         List {

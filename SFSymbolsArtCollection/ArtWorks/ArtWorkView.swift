@@ -14,8 +14,6 @@ struct ArtWorkView: View {
     var body: some View {
         
         switch artwork {
-        case .flyingFlower:
-            FlyingFlower()
         case .crayonBoy:
             CrayonBoy()
         case .magician:
@@ -36,6 +34,6 @@ struct ArtWorkView: View {
 
 struct ArtWorkView_Previews: PreviewProvider {
     static var previews: some View {
-        ArtWorkView(artwork: .constant(.flyingFlower))
+        ArtWorkView(artwork: .constant(.crayonBoy))
     }
 }

@@ -8,7 +8,6 @@
 import Foundation
 
 enum ArtWork: Identifiable, CaseIterable {
-    case flyingFlower
     case crayonBoy
     case magician
     case worldPeace
@@ -19,8 +18,6 @@ enum ArtWork: Identifiable, CaseIterable {
     
     var title: String {
         switch self {
-        case .flyingFlower:
-            return "Flying Flower"
         case .crayonBoy:
             return "Crayon Boy"
         case .magician:

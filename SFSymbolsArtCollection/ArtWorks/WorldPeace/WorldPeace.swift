@@ -9,20 +9,29 @@ import SwiftUI
 
 struct WorldPeace: View {
     var body: some View {
-        VStack {
-            AlphabeticalWorld()
+        
+        GeometryReader { proxy in
+            
+            let baseLength = proxy.baseLength
+            
+            VStack {
 
-            ZStack {
-                Earth()
+                FiveCharactersView(type: .world,
+                                   baseLength: baseLength)
+                ZStack {
+                    Earth(baseLength: baseLength)
+                    
+                    Image(symbol: .peacesign)
+                        .arrangeShape(color: .white,
+                                      fontSize: baseLength * 0.52,
+                                      fontWeight: .thin)
+                }
                 
-                DrawingSymbol(.peacesign,
-                              color: .white,
-                              width: 200,
-                              height: 200,
-                              lineWeight: .thin)
+                FiveCharactersView(type: .peace,
+                                   baseLength: baseLength)
             }
-                     
-            AlphabeticalPeace()
+            .position(x: proxy.frame(in: .local).midX,
+                      y: proxy.frame(in: .local).midY)
         }
     }
 }

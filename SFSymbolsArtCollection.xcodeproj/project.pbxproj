@@ -15,8 +15,6 @@
 		9748BE1D289399CF006DF0BE /* SFAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE1C289399CF006DF0BE /* SFAlphabet.swift */; };
 		9748BE2028939B04006DF0BE /* FlipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE1F28939B04006DF0BE /* FlipType.swift */; };
 		9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE222893B35A006DF0BE /* WorldPeace.swift */; };
-		9748BE252893BD97006DF0BE /* AlphabeticalPeace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE242893BD97006DF0BE /* AlphabeticalPeace.swift */; };
-		9748BE272893BE7B006DF0BE /* AlphabeticalWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE262893BE7B006DF0BE /* AlphabeticalWorld.swift */; };
 		9748BE292893BFE3006DF0BE /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE282893BFE3006DF0BE /* Earth.swift */; };
 		9748BE2C2893C428006DF0BE /* Bear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE2B2893C428006DF0BE /* Bear.swift */; };
 		9748BE2E2893C688006DF0BE /* AnimalOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE2D2893C688006DF0BE /* AnimalOutline.swift */; };
@@ -44,6 +42,9 @@
 		97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2B28C2DDAA004E1720 /* Buildings.swift */; };
 		97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2E28C2E608004E1720 /* SmallFirework.swift */; };
 		97624C3328C4F43F004E1720 /* GeometryProxy+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3228C4F43F004E1720 /* GeometryProxy+Extensions.swift */; };
+		97624C3A28C82DBB004E1720 /* CharacterAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3928C82DBB004E1720 /* CharacterAppearance.swift */; };
+		97624C3C28C935F0004E1720 /* FiveCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3B28C935F0004E1720 /* FiveCharactersView.swift */; };
+		97624C3E28C93693004E1720 /* CharactersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3D28C93693004E1720 /* CharactersType.swift */; };
 		97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */; };
 		97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
@@ -77,8 +78,6 @@
 		9748BE1C289399CF006DF0BE /* SFAlphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAlphabet.swift; sourceTree = "<group>"; };
 		9748BE1F28939B04006DF0BE /* FlipType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipType.swift; sourceTree = "<group>"; };
 		9748BE222893B35A006DF0BE /* WorldPeace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPeace.swift; sourceTree = "<group>"; };
-		9748BE242893BD97006DF0BE /* AlphabeticalPeace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticalPeace.swift; sourceTree = "<group>"; };
-		9748BE262893BE7B006DF0BE /* AlphabeticalWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticalWorld.swift; sourceTree = "<group>"; };
 		9748BE282893BFE3006DF0BE /* Earth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earth.swift; sourceTree = "<group>"; };
 		9748BE2B2893C428006DF0BE /* Bear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear.swift; sourceTree = "<group>"; };
 		9748BE2D2893C688006DF0BE /* AnimalOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalOutline.swift; sourceTree = "<group>"; };
@@ -107,6 +106,9 @@
 		97624C2B28C2DDAA004E1720 /* Buildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		97624C2E28C2E608004E1720 /* SmallFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFirework.swift; sourceTree = "<group>"; };
 		97624C3228C4F43F004E1720 /* GeometryProxy+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryProxy+Extensions.swift"; sourceTree = "<group>"; };
+		97624C3928C82DBB004E1720 /* CharacterAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAppearance.swift; sourceTree = "<group>"; };
+		97624C3B28C935F0004E1720 /* FiveCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCharactersView.swift; sourceTree = "<group>"; };
+		97624C3D28C93693004E1720 /* CharactersType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersType.swift; sourceTree = "<group>"; };
 		97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Symbol.swift; sourceTree = "<group>"; };
 		97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Logo.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		971D9DE528C93E5900136A36 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				97624C3D28C93693004E1720 /* CharactersType.swift */,
+				97624C3928C82DBB004E1720 /* CharacterAppearance.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		973B2CA228C2584F006ED5F0 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,8 +186,9 @@
 			children = (
 				9748BE222893B35A006DF0BE /* WorldPeace.swift */,
 				9748BE282893BFE3006DF0BE /* Earth.swift */,
-				9748BE262893BE7B006DF0BE /* AlphabeticalWorld.swift */,
-				9748BE242893BD97006DF0BE /* AlphabeticalPeace.swift */,
+				97624C3B28C935F0004E1720 /* FiveCharactersView.swift */,
+				9748BE1C289399CF006DF0BE /* SFAlphabet.swift */,
+				971D9DE528C93E5900136A36 /* Entity */,
 			);
 			path = WorldPeace;
 			sourceTree = "<group>";
@@ -186,7 +198,6 @@
 			children = (
 				9748BE362893D064006DF0BE /* PartyAnimals.swift */,
 				97624C3728C81E90004E1720 /* Animals */,
-				9748BE382893D079006DF0BE /* Animal */,
 			);
 			path = PartyAnimals;
 			sourceTree = "<group>";
@@ -285,6 +296,7 @@
 				9748BE342893CB67006DF0BE /* Lion.swift */,
 				9748BE392893D0E3006DF0BE /* Frog.swift */,
 				9748BE2B2893C428006DF0BE /* Bear.swift */,
+				9748BE382893D079006DF0BE /* Animal */,
 			);
 			path = Animals;
 			sourceTree = "<group>";
@@ -355,7 +367,6 @@
 			isa = PBXGroup;
 			children = (
 				97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */,
-				9748BE1C289399CF006DF0BE /* SFAlphabet.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -467,8 +478,10 @@
 				9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */,
 				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
+				97624C3E28C93693004E1720 /* CharactersType.swift in Sources */,
 				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,
 				97E11E33281971E200B2AB32 /* CrayonHair.swift in Sources */,
+				97624C3A28C82DBB004E1720 /* CharacterAppearance.swift in Sources */,
 				9748BE3A2893D0E3006DF0BE /* Frog.swift in Sources */,
 				97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */,
 				9748BE2028939B04006DF0BE /* FlipType.swift in Sources */,
@@ -476,8 +489,8 @@
 				9748BE3C2897AA28006DF0BE /* AnimalWhiskers.swift in Sources */,
 				97E11E35281971E200B2AB32 /* CrayonMouth.swift in Sources */,
 				9748BE6428A3936E006DF0BE /* ArtWorkView.swift in Sources */,
-				9748BE272893BE7B006DF0BE /* AlphabeticalWorld.swift in Sources */,
 				97E11E3D281971ED00B2AB32 /* CrayonEyelid.swift in Sources */,
+				97624C3C28C935F0004E1720 /* FiveCharactersView.swift in Sources */,
 				9748BE292893BFE3006DF0BE /* Earth.swift in Sources */,
 				97E11E3E281971ED00B2AB32 /* CrayonEyebrow.swift in Sources */,
 				9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */,
@@ -488,7 +501,6 @@
 				9748BE5D289DD696006DF0BE /* Building.swift in Sources */,
 				9748BE1D289399CF006DF0BE /* SFAlphabet.swift in Sources */,
 				9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */,
-				9748BE252893BD97006DF0BE /* AlphabeticalPeace.swift in Sources */,
 				973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */,
 				9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */,
 				97E11D522817381100B2AB32 /* ContentView.swift in Sources */,

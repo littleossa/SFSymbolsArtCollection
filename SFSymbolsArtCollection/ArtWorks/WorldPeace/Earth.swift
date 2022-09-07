@@ -8,28 +8,29 @@
 import SwiftUI
 
 struct Earth: View {
+    
+    let baseLength: CGFloat
+    
     var body: some View {
         ZStack {
-            DrawingSymbol(.circleFill,
-                          color: .cyan,
-                          width: 200, height: 200)
+            Image(symbol: .circleFill)
+                .arrangeShape(color: .cyan,
+                              fontSize: baseLength * 0.5)
             
-            DrawingSymbol(.globeAsiaAustraliaFill,
-                          color: .green,
-                          width: 200,
-                          height: 200,
-                          lineWeight: .ultraLight)
+            Image(symbol: .globeAsiaAustraliaFill)
+                .arrangeShape(color: .green,
+                              fontSize: baseLength * 0.55,
+                              fontWeight: .ultraLight)
             
-            DrawingSymbol(.globeAsiaAustralia,
-                          width: 200,
-                          height: 200,
-                          lineWeight: .ultraLight)
+            Image(symbol: .globeAsiaAustralia)
+                .arrangeShape(fontSize: baseLength * 0.55,
+                              fontWeight: .ultraLight)
         }
     }
 }
 
 struct Earth_Previews: PreviewProvider {
     static var previews: some View {
-        Earth()
+        Earth(baseLength: 400)
     }
 }

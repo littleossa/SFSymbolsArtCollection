@@ -9,11 +9,19 @@ import SwiftUI
 
 struct Magician: View {
     var body: some View {
-        ZStack {
-            MagicianFace()
-                .offset(x: 0, y: 50)
-            MagicianHat()
-                .offset(x: 0, y: -150)
+        
+        GeometryReader { proxy in
+            
+            let baseLength = proxy.baseLength
+            
+            ZStack {
+                MagicianFace(baseLength: baseLength)
+                    .offset(x: 0, y: baseLength * 0.125)
+                MagicianHat(baseLength: baseLength)
+                    .offset(x: 0, y: baseLength * -0.375)
+            }
+            .position(x: proxy.frame(in: .local).midX,
+                      y: proxy.frame(in: .local).midY)
         }
     }
 }

@@ -8,31 +8,34 @@
 import SwiftUI
 
 struct MagicianHat: View {
+    
+    let baseLength: CGFloat
+    
     var body: some View {
         ZStack {
-            DrawingSymbol(.rectangleFill,
-                          color: .red,
-                          width: 171,
-                          height: 30,
-                          flipType: .vertical,
-                          offsetY: 40)
             
-            DrawingSymbol(.archiveboxFill,
-                          width: 200,
-                          height: 200,
-                          flipType: .vertical)
+            Image(symbol: .rectangleFill)
+                .arrangeShape(color: .red,
+                              width: baseLength * 0.435,
+                              height: baseLength * 0.075,
+                              flipType: .vertical,
+                              offsetY: baseLength * 0.1)
             
-            DrawingSymbol(.rectangleFill,
-                          width: 250,
-                          height: 50,
-                          flipType: .vertical,
-                          offsetY: 75)
+            Image(symbol: .archiveboxFill)
+                .arrangeShape(fontSize: baseLength * 0.525,
+                              flipType: .vertical)
+            
+            Image(symbol: .rectangleFill)
+                .arrangeShape(width: baseLength * 0.625,
+                              height: baseLength * 0.125,
+                              flipType: .vertical,
+                              offsetY: baseLength * 0.1875)
         }
     }
 }
 
 struct MagicianHat_Previews: PreviewProvider {
     static var previews: some View {
-        MagicianHat()
+        MagicianHat(baseLength: 400)
     }
 }

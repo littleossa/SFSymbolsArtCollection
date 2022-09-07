@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971D9DE828C9497D00136A36 /* MagicianSunGlasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971D9DE728C9497D00136A36 /* MagicianSunGlasses.swift */; };
 		973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */; };
 		973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */; };
 		9748BE15289338A3006DF0BE /* Magician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE14289338A3006DF0BE /* Magician.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		971D9DE728C9497D00136A36 /* MagicianSunGlasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianSunGlasses.swift; sourceTree = "<group>"; };
 		973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithFont.swift; sourceTree = "<group>"; };
 		973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithWidthAndHeight.swift; sourceTree = "<group>"; };
 		9748BE14289338A3006DF0BE /* Magician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magician.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				9748BE14289338A3006DF0BE /* Magician.swift */,
 				9748BE1728933E40006DF0BE /* MagicianHat.swift */,
 				9748BE19289341BE006DF0BE /* MagicianFace.swift */,
+				971D9DE728C9497D00136A36 /* MagicianSunGlasses.swift */,
 			);
 			path = Magician;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */,
 				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
+				971D9DE828C9497D00136A36 /* MagicianSunGlasses.swift in Sources */,
 				97624C3E28C93693004E1720 /* CharactersType.swift in Sources */,
 				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,
 				97E11E33281971E200B2AB32 /* CrayonHair.swift in Sources */,

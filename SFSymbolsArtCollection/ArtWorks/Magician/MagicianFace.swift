@@ -8,80 +8,50 @@
 import SwiftUI
 
 struct MagicianFace: View {
+    
+    let baseLength: CGFloat
+    
     var body: some View {
         ZStack {
-            // Face
-            DrawingSymbol(.dropFill,color: .paleOrange, width: 220, height: 300,flipType: .vertical)
+            // Outline
+            Image(symbol: .dropFill)
+                .arrangeShape(color: .paleOrange,
+                              fontSize: baseLength * 0.75,
+                              flipType: .vertical)
             
             VStack {
                 // Eyebrows
-                HStack(spacing: 20) {
-                    DrawingSymbol(.chevronCompactUp,
-                                  width: 60,
-                                  height: 20,
-                                  lineWeight: .thin)
-                    
-                    DrawingSymbol(.chevronCompactUp,
-                                  width: 60,
-                                  height: 20,
-                                  lineWeight: .thin)
+                HStack(spacing: 0) {
+                    ForEach(0..<2) { _ in
+                        Image(symbol: .chevronCompactUp)
+                            .arrangeShape(fontSize: baseLength * 0.225,
+                                          fontWeight: .thin)
+                    }
                 }
                 
-                // Sun glasses
-                HStack(spacing: 0) {
-                    DrawingSymbol(.minus,
-                                  width: 30,
-                                  height: 5)
-                    
-                    ZStack {
-                        DrawingSymbol(.circleFill,
-                                      color: .white,
-                                      width: 50,
-                                      height: 50)
-                        
-                        DrawingSymbol(.moonCircleFill,
-                                      width: 50,
-                                      height: 50)
-                    }
-                    
-                    DrawingSymbol(.minus,
-                                  width: 30,
-                                  height: 5)
-                    
-                    ZStack {
-                        DrawingSymbol(.circleFill,
-                                      color: .white,
-                                      width: 50,
-                                      height: 50)
-                        
-                        DrawingSymbol(.moonCircleFill,
-                                      width: 50,
-                                      height: 50)
-                    }
-                    
-                    DrawingSymbol(.minus,
-                                  width: 30,
-                                  height: 5)
-                }
+                Spacer()
+                    .frame(height: 0)
+                
+                MagicianSunGlasses(baseLength: baseLength)
                 
                 // Nose
-                DrawingSymbol(.cloudHeavyrain,
-                              width: 80,
-                              height: 70,
-                              lineWeight: .light)
+                Image(symbol: .cloudHeavyrain)
+                    .arrangeShape(fontSize: baseLength * 0.1625,
+                                  fontWeight: .light)
                 
                 // Mouse
                 ZStack {
-                    DrawingSymbol(.rectangleRoundedbottomFill,
-                                  color: .red,
-                                  width: 60,
-                                  height: 30)
                     
-                    DrawingSymbol(.capsuleFill,
-                                  color: .orange,
-                                  width: 58,
-                                  height: 10,
-                                  offsetY: 9.5)
+                    Image(symbol: .rectangleRoundedbottomFill)
+                        .arrangeShape(color: .red,
+                                      width: baseLength * 0.15,
+                                      height: baseLength * 0.075)
+                    
+                    Image(symbol: .capsuleFill)
+                        .arrangeShape(color: .orange,
+                                      width: baseLength * 0.145,
+                                      height: baseLength * 0.025,
+                                      offsetY: baseLength * 0.025)
                 }
             }
         }
@@ -90,6 +60,6 @@ struct MagicianFace: View {
 
 struct MagicianFace_Previews: PreviewProvider {
     static var previews: some View {
-        MagicianFace()
+        MagicianFace(baseLength: 400)
     }
 }

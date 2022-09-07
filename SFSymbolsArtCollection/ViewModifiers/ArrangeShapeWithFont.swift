@@ -33,7 +33,7 @@ struct ArrangeShapeWithFontModifier: ViewModifier {
     }
 }
 
-extension View {
+extension Image {
     
     func arrangeShape(color: Color = .black,
                       fontSize: CGFloat,

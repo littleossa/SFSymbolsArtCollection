@@ -12,13 +12,26 @@ struct ContentView: View {
     @State private var selectedArtWork: ArtWork = .crayonBoy
     
     var body: some View {
-        List {
-            ForEach(ArtWork.allCases) { artwork in
-                Button {
-                    selectedArtWork = artwork
-                    isPresented = true
-                } label: {
-                    Text(artwork.title)
+        
+        VStack {
+            
+            iOSDCJapan2022Logo()
+            
+            List {
+                ForEach(ArtWork.allCases) { artwork in
+                    Button {
+                        selectedArtWork = artwork
+                        isPresented = true
+                    } label: {
+                        HStack {
+                            Text(artwork.title)
+                            
+                            Spacer()
+                            
+                            Image(symbol: .chevronForward)
+                                .font(.caption.bold())
+                        }
+                    }
                 }
             }
         }

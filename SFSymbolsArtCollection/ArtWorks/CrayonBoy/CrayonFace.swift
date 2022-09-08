@@ -34,16 +34,17 @@ struct CrayonFace: View {
     }
     
     let faceType: FaceType
+    let baseLength: CGFloat
     
     var body: some View {
         
-        DrawingSymbol(faceType.symbol,
-                      color: faceType.color,
-                      width: 300,
-                      height: 200,
-                      lineWeight: .ultraLight,
-                      flipType: .horizontal,
-                      rotationDegrees: 8)
+        Image(symbol: faceType.symbol)
+            .arrangeShape(color: faceType.color,
+                          width: baseLength * 0.75,
+                          height: baseLength * 0.5,
+                          fontWeight: .ultraLight,
+                          flipType: .horizontal,
+                          rotationDegrees: 8)
     }
 }
 
@@ -51,8 +52,10 @@ struct CrayonFace_Previews: PreviewProvider {
     static var previews: some View {
         
         ZStack {
-            CrayonFace(faceType: .fill)
-            CrayonFace(faceType: .line)
+            CrayonFace(faceType: .fill,
+                       baseLength: 400)
+            CrayonFace(faceType: .line,
+                       baseLength: 400)
         }
     }
 }

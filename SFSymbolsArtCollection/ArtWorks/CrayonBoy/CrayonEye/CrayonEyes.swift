@@ -9,26 +9,24 @@ import SwiftUI
 
 struct CrayonEyes: View {
     
+    let baseLength: CGFloat
+    
     var body: some View {
-        HStack {
+        HStack(spacing: 0) {
             Spacer()
             
-            CrayonEye()
+            CrayonEye(baseLength: baseLength)
             
-            Spacer()
-                .frame(width: 1)
-            
-            CrayonEye()
+            CrayonEye(baseLength: baseLength)
             
             Spacer()
         }
         .rotationEffect(.radians(0.1))
-        .offset(x: 5, y: -5)
     }
 }
 
 struct CrayonEyes_Previews: PreviewProvider {
     static var previews: some View {
-        CrayonEyes()
+        CrayonEyes(baseLength: 400)
     }
 }

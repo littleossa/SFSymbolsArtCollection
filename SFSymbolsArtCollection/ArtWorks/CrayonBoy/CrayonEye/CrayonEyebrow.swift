@@ -9,16 +9,18 @@ import SwiftUI
 
 struct CrayonEyebrow: View {
     
+    let baseLength: CGFloat
+    
     var body: some View {
-        DrawingSymbol(.control,
-                      width: 75,
-                      height: 50,
-                      lineWeight: .black)
+        
+        Image(symbol: .control)
+                .arrangeShape(fontSize: baseLength * 0.2,
+                          fontWeight: .black)
     }
 }
 
 struct CrayonEyebrow_Previews: PreviewProvider {
     static var previews: some View {
-        CrayonEyebrow()
+        CrayonEyebrow(baseLength: 400)
     }
 }

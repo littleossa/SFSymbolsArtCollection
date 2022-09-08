@@ -9,23 +9,23 @@ import SwiftUI
 
 struct CrayonEyeBall: View {
     
+    let baseLength: CGFloat
+    
     var body: some View {
         ZStack {
             
-            DrawingSymbol(.circleFill,
-                          width: 50,
-                          height: 50)
+            Image(symbol: .circleFill)
+                .arrangeShape(fontSize: baseLength * 0.125)
             
-            DrawingSymbol(.circleFill,
-                          color: .white,
-                          width: 20,
-                          height: 20)
+            Image(symbol: .circleFill)
+                .arrangeShape(color: .white,
+                              fontSize: baseLength * 0.05)
         }
     }
 }
 
 struct CrayonEyeBall_Previews: PreviewProvider {
     static var previews: some View {
-        CrayonEyeBall()
+        CrayonEyeBall(baseLength: 400)
     }
 }

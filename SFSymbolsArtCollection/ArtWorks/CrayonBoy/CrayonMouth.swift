@@ -9,20 +9,19 @@ import SwiftUI
 
 struct CrayonMouth: View {
     
+    let baseLength: CGFloat
+    
     var body: some View {
         
         ZStack {
-            DrawingSymbol(.capsulePortraitFill,
-                          color: .red,
-                          width: 42,
-                          height: 60,
-                          lineWeight: .ultraLight)
+            Image(symbol: .capsulePortraitFill)
+                .arrangeShape(color: .red,
+                              width: baseLength * 0.105,
+                              height: baseLength * 0.15, fontWeight: .ultraLight)
             
-            DrawingSymbol(.capsulePortrait,
-                          width: 42,
-                          height: 60,
-                          lineWeight: .ultraLight,
-                          rotationDegrees: -1)
+            Image(symbol: .capsulePortrait)
+                .arrangeShape(width: baseLength * 0.105,
+                              height: baseLength * 0.15, fontWeight: .ultraLight)
         }
         .rotationEffect(.degrees(10))
     }
@@ -30,6 +29,6 @@ struct CrayonMouth: View {
 
 struct CrayonMouth_Previews: PreviewProvider {
     static var previews: some View {
-        CrayonMouth()
+        CrayonMouth(baseLength: 400)
     }
 }

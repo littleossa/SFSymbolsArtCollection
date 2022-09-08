@@ -9,23 +9,25 @@ import SwiftUI
 
 struct CrayonHair: View {
     
+    let baseLength: CGFloat
+    
     var body: some View {
         ZStack {
-            DrawingSymbol(.circleFill,
-                          width: 150,
-                          height: 100)
+            Image(symbol: .circleFill)
+                .arrangeShape(width: baseLength * 0.375,
+                              height: baseLength * 0.25)
             
-            DrawingSymbol(.rectangleFill,
-                          color: .paleOrange,
-                          width: 160,
-                          height: 100,
-                          offsetY: 30)
+            Image(symbol: .rectangleFill)
+                .arrangeShape(color: .paleOrange,
+                              width: baseLength * 0.375,
+                              height: baseLength * 0.25,
+                              offsetY: baseLength * 0.075)
         }
     }
 }
 
 struct CrayonHair_Previews: PreviewProvider {
     static var previews: some View {
-        CrayonHair()
+        CrayonHair(baseLength: 400)
     }
 }

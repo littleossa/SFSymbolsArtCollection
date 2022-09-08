@@ -10,19 +10,42 @@ import SwiftUI
 struct CrayonBoy: View {
     
     var body: some View {
-        ZStack {
-            CrayonFace(faceType: .fill)
+        
+        GeometryReader { proxy in
             
-            CrayonHair()
-                .offset(x: 10, y: -50)
+            let baseLength = proxy.baseLength
             
-            CrayonEyes()
-            
-            CrayonFace(faceType: .line)
-            
-            CrayonMouth()
-                .offset(x: -30, y: 90)
-            
+            ZStack {
+                CrayonFace(faceType: .fill,
+                           baseLength: baseLength)
+                
+                CrayonHair(baseLength: baseLength)
+                    .offset(x: baseLength * 0.025,
+                            y: baseLength * -0.125)
+                
+                Group {
+                    CrayonEye(baseLength: baseLength)
+                        .offset(x: baseLength * -0.0625,
+                                y: 0)
+                    
+                    CrayonEye(baseLength: baseLength)
+                        .offset(x: baseLength * 0.125,
+                                y: 0)
+                    
+                }
+                .rotationEffect(.radians(0.1))
+                
+                CrayonFace(faceType: .line,
+                           baseLength: baseLength)
+                
+                
+                CrayonMouth(baseLength: baseLength)
+                    .offset(x: baseLength * -0.075,
+                            y: baseLength * 0.225)
+                
+            }
+            .position(x: proxy.frame(in: .local).midX,
+                      y: proxy.frame(in: .local).midY)
         }
     }
 }

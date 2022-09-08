@@ -13,7 +13,7 @@ struct DemonWrestler: View {
     var body: some View {
         
         GeometryReader { proxy in
-            let baseLength = proxy.baseLength
+            let baseLength = proxy.baseLength * 1.2
             
             ZStack {
                 DemonWrestlerBody(baseLength: baseLength)

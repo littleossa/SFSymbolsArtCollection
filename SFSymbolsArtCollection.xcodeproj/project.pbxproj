@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		971D9DE828C9497D00136A36 /* MagicianSunGlasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971D9DE728C9497D00136A36 /* MagicianSunGlasses.swift */; };
+		971D9DEA28C9731D00136A36 /* iOSDCJapan2022SymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971D9DE928C9731D00136A36 /* iOSDCJapan2022SymbolType.swift */; };
 		973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */; };
 		973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */; };
 		9748BE15289338A3006DF0BE /* Magician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE14289338A3006DF0BE /* Magician.swift */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		971D9DE728C9497D00136A36 /* MagicianSunGlasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianSunGlasses.swift; sourceTree = "<group>"; };
+		971D9DE928C9731D00136A36 /* iOSDCJapan2022SymbolType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022SymbolType.swift; sourceTree = "<group>"; };
 		973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithFont.swift; sourceTree = "<group>"; };
 		973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithWidthAndHeight.swift; sourceTree = "<group>"; };
 		9748BE14289338A3006DF0BE /* Magician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magician.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 				97E11E412819727A00B2AB32 /* Extensions */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		971D9DEB28C973AD00136A36 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				971D9DE928C9731D00136A36 /* iOSDCJapan2022SymbolType.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		973B2CA228C2584F006ED5F0 /* ViewModifiers */ = {
@@ -290,6 +300,7 @@
 				9748BE212893B2CD006DF0BE /* WorldPeace */,
 				9748BE16289338C9006DF0BE /* Magician */,
 				97E11E402819720900B2AB32 /* CrayonBoy */,
+				97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */,
 			);
 			path = ArtWorks;
 			sourceTree = "<group>";
@@ -308,8 +319,9 @@
 		97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */ = {
 			isa = PBXGroup;
 			children = (
-				97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */,
 				97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */,
+				97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */,
+				971D9DEB28C973AD00136A36 /* Entity */,
 			);
 			path = iOSDCJapan2022;
 			sourceTree = "<group>";
@@ -341,7 +353,6 @@
 				971D9DE628C93EB500136A36 /* Common */,
 				97E11D532817381200B2AB32 /* Assets.xcassets */,
 				97E11D552817381200B2AB32 /* Preview Content */,
-				97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */,
 			);
 			path = SFSymbolsArtCollection;
 			sourceTree = "<group>";
@@ -469,6 +480,7 @@
 				9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */,
 				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
+				971D9DEA28C9731D00136A36 /* iOSDCJapan2022SymbolType.swift in Sources */,
 				971D9DE828C9497D00136A36 /* MagicianSunGlasses.swift in Sources */,
 				97624C3E28C93693004E1720 /* CharactersType.swift in Sources */,
 				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,

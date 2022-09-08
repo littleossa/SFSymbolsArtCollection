@@ -34,6 +34,11 @@ extension iOSDCJapan2022Symbol {
             DotOffset(x: -x0_58Value, y: -x0_34Value),
         ]
     }
+    
+    struct DotOffset: Hashable {
+        let x: CGFloat
+        let y: CGFloat
+    }
 }
 
 struct iOSDCJapan2022Symbol: View {
@@ -47,35 +52,24 @@ struct iOSDCJapan2022Symbol: View {
     var body: some View {
         ZStack {
             Image(systemName: "slowmo")
-                .font(.system(size: size,
-                              weight: .regular,
-                              design: .default))
-                .foregroundColor(color)
+                .arrangeShape(color: color,
+                              fontSize: size)
             
             Image(systemName: "slowmo")
-                .font(.system(size: innerSlowmoSize,
-                              weight: .bold,
-                              design: .default))
-                .foregroundColor(color)
+                .arrangeShape(color: color,
+                              fontSize: innerSlowmoSize,
+                              fontWeight: .bold)
 
             
             ForEach(dotOffsets, id: \.self) { offset in
                 Image(systemName: "circle.fill")
-                    .font(.system(size: dotSize,
-                                  weight: .regular,
-                                  design: .default))
-                    .foregroundColor(color)
-                    .offset(x: offset.x,
-                            y: offset.y)
-                
+                    .arrangeShape(color: color,
+                                  fontSize: dotSize,
+                                  offsetX: offset.x,
+                                  offsetY: offset.y)
             }
         }
     }
-}
-    
-struct DotOffset: Hashable {
-    let x: CGFloat
-    let y: CGFloat
 }
 
 struct iOSDCJapan2022Symbol_Previews: PreviewProvider {

@@ -53,7 +53,6 @@
 		97E11D522817381100B2AB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D512817381100B2AB32 /* ContentView.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
 		97E11D572817381200B2AB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D562817381200B2AB32 /* Preview Assets.xcassets */; };
-		97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */; };
 		97E11DF028176A0D00B2AB32 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */; };
 		97E11E33281971E200B2AB32 /* CrayonHair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E30281971E100B2AB32 /* CrayonHair.swift */; };
 		97E11E34281971E200B2AB32 /* CrayonFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E31281971E200B2AB32 /* CrayonFace.swift */; };
@@ -116,7 +115,6 @@
 		97E11D512817381100B2AB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97E11D532817381200B2AB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E11D562817381200B2AB32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingSymbol.swift; sourceTree = "<group>"; };
 		97E11E30281971E100B2AB32 /* CrayonHair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonHair.swift; sourceTree = "<group>"; };
 		97E11E31281971E200B2AB32 /* CrayonFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonFace.swift; sourceTree = "<group>"; };
 		97E11E32281971E200B2AB32 /* CrayonMouth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonMouth.swift; sourceTree = "<group>"; };
@@ -361,7 +359,6 @@
 				97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */,
 				97E11D512817381100B2AB32 /* ContentView.swift */,
 				97624C3628C74AA0004E1720 /* ArtWorks */,
-				97E11E082817A71300B2AB32 /* Util */,
 				971D9DE628C93EB500136A36 /* Common */,
 				97E11D532817381200B2AB32 /* Assets.xcassets */,
 				97E11D552817381200B2AB32 /* Preview Content */,
@@ -375,14 +372,6 @@
 				97E11D562817381200B2AB32 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		97E11E082817A71300B2AB32 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				97E11D5D2817396500B2AB32 /* DrawingSymbol.swift */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		97E11E402819720900B2AB32 /* CrayonBoy */ = {
@@ -486,7 +475,6 @@
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
 				9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */,
-				97E11D5E2817396500B2AB32 /* DrawingSymbol.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
 				971D9DEA28C9731D00136A36 /* iOSDCJapan2022SymbolType.swift in Sources */,
 				971D9DE828C9497D00136A36 /* MagicianSunGlasses.swift in Sources */,

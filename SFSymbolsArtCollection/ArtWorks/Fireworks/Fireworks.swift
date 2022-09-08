@@ -94,9 +94,8 @@ struct Fireworks: View {
                         
                         // Audience
                         ForEach(0..<4) { _ in
-                            DrawingSymbol(.person3SequenceFill,
-                                          width: baseLength * 0.25,
-                                          height: baseLength * 0.125)
+                            Image(symbol: .person3SequenceFill)
+                                .arrangeShape(fontSize: baseLength * 0.13)
                         }
                     }
                 }
@@ -108,6 +107,5 @@ struct Fireworks: View {
 struct Fireworks_Previews: PreviewProvider {
     static var previews: some View {
         Fireworks()
-            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }

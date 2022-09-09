@@ -44,8 +44,7 @@ struct CrayonBoy: View {
                             y: baseLength * 0.225)
                 
             }
-            .position(x: proxy.frame(in: .local).midX,
-                      y: proxy.frame(in: .local).midY)
+            .position(proxy.localCenter)
         }
     }
 }

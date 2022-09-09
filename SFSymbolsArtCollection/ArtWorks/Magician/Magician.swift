@@ -20,8 +20,7 @@ struct Magician: View {
                 MagicianHat(baseLength: baseLength)
                     .offset(x: 0, y: baseLength * -0.375)
             }
-            .position(x: proxy.frame(in: .local).midX,
-                      y: proxy.frame(in: .local).midY)
+            .position(proxy.localCenter)
         }
     }
 }

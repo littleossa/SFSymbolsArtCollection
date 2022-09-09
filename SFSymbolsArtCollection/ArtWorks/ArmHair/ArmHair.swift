@@ -29,8 +29,7 @@ struct ArmHair: View {
                                 y: CGFloat(Int.random(in: lowestY...highestY)))
                 }
             }
-            .position(x: proxy.frame(in: .local).midX,
-                      y: proxy.frame(in: .local).midY)
+            .position(proxy.localCenter)
         }
     }
 }

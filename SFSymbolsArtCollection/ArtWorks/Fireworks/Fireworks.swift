@@ -22,8 +22,7 @@ struct Fireworks: View {
                                   width: proxy.size.width * 1.5,
                                   height: proxy.size.height * 1.5)
             }
-            .position(x: proxy.frame(in: .local).midX,
-                      y: proxy.frame(in: .local).midY)
+            .position(proxy.localCenter)
             
             ZStack {
                 

@@ -29,8 +29,7 @@ struct iOSDCJapan2022Logo: View {
                     .arrangeShape(color: .white,
                                   fontSize: baseLength)
             }
-            .position(x: proxy.frame(in: .local).midX,
-                      y: proxy.frame(in: .local).midY)
+            .position(proxy.localCenter)
         }
     }
 }

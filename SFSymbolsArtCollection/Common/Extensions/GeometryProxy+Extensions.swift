@@ -17,4 +17,9 @@ extension GeometryProxy {
         let baseLength = width < halfHeight ? width : halfHeight
         return baseLength
     }
+    
+    var localCenter: CGPoint {
+        return CGPoint(x: self.frame(in: .local).midX,
+                       y: self.frame(in: .local).midY)
+    }
 }

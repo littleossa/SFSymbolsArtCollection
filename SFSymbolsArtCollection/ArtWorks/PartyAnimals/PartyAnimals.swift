@@ -62,8 +62,7 @@ struct PartyAnimals: View {
                 
                 Lion(baseLength: baseLength)
             }
-            .position(x: proxy.frame(in: .local).midX,
-                      y: proxy.frame(in: .local).midY)
+            .position(proxy.localCenter)
         }
     }
 }

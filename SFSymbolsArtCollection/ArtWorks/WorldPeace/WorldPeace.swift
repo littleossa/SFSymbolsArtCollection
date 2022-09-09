@@ -15,7 +15,7 @@ struct WorldPeace: View {
             let baseLength = proxy.baseLength
             
             VStack {
-
+                
                 FiveCharactersView(type: .world,
                                    baseLength: baseLength)
                 ZStack {

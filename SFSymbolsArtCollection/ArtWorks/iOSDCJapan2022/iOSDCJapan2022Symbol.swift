@@ -59,7 +59,6 @@ struct iOSDCJapan2022Symbol: View {
                 .arrangeShape(color: color,
                               fontSize: innerSlowmoSize,
                               fontWeight: .bold)
-
             
             ForEach(dotOffsets, id: \.self) { offset in
                 Image(systemName: "circle.fill")

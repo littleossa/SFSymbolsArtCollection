@@ -17,13 +17,13 @@ struct Building: View {
         
         ZStack {
             
-        Image(symbol: .rectanglePortraitFill)
-            .arrangeShape(color: lightColor,
-                          fontSize: fontSize * 0.9)
-        
-        Image(symbol: .buildingFill)
-            .arrangeShape(color: color,
-                          fontSize: fontSize)
+            Image(symbol: .rectanglePortraitFill)
+                .arrangeShape(color: lightColor,
+                              fontSize: fontSize * 0.9)
+            
+            Image(symbol: .buildingFill)
+                .arrangeShape(color: color,
+                              fontSize: fontSize)
         }
     }
 }

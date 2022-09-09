@@ -63,9 +63,9 @@ struct LargeFirework: View {
 
 struct Firework_Previews: PreviewProvider {
     static var previews: some View {
-                    
-            LargeFirework(baseLength: 400,
-                          color: .red,
-                          dotColor: .yellow)
+        
+        LargeFirework(baseLength: 400,
+                      color: .red,
+                      dotColor: .yellow)
     }
 }

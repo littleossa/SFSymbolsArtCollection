@@ -77,7 +77,7 @@ struct SFAlphabet: View {
     private let rotationDegrees: CGFloat
     private let offsetX: CGFloat
     private let offsetY: CGFloat
-        
+    
     var body: some View {
         ZStack {
             

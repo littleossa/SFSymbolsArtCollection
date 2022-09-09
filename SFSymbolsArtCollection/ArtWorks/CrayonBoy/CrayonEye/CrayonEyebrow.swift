@@ -14,7 +14,7 @@ struct CrayonEyebrow: View {
     var body: some View {
         
         Image(symbol: .control)
-                .arrangeShape(fontSize: baseLength * 0.2,
+            .arrangeShape(fontSize: baseLength * 0.2,
                           fontWeight: .black)
     }
 }

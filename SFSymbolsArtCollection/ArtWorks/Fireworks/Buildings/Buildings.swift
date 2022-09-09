@@ -20,9 +20,10 @@ struct Buildings: View {
             Spacer()
             
             Building(fontSize: baseLength * 0.25,
-                color: color,
+                     color: color,
                      lightColor: lightColor)
-            .offset(x: baseLength * 0.09, y: baseLength * 0.1)
+            .offset(x: baseLength * 0.09,
+                    y: baseLength * 0.1)
             
             Building(fontSize: baseLength * 0.45,
                      color: color,
@@ -30,7 +31,8 @@ struct Buildings: View {
             
             Spacer()
         }
-        .offset(x: baseLength * -0.05, y: 0)
+        .offset(x: baseLength * -0.05,
+                y: 0)
     }
 }
 

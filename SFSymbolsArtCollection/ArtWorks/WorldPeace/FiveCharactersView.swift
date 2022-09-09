@@ -52,7 +52,9 @@ struct FiveCharactersView: View {
 
 struct FiveCharactersView_Previews: PreviewProvider {
     static var previews: some View {
-        FiveCharactersView(type: .world, baseLength: 400)
-        FiveCharactersView(type: .peace, baseLength: 400)
+        FiveCharactersView(type: .world,
+                           baseLength: 400)
+        FiveCharactersView(type: .peace,
+                           baseLength: 400)
     }
 }

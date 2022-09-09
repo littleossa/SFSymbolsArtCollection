@@ -15,7 +15,7 @@ struct PartyAnimals: View {
             let baseLength = proxy.baseLength
             
             VStack {
-                                
+                
                 HStack {
                     VStack {
                         Image(symbol: .pawprintFill)

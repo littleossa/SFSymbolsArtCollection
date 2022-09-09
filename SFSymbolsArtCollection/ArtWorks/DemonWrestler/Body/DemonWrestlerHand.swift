@@ -35,7 +35,7 @@ struct DemonWrestlerHand: View {
     
     let type: HandType
     let baseLength: CGFloat
-        
+    
     var body: some View {
         ZStack {
             Image(symbol: .coneFill)
@@ -54,9 +54,9 @@ struct DemonWrestlerHand: View {
 struct DemonWrestlerHand_Previews: PreviewProvider {
     static var previews: some View {
         DemonWrestlerHand(type: .left,
-                                     baseLength: 400)
+                          baseLength: 400)
         
         DemonWrestlerHand(type: .right,
-                                     baseLength: 400)
+                          baseLength: 400)
     }
 }

@@ -21,13 +21,17 @@ struct DemonWrestlerFace: View {
                     
                     ForEach(0..<2) { _ in
                         ZStack {
+                            Image(symbol: .capsuleFill)
+                                .arrangeShape(color: .indigo,
+                                              fontSize: baseLength * 0.033,
+                                              offsetY: baseLength * 0.005)
+                            
                             Image(symbol: .eye)
                                 .arrangeShape(fontSize: baseLength * 0.035)
                             
                             Image(symbol: .eyeFill)
                                 .arrangeShape(color: .white,
                                               fontSize: baseLength * 0.031)
-                            
                         }
                     }
                 }

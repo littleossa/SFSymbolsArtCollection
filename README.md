@@ -17,7 +17,7 @@ The Art collection made from SF Symbols
 <img src="https://user-images.githubusercontent.com/67716751/189031623-6ad6e971-4a1c-427e-b175-078ed2571dd9.png" width="400">
 
 ### Demon Wrestler
-<img src="https://user-images.githubusercontent.com/67716751/189031652-25056605-880c-4810-b1fc-83c9459b26b4.png" width="400">
+<img src="https://user-images.githubusercontent.com/67716751/189249059-62309f6c-1816-4d2b-a4d2-16436388fe84.png" width="400">
 
 ### Firewokrs
 <img src="https://user-images.githubusercontent.com/67716751/189031694-769478f2-5a5c-4fd2-bf43-97714b0cceb4.png" width="400">

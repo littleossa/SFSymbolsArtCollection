@@ -14,6 +14,7 @@ struct SFSymbolsArtCollectionApp: App {
         WindowGroup {
             GeometryReader { geometry in
                 ArtGalleryView(screenSize: geometry.size)
+                    .preferredColorScheme(.light)
             }
         }
     }

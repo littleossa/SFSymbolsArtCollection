@@ -21,8 +21,8 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.42),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.5)
+                    offsetX: model.calculatingOffsetX(forBottomColumn: .first),
+                    offsetY: model.offsetYForBottomColumn
                 ),
                 finalValue: .init(
                     width: model.calculatingProportionalValue(withRatio: 0.9),
@@ -39,8 +39,8 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.28),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.5)
+                    offsetX: model.calculatingOffsetX(forBottomColumn: .second),
+                    offsetY: model.offsetYForBottomColumn
                 ),
                 finalValue: .init(
                     primaryColor: .paleOrange,
@@ -59,8 +59,8 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.14),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.5)
+                    offsetX: model.calculatingOffsetX(forBottomColumn: .third),
+                    offsetY: model.offsetYForBottomColumn
                 ),
                 finalValue: .init(
                     secondaryColor: .paleOrange,
@@ -79,7 +79,7 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.5)
+                    offsetY: model.offsetYForBottomColumn
                 ),
                 finalValue: .init(
                     primaryColor: .red,

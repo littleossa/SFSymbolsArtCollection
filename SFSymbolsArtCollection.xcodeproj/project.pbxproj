@@ -63,7 +63,6 @@
 		97E11E3D281971ED00B2AB32 /* CrayonEyelid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E38281971ED00B2AB32 /* CrayonEyelid.swift */; };
 		97E11E3E281971ED00B2AB32 /* CrayonEyebrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E39281971ED00B2AB32 /* CrayonEyebrow.swift */; };
 		97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E3A281971ED00B2AB32 /* CrayonEyeBall.swift */; };
-		97E11E442819729B00B2AB32 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E432819729B00B2AB32 /* Color+Extensions.swift */; };
 		97E11E462819734700B2AB32 /* CrayonBoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E452819734700B2AB32 /* CrayonBoy.swift */; };
 /* End PBXBuildFile section */
 
@@ -125,7 +124,6 @@
 		97E11E38281971ED00B2AB32 /* CrayonEyelid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonEyelid.swift; sourceTree = "<group>"; };
 		97E11E39281971ED00B2AB32 /* CrayonEyebrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonEyebrow.swift; sourceTree = "<group>"; };
 		97E11E3A281971ED00B2AB32 /* CrayonEyeBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonEyeBall.swift; sourceTree = "<group>"; };
-		97E11E432819729B00B2AB32 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		97E11E452819734700B2AB32 /* CrayonBoy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonBoy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -400,7 +398,6 @@
 		97E11E412819727A00B2AB32 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				97E11E432819729B00B2AB32 /* Color+Extensions.swift */,
 				97624C3228C4F43F004E1720 /* GeometryProxy+Extensions.swift */,
 			);
 			path = Extensions;
@@ -529,7 +526,6 @@
 				9748BE352893CB67006DF0BE /* Lion.swift in Sources */,
 				97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */,
 				97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */,
-				97E11E442819729B00B2AB32 /* Color+Extensions.swift in Sources */,
 				9748BE4A28995877006DF0BE /* DemonWrestlerOutline.swift in Sources */,
 				97E11E34281971E200B2AB32 /* CrayonFace.swift in Sources */,
 				9748BE4C28995A43006DF0BE /* DemonWrestlerBody.swift in Sources */,

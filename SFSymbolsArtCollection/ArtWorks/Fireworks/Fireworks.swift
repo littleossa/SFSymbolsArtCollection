@@ -33,7 +33,7 @@ struct Fireworks: View {
                                   offsetX: baseLength * -0.225,
                                   offsetY: baseLength * 0.125)
                     
-                    SmallFirework(color: .lemonYellow,
+                    SmallFirework(color: .init(.yellow),
                                   fontSize: baseLength * 0.125,
                                   offsetX: baseLength * -0.075,
                                   offsetY: baseLength * 0.25)
@@ -73,7 +73,7 @@ struct Fireworks: View {
                 }
                 
                 MediumFirework(baseLength: baseLength,
-                               color: .lemonYellow,
+                               color: .init(uiColor: .yellow),
                                dotColor: .red)
                 .offset(x: baseLength * 0.225,
                         y: baseLength * 0.075)

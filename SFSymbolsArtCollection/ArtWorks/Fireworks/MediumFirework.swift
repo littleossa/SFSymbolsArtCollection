@@ -35,6 +35,6 @@ struct FMediumFirework_Previews: PreviewProvider {
     static var previews: some View {
         MediumFirework(baseLength: 400,
                        color: .red,
-                       dotColor: .lemonYellow)
+                       dotColor: .init(uiColor: .yellow))
     }
 }

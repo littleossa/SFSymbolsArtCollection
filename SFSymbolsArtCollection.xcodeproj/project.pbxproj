@@ -362,9 +362,8 @@
 		97AD53132B70DF5A0034FB5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				97AD53212B70E3FA0034FB5D /* ArtComponentView.swift */,
+				97AD53252B70E4DA0034FB5D /* ArtComponentView */,
 				97AD53232B70E48F0034FB5D /* PlayButton.swift */,
-				97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -391,6 +390,15 @@
 			children = (
 			);
 			path = AfroBoy;
+			sourceTree = "<group>";
+		};
+		97AD53252B70E4DA0034FB5D /* ArtComponentView */ = {
+			isa = PBXGroup;
+			children = (
+				97AD53212B70E3FA0034FB5D /* ArtComponentView.swift */,
+				97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */,
+			);
+			path = ArtComponentView;
 			sourceTree = "<group>";
 		};
 		97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */ = {

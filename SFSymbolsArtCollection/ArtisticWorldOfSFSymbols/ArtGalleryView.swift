@@ -10,13 +10,13 @@ import SwiftUI
 extension ArtGalleryView {
     
     init(screenSize: CGSize) {
-        self._model = State(wrappedValue: ArtWorkModel(screenSize: screenSize))
+        self.model = ArtWorkModel(screenSize: screenSize)
     }
 }
 
 struct ArtGalleryView: View {
     
-    @State private var model: ArtWorkModel
+    private let model: ArtWorkModel
     
     var body: some View {
         NavigationStack {

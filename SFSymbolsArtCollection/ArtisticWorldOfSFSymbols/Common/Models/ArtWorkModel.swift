@@ -9,6 +9,8 @@ import SwiftUI
 
 @Observable
 class ArtWorkModel {
+    
+    static let preview = ArtWorkModel(screenSize: CGSize(width: 1024, height: 1024))
         
     init(screenSize: CGSize) {
         let width = screenSize.width

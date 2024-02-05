@@ -112,13 +112,6 @@ struct AfroBoyArtView: View {
 #Preview {
     NavigationStack {
         AfroBoyArtView()
-            .environment(
-                ArtWorkModel(
-                    screenSize: .init(
-                        width: 1024,
-                        height: 1024
-                    )
-                )
-            )
+            .environment(ArtWorkModel.preview)
     }
 }

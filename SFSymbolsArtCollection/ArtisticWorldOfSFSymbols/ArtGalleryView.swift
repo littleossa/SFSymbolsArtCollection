@@ -11,7 +11,7 @@ extension ArtGalleryView {
     
     init(screenSize: CGSize) {
         self.model = ArtWorkModel(screenSize: screenSize)
-        self.columns = Array(repeating: GridItem(spacing: model.galleryColumnSpacing),
+        self.columns = Array(repeating: GridItem(.fixed(model.galleryColumnLength), spacing: model.galleryColumnSpacing),
                              count: model.galleryColumnCount)
     }
 }
@@ -31,6 +31,7 @@ struct ArtGalleryView: View {
                             AfroBoyArtView()
                         } label: {
                             AfroBoyPreviewView()
+                                .galleryGridItemView(length: model.galleryColumnLength)
                         }
                         
                         NavigationLink {
@@ -55,11 +56,9 @@ struct ArtGalleryView: View {
                             AfroBoyArtView()
                         } label: {
                             AfroBoyPreviewView()
+                                .galleryGridItemView(length: model.galleryColumnLength)
                         }
                     }
-                    .padding(model.galleryColumnSpacing)
-                    .background(RoundedRectangle(cornerRadius: 12).stroke(lineWidth: 4))
-                    .padding(.top, 24)
                 }
                 .padding(.horizontal, 24)
             }

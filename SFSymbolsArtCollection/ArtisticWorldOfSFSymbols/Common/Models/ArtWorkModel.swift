@@ -31,6 +31,12 @@ class ArtWorkModel {
         return 2
     }
     
+    var galleryColumnLength: CGFloat {
+        let columnCount = CGFloat(galleryColumnCount)
+        let padding = galleryColumnSpacing
+        return (baseLength / columnCount - padding)
+    }
+    
     var initialSymbolLength: Double {
         return baseLength * 0.06
     }
@@ -47,9 +53,7 @@ class ArtWorkModel {
     func calculatingProportionalValue(withRatio ratio: CGFloat, forPreview isForPreview: Bool = false) -> CGFloat {
         
         if isForPreview {
-            let columnCount = CGFloat(galleryColumnCount)
-            let padding = galleryColumnSpacing * 2 + galleryColumnSpacing / 2
-            return (baseLength / columnCount - padding) * ratio
+            return (galleryColumnLength - galleryColumnSpacing) * ratio
         }
         return baseLength * ratio
     }

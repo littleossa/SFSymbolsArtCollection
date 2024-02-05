@@ -2,6 +2,7 @@
 //  ArtGalleryView.swift
 //  SFSymbolsArtCollection
 //
+//  Created by Lil Ossa
 //
 
 import SwiftUI

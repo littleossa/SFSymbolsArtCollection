@@ -2,7 +2,7 @@
 //  GeometryProxy+Extensions.swift
 //  SFSymbolsArtCollection
 //
-//  Created by 平岡修 on 2022/09/04.
+//  Created by Lil Ossa
 //
 
 import SwiftUI
@@ -12,9 +12,9 @@ extension GeometryProxy {
     var baseLength: CGFloat {
         
         let width = self.size.width
-        let halfHeight = self.size.height / 2
+        let height = self.size.height
         
-        let baseLength = width < halfHeight ? width : halfHeight
+        let baseLength = width < height ? width : height
         return baseLength
     }
     

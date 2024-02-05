@@ -43,7 +43,7 @@
 		97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2928C2BC9A004E1720 /* MediumFirework.swift */; };
 		97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2B28C2DDAA004E1720 /* Buildings.swift */; };
 		97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2E28C2E608004E1720 /* SmallFirework.swift */; };
-		97624C3328C4F43F004E1720 /* GeometryProxy+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3228C4F43F004E1720 /* GeometryProxy+Extensions.swift */; };
+		97624C3328C4F43F004E1720 /* GeometryProxy+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3228C4F43F004E1720 /* GeometryProxy+.swift */; };
 		97624C3A28C82DBB004E1720 /* CharacterAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3928C82DBB004E1720 /* CharacterAppearance.swift */; };
 		97624C3C28C935F0004E1720 /* FiveCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3B28C935F0004E1720 /* FiveCharactersView.swift */; };
 		97624C3E28C93693004E1720 /* CharactersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3D28C93693004E1720 /* CharactersType.swift */; };
@@ -104,7 +104,7 @@
 		97624C2928C2BC9A004E1720 /* MediumFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumFirework.swift; sourceTree = "<group>"; };
 		97624C2B28C2DDAA004E1720 /* Buildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		97624C2E28C2E608004E1720 /* SmallFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFirework.swift; sourceTree = "<group>"; };
-		97624C3228C4F43F004E1720 /* GeometryProxy+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryProxy+Extensions.swift"; sourceTree = "<group>"; };
+		97624C3228C4F43F004E1720 /* GeometryProxy+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryProxy+.swift"; sourceTree = "<group>"; };
 		97624C3928C82DBB004E1720 /* CharacterAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAppearance.swift; sourceTree = "<group>"; };
 		97624C3B28C935F0004E1720 /* FiveCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCharactersView.swift; sourceTree = "<group>"; };
 		97624C3D28C93693004E1720 /* CharactersType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersType.swift; sourceTree = "<group>"; };
@@ -153,7 +153,6 @@
 			children = (
 				973B2CA228C2584F006ED5F0 /* ViewModifiers */,
 				9748BE1E28939AE5006DF0BE /* Enum */,
-				97E11E412819727A00B2AB32 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -330,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */,
+				97E11E412819727A00B2AB32 /* Extensions */,
 			);
 			path = ArtisticWorldOfSFSymbols;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 		97E11E412819727A00B2AB32 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				97624C3228C4F43F004E1720 /* GeometryProxy+Extensions.swift */,
+				97624C3228C4F43F004E1720 /* GeometryProxy+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -515,7 +515,7 @@
 				97E11D522817381100B2AB32 /* ContentView.swift in Sources */,
 				9748BE412897CD6C006DF0BE /* Arm.swift in Sources */,
 				9748BE4328980C4D006DF0BE /* Hair.swift in Sources */,
-				97624C3328C4F43F004E1720 /* GeometryProxy+Extensions.swift in Sources */,
+				97624C3328C4F43F004E1720 /* GeometryProxy+.swift in Sources */,
 				9748BE1828933E40006DF0BE /* MagicianHat.swift in Sources */,
 				9748BE50289AB439006DF0BE /* DemonWrestlerHand.swift in Sources */,
 				97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */,

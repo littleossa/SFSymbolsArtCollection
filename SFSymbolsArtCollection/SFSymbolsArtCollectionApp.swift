@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct SFSymbolsArtCollectionApp: App {
+        
     var body: some Scene {
         WindowGroup {
             GeometryReader { geometry in
-                ArtGalleryView(baseLength: geometry.baseLength)
+                ArtGalleryView(screenSize: geometry.size)
             }
         }
     }

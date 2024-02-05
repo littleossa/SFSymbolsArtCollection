@@ -7,17 +7,33 @@
 
 import SwiftUI
 
+extension ArtGalleryView {
+    
+    init(screenSize: CGSize) {
+        self._model = State(wrappedValue: ArtWorkModel(screenSize: screenSize))
+    }
+}
+
 struct ArtGalleryView: View {
     
-    let baseLength: CGFloat
+    @State private var model: ArtWorkModel
     
     var body: some View {
         NavigationStack {
-            
+            List {
+                NavigationLink {
+                    AfroBoyArtView()
+                } label: {
+                    Text("Afro boy")
+                }
+            }
+            .navigationTitle("Gallery")
         }
+        .environment(model)
     }
 }
 
 #Preview {
-    ArtGalleryView(baseLength: 1024)
+    ArtGalleryView(screenSize: .init(width: 1024,
+                                     height: 1024))
 }

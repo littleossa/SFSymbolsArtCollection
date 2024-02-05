@@ -21,6 +21,15 @@ class ArtWorkModel {
     private let baseLength: CGFloat
     
     let animationDurationPerSymbol: Double = 1.5
+    let galleryColumnSpacing: CGFloat = 32
+    
+    /// Art works column count in gallery
+    var galleryColumnCount: Int {
+        if UIDevice.current.isPad {
+            return 4
+        }
+        return 2
+    }
     
     var initialSymbolLength: Double {
         return baseLength * 0.06
@@ -35,7 +44,13 @@ class ArtWorkModel {
     }
     
     /// The value calculated from baseLength using the given ratio.
-    func calculatingProportionalValue(withRatio ratio: CGFloat) -> CGFloat {
+    func calculatingProportionalValue(withRatio ratio: CGFloat, forPreview isForPreview: Bool = false) -> CGFloat {
+        
+        if isForPreview {
+            let columnCount = CGFloat(galleryColumnCount)
+            let padding = galleryColumnSpacing * 2 + galleryColumnSpacing / 2
+            return (baseLength / columnCount - padding) * ratio
+        }
         return baseLength * ratio
     }
     

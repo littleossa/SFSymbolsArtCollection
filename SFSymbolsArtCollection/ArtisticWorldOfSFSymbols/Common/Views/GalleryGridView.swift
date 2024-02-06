@@ -45,7 +45,7 @@ struct GalleryGridItemView<Content: View>: View {
         }
         .frame(width: length,
                height: length)
-        .background(RoundedRectangle(cornerRadius: 12).stroke(lineWidth: 4).foregroundStyle(Color(uiColor: .label)))
+        .background(RoundedRectangle(cornerRadius: 12).stroke(lineWidth: 4).foregroundStyle(.black))
         .padding(.top, 16)
     }
 }

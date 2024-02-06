@@ -369,8 +369,8 @@
 			isa = PBXGroup;
 			children = (
 				97AD53252B70E4DA0034FB5D /* ArtComponentView */,
-				97AD53232B70E48F0034FB5D /* PlayButton.swift */,
 				97AD53302B71A5130034FB5D /* GalleryGridView.swift */,
+				97AD53232B70E48F0034FB5D /* PlayButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

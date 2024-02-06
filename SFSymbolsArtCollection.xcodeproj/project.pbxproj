@@ -75,6 +75,7 @@
 		97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E3A281971ED00B2AB32 /* CrayonEyeBall.swift */; };
 		97E11E462819734700B2AB32 /* CrayonBoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E452819734700B2AB32 /* CrayonBoy.swift */; };
 		97EF438B2B725E02003648F5 /* NosebleedArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438A2B725E02003648F5 /* NosebleedArtView.swift */; };
+		97EF438D2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438C2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +148,7 @@
 		97E11E3A281971ED00B2AB32 /* CrayonEyeBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonEyeBall.swift; sourceTree = "<group>"; };
 		97E11E452819734700B2AB32 /* CrayonBoy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonBoy.swift; sourceTree = "<group>"; };
 		97EF438A2B725E02003648F5 /* NosebleedArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosebleedArtView.swift; sourceTree = "<group>"; };
+		97EF438C2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArtWorkModel+InitialSymbolRow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +479,7 @@
 		97E11E412819727A00B2AB32 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				97EF438C2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift */,
 				97624C3228C4F43F004E1720 /* GeometryProxy+.swift */,
 				97AD53112B70DEB60034FB5D /* UIDevice+.swift */,
 				97AD53192B70E0530034FB5D /* Font.Weight+.swift */,
@@ -621,6 +624,7 @@
 				973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */,
 				97E11E462819734700B2AB32 /* CrayonBoy.swift in Sources */,
 				97E11E3B281971ED00B2AB32 /* CrayonEyes.swift in Sources */,
+				97EF438D2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift in Sources */,
 				9748BE352893CB67006DF0BE /* Lion.swift in Sources */,
 				97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */,
 				97AD53222B70E3FA0034FB5D /* ArtComponentView.swift in Sources */,

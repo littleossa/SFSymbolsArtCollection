@@ -17,7 +17,7 @@ struct NosebleedArtView: View {
         
         ZStack {
             
-            // 🟡 Contour
+            // MARK: - 􀀁 Contour
             ArtComponentView(
                 name: "circle.fill",
                 initialValue: .init(
@@ -36,7 +36,7 @@ struct NosebleedArtView: View {
                 waitingTime: 0.001
             )
             
-            // 👃🩸 Nosebleed bottom
+            // MARK: - 􀭧 Nosebleed bottom
             ArtComponentView(
                 name: "cellularbars",
                 initialValue: .init(
@@ -62,7 +62,7 @@ struct NosebleedArtView: View {
                           options: .speed(0.6).repeating,
                           isActive: isEffectActivated)
             
-            // 🟨 Nosebleed bottom hide
+            // MARK: - 􀏄 Concealing part for nosebleed bottom
             ArtComponentView(
                 name: "rectangle.fill",
                 initialValue: .init(
@@ -83,7 +83,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 2)
             )
             
-            // 👄 Mouth
+            // MARK: - 􀓩 Mouth
             ArtComponentView(
                 name: "lasso",
                 initialValue: .init(
@@ -104,7 +104,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 3)
             )
                         
-            // 🟨 Mouth hide
+            // MARK: - 􀏄 Concealing part for Mouth
             ArtComponentView(
                 name: "rectangle.fill",
                 initialValue: .init(
@@ -125,7 +125,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 4)
             )
             
-            // 👃🩸 Nosebleed top
+            // MARK: - 􀭧 Nosebleed top
             ArtComponentView(
                 name: "cellularbars",
                 initialValue: .init(
@@ -151,7 +151,7 @@ struct NosebleedArtView: View {
                           options: .speed(0.6).repeating,
                           isActive: isEffectActivated)
             
-            // 🟨 Nosebleed top hide right
+            // MARK: - 􀏄 Concealing part for nosebleed top right
             ArtComponentView(
                 name: "rectangle.fill",
                 initialValue: .init(
@@ -172,7 +172,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 6)
             )
             
-            // 🟨 Nosebleed top hide left
+            // MARK: - 􀏄 Concealing part for nosebleed top left
             ArtComponentView(
                 name: "rectangle.fill",
                 initialValue: .init(
@@ -193,7 +193,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 6)
             )
             
-            // 👁️ Right eye
+            // MARK: - 􀀁 Right eye
             ArtComponentView(
                 name: "circle.fill",
                 initialValue: .init(
@@ -213,7 +213,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 7)
             )
             
-            // 👁️ Left eye
+            // MARK: - 􀀁 Left eye
             ArtComponentView(
                 name: "circle.fill",
                 initialValue: .init(
@@ -233,7 +233,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 7)
             )
             
-            // 🧻 Tissue
+            // MARK: - 􀥨 Tissue
             ArtComponentView(
                 name: "doc.plaintext.fill",
                 initialValue: .init(
@@ -256,7 +256,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 8)
             )
             
-            // 🧻 Tissue frame
+            // MARK: - 􀉆 Tissue frame
             ArtComponentView(
                 name: "doc.plaintext",
                 initialValue: .init(
@@ -278,7 +278,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 8)
             )
             
-            // 👃 Nose
+            // MARK: - 􀥰 Nose
             ArtComponentView(
                 name: "triangleshape",
                 initialValue: .init(
@@ -300,7 +300,7 @@ struct NosebleedArtView: View {
                 waitingTime: model.waitingTime(forCount: 9)
             )
             
-            // 🟨 Nose hide
+            // MARK: - 􀏄 Concealing part for nose
             ArtComponentView(
                 name: "rectangle.fill",
                 initialValue: .init(
@@ -374,7 +374,7 @@ struct NosebleedArtPreviewView: View {
                 .offset(x: model.calculatingProportionalValue(withRatio: 0.09, forPreview: true),
                         y: model.calculatingProportionalValue(withRatio: 0.074, forPreview: true))
             
-            // MARK: - 􀏄 Nosebleed bottom hide
+            // MARK: - 􀏄 Concealing part for nosebleed bottom
             Image(systemName: "rectangle.fill")
                 .resizable()
                 .foregroundStyle(.awesomeYellow)
@@ -394,7 +394,7 @@ struct NosebleedArtPreviewView: View {
                 .offset(x: model.calculatingProportionalValue(withRatio: 0.01, forPreview: true),
                         y: model.calculatingProportionalValue(withRatio: 0.05, forPreview: true))
             
-            // MARK: - 􀏄 Mouth hide
+            // MARK: - 􀏄 Concealing part for Mouth
             Image(systemName: "rectangle.fill")
                 .resizable()
                 .foregroundStyle(.awesomeYellow)

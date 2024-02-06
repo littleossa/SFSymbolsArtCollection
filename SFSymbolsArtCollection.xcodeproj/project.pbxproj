@@ -74,6 +74,7 @@
 		97E11E3E281971ED00B2AB32 /* CrayonEyebrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E39281971ED00B2AB32 /* CrayonEyebrow.swift */; };
 		97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E3A281971ED00B2AB32 /* CrayonEyeBall.swift */; };
 		97E11E462819734700B2AB32 /* CrayonBoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11E452819734700B2AB32 /* CrayonBoy.swift */; };
+		97EF438B2B725E02003648F5 /* NosebleedArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438A2B725E02003648F5 /* NosebleedArtView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +146,7 @@
 		97E11E39281971ED00B2AB32 /* CrayonEyebrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonEyebrow.swift; sourceTree = "<group>"; };
 		97E11E3A281971ED00B2AB32 /* CrayonEyeBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonEyeBall.swift; sourceTree = "<group>"; };
 		97E11E452819734700B2AB32 /* CrayonBoy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonBoy.swift; sourceTree = "<group>"; };
+		97EF438A2B725E02003648F5 /* NosebleedArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosebleedArtView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +389,7 @@
 		97AD531B2B70E0A10034FB5D /* ArtWorks */ = {
 			isa = PBXGroup;
 			children = (
+				97EF43892B725DE7003648F5 /* Nosebleed */,
 				97AD531E2B70E2770034FB5D /* AfroBoy */,
 			);
 			path = ArtWorks;
@@ -481,6 +484,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		97EF43892B725DE7003648F5 /* Nosebleed */ = {
+			isa = PBXGroup;
+			children = (
+				97EF438A2B725E02003648F5 /* NosebleedArtView.swift */,
+			);
+			path = Nosebleed;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -562,6 +573,7 @@
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
 				9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */,
 				97AD532D2B717C950034FB5D /* AfroBoyPreviewView.swift in Sources */,
+				97EF438B2B725E02003648F5 /* NosebleedArtView.swift in Sources */,
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
 				971D9DEA28C9731D00136A36 /* iOSDCJapan2022SymbolType.swift in Sources */,
 				97AD53182B70DFF30034FB5D /* AnimationValues.swift in Sources */,

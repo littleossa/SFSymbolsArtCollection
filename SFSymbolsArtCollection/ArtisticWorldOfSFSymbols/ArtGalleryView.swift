@@ -35,9 +35,10 @@ struct ArtGalleryView: View {
                         }
                         
                         NavigationLink {
-                            AfroBoyArtView()
+                            NosebleedArtView()
                         } label: {
-                            AfroBoyPreviewView()
+                            NosebleedArtPreviewView()
+                                .galleryGridItemView(length: model.galleryColumnLength)
                         }
                         
                         NavigationLink {

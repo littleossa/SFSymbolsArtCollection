@@ -391,8 +391,8 @@
 		97AD531B2B70E0A10034FB5D /* ArtWorks */ = {
 			isa = PBXGroup;
 			children = (
-				97EF43892B725DE7003648F5 /* Nosebleed */,
 				97AD531E2B70E2770034FB5D /* AfroBoy */,
+				97EF43892B725DE7003648F5 /* Nosebleed */,
 			);
 			path = ArtWorks;
 			sourceTree = "<group>";

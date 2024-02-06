@@ -21,8 +21,8 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetX: model.calculatingOffsetX(forBottomColumn: .first),
-                    offsetY: model.offsetYForBottomColumn
+                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.first)),
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.first))
                 ),
                 finalValue: .init(
                     width: model.calculatingProportionalValue(withRatio: 0.9),
@@ -39,8 +39,8 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetX: model.calculatingOffsetX(forBottomColumn: .second),
-                    offsetY: model.offsetYForBottomColumn
+                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.second)),
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.second))
                 ),
                 finalValue: .init(
                     primaryColor: .paleOrange,
@@ -59,8 +59,8 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetX: model.calculatingOffsetX(forBottomColumn: .third),
-                    offsetY: model.offsetYForBottomColumn
+                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
                 ),
                 finalValue: .init(
                     secondaryColor: .paleOrange,
@@ -79,7 +79,7 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetY: model.offsetYForBottomColumn
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.forth))
                 ),
                 finalValue: .init(
                     primaryColor: .red,

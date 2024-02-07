@@ -25,20 +25,28 @@ struct ArtGalleryView: View {
         
         VStack {
             
-            Spacer()
-                .frame(height: 60)
-            
-            Text("SF Symbols Art")
-                .font(.largeTitle)
-                .bold()
-            
-            Text("is just the art created by combining SF Symbols")
-            
+            // Navigation pathの状態によって、この部分の表示非表示を切り替えれるか？
+//            Spacer()
+//                .frame(height: 60)
+//            
+//            Text("SF Symbols Art")
+//                .font(.largeTitle)
+//                .bold()
+//            
+//            Text("is just the art created by combining SF Symbols")
+//            
             NavigationStack {
                 ScrollView {
                     LazyVGrid(columns: columns) {
                         
                         Group {
+                            NavigationLink {
+                                MagicianArtView()
+                            } label: {
+                                MagicianPreviewView()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
                             NavigationLink {
                                 AfroBoyArtView()
                             } label: {
@@ -58,12 +66,6 @@ struct ArtGalleryView: View {
                             } label: {
                                 ImWearingPantsPreviewView()
                                     .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                AfroBoyArtView()
-                            } label: {
-                                AfroBoyPreviewView()
                             }
                             
                             NavigationLink {

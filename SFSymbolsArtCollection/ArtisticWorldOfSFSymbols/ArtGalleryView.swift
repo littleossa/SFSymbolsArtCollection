@@ -22,49 +22,62 @@ struct ArtGalleryView: View {
     private let columns: [GridItem]
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                LazyVGrid(columns: columns) {
-                    
-                    Group {
-                        NavigationLink {
-                            AfroBoyArtView()
-                        } label: {
-                            AfroBoyPreviewView()
-                                .galleryGridItemView(length: model.galleryColumnLength)
-                        }
+        
+        VStack {
+            
+            Spacer()
+                .frame(height: 60)
+            
+            Text("SF Symbols Art")
+                .font(.largeTitle)
+                .bold()
+            
+            Text("is just the art created by combining SF Symbols")
+            
+            NavigationStack {
+                ScrollView {
+                    LazyVGrid(columns: columns) {
                         
-                        NavigationLink {
-                            NosebleedArtView()
-                        } label: {
-                            NosebleedArtPreviewView()
-                                .galleryGridItemView(length: model.galleryColumnLength)
-                        }
-                        
-                        NavigationLink {
-                            ImWearingPantsArtView()
-                        } label: {
-                            ImWearingPantsPreviewView()
-                                .galleryGridItemView(length: model.galleryColumnLength)
-                        }
-                        
-                        NavigationLink {
-                            AfroBoyArtView()
-                        } label: {
-                            AfroBoyPreviewView()
-                        }
-                        
-                        NavigationLink {
-                            AfroBoyArtView()
-                        } label: {
-                            AfroBoyPreviewView()
-                                .galleryGridItemView(length: model.galleryColumnLength)
+                        Group {
+                            NavigationLink {
+                                AfroBoyArtView()
+                            } label: {
+                                AfroBoyPreviewView()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
+                                NosebleedArtView()
+                            } label: {
+                                NosebleedArtPreviewView()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
+                                ImWearingPantsArtView()
+                            } label: {
+                                ImWearingPantsPreviewView()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
+                                AfroBoyArtView()
+                            } label: {
+                                AfroBoyPreviewView()
+                            }
+                            
+                            NavigationLink {
+                                AfroBoyArtView()
+                            } label: {
+                                AfroBoyPreviewView()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
                         }
                     }
+                    .padding(.horizontal, 24)
                 }
-                .padding(.horizontal, 24)
+                .navigationTitle("Art Gallery")
             }
-            .navigationTitle("Art Gallery")
         }
         .environment(model)
     }

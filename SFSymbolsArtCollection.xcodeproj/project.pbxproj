@@ -79,6 +79,8 @@
 		97EF43902B72D2E4003648F5 /* NosebleedPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438F2B72D2E4003648F5 /* NosebleedPreviewView.swift */; };
 		97EF43932B72D3E2003648F5 /* ImWearingPantsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43922B72D3E2003648F5 /* ImWearingPantsPreviewView.swift */; };
 		97EF43952B72DA69003648F5 /* ImWearingPantsArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43942B72DA69003648F5 /* ImWearingPantsArtView.swift */; };
+		97EF43982B733337003648F5 /* MagicianArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43972B733337003648F5 /* MagicianArtView.swift */; };
+		97EF439C2B7421A7003648F5 /* MagicianPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +157,8 @@
 		97EF438F2B72D2E4003648F5 /* NosebleedPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosebleedPreviewView.swift; sourceTree = "<group>"; };
 		97EF43922B72D3E2003648F5 /* ImWearingPantsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImWearingPantsPreviewView.swift; sourceTree = "<group>"; };
 		97EF43942B72DA69003648F5 /* ImWearingPantsArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImWearingPantsArtView.swift; sourceTree = "<group>"; };
+		97EF43972B733337003648F5 /* MagicianArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianArtView.swift; sourceTree = "<group>"; };
+		97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +401,7 @@
 		97AD531B2B70E0A10034FB5D /* ArtWorks */ = {
 			isa = PBXGroup;
 			children = (
+				97EF43962B7332FB003648F5 /* Magician */,
 				97AD531E2B70E2770034FB5D /* AfroBoy */,
 				97EF43892B725DE7003648F5 /* Nosebleed */,
 				97EF43912B72D3AF003648F5 /* ImWearingPants */,
@@ -520,6 +525,15 @@
 			path = ImWearingPants;
 			sourceTree = "<group>";
 		};
+		97EF43962B7332FB003648F5 /* Magician */ = {
+			isa = PBXGroup;
+			children = (
+				97EF43972B733337003648F5 /* MagicianArtView.swift */,
+				97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */,
+			);
+			path = Magician;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -611,6 +625,7 @@
 				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,
 				97E11E33281971E200B2AB32 /* CrayonHair.swift in Sources */,
 				97624C3A28C82DBB004E1720 /* CharacterAppearance.swift in Sources */,
+				97EF43982B733337003648F5 /* MagicianArtView.swift in Sources */,
 				9748BE3A2893D0E3006DF0BE /* Frog.swift in Sources */,
 				97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */,
 				97AD53242B70E48F0034FB5D /* PlayButton.swift in Sources */,
@@ -648,6 +663,7 @@
 				97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */,
 				9748BE2C2893C428006DF0BE /* Bear.swift in Sources */,
 				97AD53292B7100670034FB5D /* ArtWorkModel.swift in Sources */,
+				97EF439C2B7421A7003648F5 /* MagicianPreviewView.swift in Sources */,
 				973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */,
 				97E11E462819734700B2AB32 /* CrayonBoy.swift in Sources */,
 				97E11E3B281971ED00B2AB32 /* CrayonEyes.swift in Sources */,

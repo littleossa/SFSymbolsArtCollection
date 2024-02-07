@@ -406,7 +406,7 @@ struct ImWearingPantsArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.forth))
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fourth))
                 ),
                 finalValue: .init(
                     primaryColor: .yellow,
@@ -426,7 +426,7 @@ struct ImWearingPantsArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.forth))
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fourth))
                 ),
                 finalValue: .init(
                     primaryColor: .yellow,
@@ -634,7 +634,7 @@ struct ImWearingPantsArtView: View {
                     secondaryColor: .clear,
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.forth))
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
                 ),
                 finalValue: .init(
                     primaryColor: .black,
@@ -657,7 +657,7 @@ struct ImWearingPantsArtView: View {
                     secondaryColor: .clear,
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.forth))
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
                 ),
                 finalValue: .init(
                     primaryColor: .black,

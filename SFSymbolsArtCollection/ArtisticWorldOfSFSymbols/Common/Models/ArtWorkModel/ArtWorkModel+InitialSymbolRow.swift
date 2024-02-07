@@ -19,7 +19,7 @@ extension ArtWorkModel {
             case first
             case second
             case third
-            case forth
+            case fourth
             case fifth
             case sixth
             case seventh
@@ -32,7 +32,7 @@ extension ArtWorkModel {
                     -0.28
                 case .third:
                     -0.14
-                case .forth:
+                case .fourth:
                     0
                 case .fifth:
                     0.14

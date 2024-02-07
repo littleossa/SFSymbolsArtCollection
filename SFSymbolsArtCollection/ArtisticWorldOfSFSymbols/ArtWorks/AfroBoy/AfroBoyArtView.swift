@@ -79,7 +79,7 @@ struct AfroBoyArtView: View {
                 initialValue: .init(
                     width: model.initialSymbolLength,
                     height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.forth))
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
                 ),
                 finalValue: .init(
                     primaryColor: .red,

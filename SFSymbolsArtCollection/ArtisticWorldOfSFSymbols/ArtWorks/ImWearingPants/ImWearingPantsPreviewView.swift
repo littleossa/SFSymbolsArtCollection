@@ -1,5 +1,5 @@
 //
-//  IamWearingPantsPreviewView.swift
+//  ImWearingPantsPreviewView.swift
 //  SFSymbolsArtCollection
 //
 //  Created by Lil Ossa

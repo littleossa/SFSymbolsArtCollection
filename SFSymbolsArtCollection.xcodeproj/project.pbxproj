@@ -77,6 +77,8 @@
 		97EF438B2B725E02003648F5 /* NosebleedArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438A2B725E02003648F5 /* NosebleedArtView.swift */; };
 		97EF438D2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438C2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift */; };
 		97EF43902B72D2E4003648F5 /* NosebleedPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438F2B72D2E4003648F5 /* NosebleedPreviewView.swift */; };
+		97EF43932B72D3E2003648F5 /* IamWearingPantsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43922B72D3E2003648F5 /* IamWearingPantsPreviewView.swift */; };
+		97EF43952B72DA69003648F5 /* IamWearingPantsArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43942B72DA69003648F5 /* IamWearingPantsArtView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +153,8 @@
 		97EF438A2B725E02003648F5 /* NosebleedArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosebleedArtView.swift; sourceTree = "<group>"; };
 		97EF438C2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArtWorkModel+InitialSymbolRow.swift"; sourceTree = "<group>"; };
 		97EF438F2B72D2E4003648F5 /* NosebleedPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosebleedPreviewView.swift; sourceTree = "<group>"; };
+		97EF43922B72D3E2003648F5 /* IamWearingPantsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IamWearingPantsPreviewView.swift; sourceTree = "<group>"; };
+		97EF43942B72DA69003648F5 /* IamWearingPantsArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IamWearingPantsArtView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +399,7 @@
 			children = (
 				97AD531E2B70E2770034FB5D /* AfroBoy */,
 				97EF43892B725DE7003648F5 /* Nosebleed */,
+				97EF43912B72D3AF003648F5 /* IamWearingPants */,
 			);
 			path = ArtWorks;
 			sourceTree = "<group>";
@@ -506,6 +511,15 @@
 			path = ArtWorkModel;
 			sourceTree = "<group>";
 		};
+		97EF43912B72D3AF003648F5 /* IamWearingPants */ = {
+			isa = PBXGroup;
+			children = (
+				97EF43942B72DA69003648F5 /* IamWearingPantsArtView.swift */,
+				97EF43922B72D3E2003648F5 /* IamWearingPantsPreviewView.swift */,
+			);
+			path = IamWearingPants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -582,6 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EF43932B72D3E2003648F5 /* IamWearingPantsPreviewView.swift in Sources */,
 				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
@@ -627,6 +642,7 @@
 				9748BE412897CD6C006DF0BE /* Arm.swift in Sources */,
 				9748BE4328980C4D006DF0BE /* Hair.swift in Sources */,
 				97624C3328C4F43F004E1720 /* GeometryProxy+.swift in Sources */,
+				97EF43952B72DA69003648F5 /* IamWearingPantsArtView.swift in Sources */,
 				9748BE1828933E40006DF0BE /* MagicianHat.swift in Sources */,
 				9748BE50289AB439006DF0BE /* DemonWrestlerHand.swift in Sources */,
 				97E11E3F281971ED00B2AB32 /* CrayonEyeBall.swift in Sources */,

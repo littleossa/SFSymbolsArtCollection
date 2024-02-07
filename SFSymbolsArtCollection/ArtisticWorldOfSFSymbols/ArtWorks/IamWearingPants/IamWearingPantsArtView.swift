@@ -504,6 +504,49 @@ struct ImWearingPantsArtView: View {
                 waitingTime: model.waitingTime(forCount: 5)
             )
             
+            // MARK: - 􀧷 Concealing part for eyebrow
+            ArtComponentView(
+                name: "capsule.portrait.fill",
+                initialValue: .init(
+                    width: model.initialSymbolLength,
+                    height: model.initialSymbolLength,
+                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.fourth)),
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fourth))
+                ),
+                finalValue: .init(
+                    primaryColor: .yellow,
+                    width: model.calculatingProportionalValue(withRatio: 0.05),
+                    height: model.calculatingProportionalValue(withRatio: 0.02),
+                    rotationDegrees: -10,
+                    offsetX: model.calculatingProportionalValue(withRatio: -0.035),
+                    offsetY: model.calculatingProportionalValue(withRatio: -0.396)
+                ),
+                isAnimating: isAnimating,
+                animationDuration: model.animationDurationPerSymbol,
+                waitingTime: model.waitingTime(forCount: 5)
+            )
+            
+            ArtComponentView(
+                name: "capsule.portrait.fill",
+                initialValue: .init(
+                    width: model.initialSymbolLength,
+                    height: model.initialSymbolLength,
+                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.fourth)),
+                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fourth))
+                ),
+                finalValue: .init(
+                    primaryColor: .yellow,
+                    width: model.calculatingProportionalValue(withRatio: 0.05),
+                    height: model.calculatingProportionalValue(withRatio: 0.02),
+                    rotationDegrees: 10,
+                    offsetX: model.calculatingProportionalValue(withRatio: 0.035),
+                    offsetY: model.calculatingProportionalValue(withRatio: -0.396)
+                ),
+                isAnimating: isAnimating,
+                animationDuration: model.animationDurationPerSymbol,
+                waitingTime: model.waitingTime(forCount: 5)
+            )
+            
             // MARK: - 􀋭 Right eye
             ArtComponentView(
                 name: "eye",

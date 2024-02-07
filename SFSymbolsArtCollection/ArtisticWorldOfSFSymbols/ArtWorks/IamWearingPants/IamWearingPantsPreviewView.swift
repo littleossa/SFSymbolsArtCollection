@@ -310,6 +310,25 @@ struct ImWearingPantsPreviewView: View {
                 .offset(x: model.calculatingProportionalValue(withRatio: -0.03, forPreview: true),
                         y: model.calculatingProportionalValue(withRatio: -0.408, forPreview: true))
             
+            // MARK: - 􀧷 Concealing part for eyebrow
+            Image(systemName: "capsule.portrait.fill")
+                .resizable()
+                .foregroundStyle(.yellow)
+                .frame(width: model.calculatingProportionalValue(withRatio: 0.05, forPreview: true),
+                       height: model.calculatingProportionalValue(withRatio: 0.02, forPreview: true))
+                .rotationEffect(.degrees(-10))
+                .offset(x: model.calculatingProportionalValue(withRatio: -0.035, forPreview: true),
+                        y: model.calculatingProportionalValue(withRatio: -0.396, forPreview: true))
+            
+            Image(systemName: "capsule.portrait.fill")
+                .resizable()
+                .foregroundStyle(.yellow)
+                .frame(width: model.calculatingProportionalValue(withRatio: 0.05, forPreview: true),
+                       height: model.calculatingProportionalValue(withRatio: 0.02, forPreview: true))
+                .rotationEffect(.degrees(10))
+                .offset(x: model.calculatingProportionalValue(withRatio: 0.035, forPreview: true),
+                        y: model.calculatingProportionalValue(withRatio: -0.396, forPreview: true))
+            
             // MARK: - 􀋭 Eye frame
             Image(systemName: "eye")
                 .resizable()

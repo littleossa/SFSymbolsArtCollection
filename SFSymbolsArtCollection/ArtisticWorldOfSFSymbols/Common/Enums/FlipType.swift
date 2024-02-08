@@ -2,7 +2,7 @@
 //  FlipType.swift
 //  SFSymbolsArtCollection
 //
-//  Created by 平岡修 on 2022/07/29.
+//  Created by Lil Ossa
 //
 
 import CoreGraphics

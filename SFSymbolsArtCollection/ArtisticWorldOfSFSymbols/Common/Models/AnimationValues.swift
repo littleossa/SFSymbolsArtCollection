@@ -17,7 +17,7 @@ struct AnimationValues {
         height: CGFloat,
         symbolNameVisibleValue: CGFloat = 1,
         rotationDegrees: CGFloat = 0,
-        rotationAxis: (x: CGFloat, y: CGFloat, z: CGFloat) = (x: 0, y: 0, z: 1),
+        rotationAxis: (x: CGFloat, y: CGFloat, z: CGFloat) = (x: 0, y: 0, z: 0),
         offsetX: CGFloat = 0,
         offsetY: CGFloat = 0
     ) {

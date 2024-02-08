@@ -20,7 +20,7 @@ struct ArtComponentView: View {
         widthRatio: CGFloat,
         heightRatio: CGFloat,
         rotationDegrees: CGFloat = 0,
-        rotationAxis: (x: CGFloat, y: CGFloat, z: CGFloat) = (x: 0, y: 0, z: 1),
+        flip: FlipType = .none,
         horizontalOffsetRatio: CGFloat = 0,
         verticalOffsetRatio: CGFloat = 0,
         isAnimating: Bool,
@@ -36,7 +36,7 @@ struct ArtComponentView: View {
         self.widthRatio = widthRatio
         self.heightRatio = heightRatio
         self.rotationDegrees = rotationDegrees
-        self.rotationAxis = rotationAxis
+        self.rotationAxis = flip.axis
         self.horizontalOffsetRatio = horizontalOffsetRatio
         self.verticalOffsetRatio = verticalOffsetRatio
         self.isAnimating = isAnimating
@@ -124,11 +124,11 @@ struct ArtComponentView: View {
                         width: value.width,
                         height: value.height
                     )
+                    .rotationEffect(.degrees(value.rotationDegrees))
+                    .rotation3DEffect(.degrees(180),
+                                      axis: value.rotationAxis,
+                                      anchorZ: 0)
                 }
-                .rotation3DEffect(
-                    .degrees(value.rotationDegrees),
-                    axis: value.rotationAxis
-                )
                 .offset(value.offset)
                 
             } keyframes: { value in
@@ -193,7 +193,7 @@ struct ArtComponentView: View {
 
 #Preview {
     ArtComponentView(
-        name: "circle.fill",
+        name: "nose",
         initialPosition: .third(.first),
         primaryColor: .red,
         widthRatio: 1,

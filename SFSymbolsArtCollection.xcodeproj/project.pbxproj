@@ -43,6 +43,9 @@
 		97624C3A28C82DBB004E1720 /* CharacterAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3928C82DBB004E1720 /* CharacterAppearance.swift */; };
 		97624C3C28C935F0004E1720 /* FiveCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3B28C935F0004E1720 /* FiveCharactersView.swift */; };
 		97624C3E28C93693004E1720 /* CharactersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3D28C93693004E1720 /* CharactersType.swift */; };
+		9767DEFA2B751C2C00457DA1 /* WorldPeacePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEF92B751C2C00457DA1 /* WorldPeacePreviewView.swift */; };
+		9767DEFC2B7523A900457DA1 /* Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEFB2B7523A900457DA1 /* Offset.swift */; };
+		9767DEFE2B752E0400457DA1 /* WorldPeace+CharacterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEFD2B752E0400457DA1 /* WorldPeace+CharacterPosition.swift */; };
 		97AD530C2B70DA2F0034FB5D /* ArtGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */; };
 		97AD53102B70DE230034FB5D /* SymbolNameFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */; };
 		97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53112B70DEB60034FB5D /* UIDevice+.swift */; };
@@ -112,6 +115,9 @@
 		97624C3928C82DBB004E1720 /* CharacterAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterAppearance.swift; sourceTree = "<group>"; };
 		97624C3B28C935F0004E1720 /* FiveCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveCharactersView.swift; sourceTree = "<group>"; };
 		97624C3D28C93693004E1720 /* CharactersType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersType.swift; sourceTree = "<group>"; };
+		9767DEF92B751C2C00457DA1 /* WorldPeacePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPeacePreviewView.swift; sourceTree = "<group>"; };
+		9767DEFB2B7523A900457DA1 /* Offset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offset.swift; sourceTree = "<group>"; };
+		9767DEFD2B752E0400457DA1 /* WorldPeace+CharacterPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorldPeace+CharacterPosition.swift"; sourceTree = "<group>"; };
 		97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryView.swift; sourceTree = "<group>"; };
 		97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolNameFrameView.swift; sourceTree = "<group>"; };
 		97AD53112B70DEB60034FB5D /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
@@ -315,6 +321,15 @@
 			path = Animals;
 			sourceTree = "<group>";
 		};
+		9767DEF82B751C1300457DA1 /* WorldPeace */ = {
+			isa = PBXGroup;
+			children = (
+				9767DEF92B751C2C00457DA1 /* WorldPeacePreviewView.swift */,
+				9767DEFD2B752E0400457DA1 /* WorldPeace+CharacterPosition.swift */,
+			);
+			path = WorldPeace;
+			sourceTree = "<group>";
+		};
 		97AD530D2B70DBC70034FB5D /* ArtisticWorldOfSFSymbols */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +366,7 @@
 			children = (
 				97EF438E2B726D66003648F5 /* ArtWorkModel */,
 				97AD53172B70DFF30034FB5D /* AnimationValues.swift */,
+				9767DEFB2B7523A900457DA1 /* Offset.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -360,6 +376,7 @@
 			children = (
 				97EF43962B7332FB003648F5 /* Magician */,
 				97EF439F2B74CA22003648F5 /* CrayonBoy */,
+				9767DEF82B751C1300457DA1 /* WorldPeace */,
 				97AD531E2B70E2770034FB5D /* AfroBoy */,
 				97EF43892B725DE7003648F5 /* Nosebleed */,
 				97EF43912B72D3AF003648F5 /* ImWearingPants */,
@@ -569,6 +586,7 @@
 			files = (
 				97EF43932B72D3E2003648F5 /* ImWearingPantsPreviewView.swift in Sources */,
 				97EF439E2B744C4C003648F5 /* Color+.swift in Sources */,
+				9767DEFC2B7523A900457DA1 /* Offset.swift in Sources */,
 				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
@@ -578,10 +596,12 @@
 				9748BE372893D064006DF0BE /* PartyAnimals.swift in Sources */,
 				971D9DEA28C9731D00136A36 /* iOSDCJapan2022SymbolType.swift in Sources */,
 				97AD53182B70DFF30034FB5D /* AnimationValues.swift in Sources */,
+				9767DEFE2B752E0400457DA1 /* WorldPeace+CharacterPosition.swift in Sources */,
 				97624C3E28C93693004E1720 /* CharactersType.swift in Sources */,
 				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,
 				97624C3A28C82DBB004E1720 /* CharacterAppearance.swift in Sources */,
 				97EF43982B733337003648F5 /* MagicianArtView.swift in Sources */,
+				9767DEFA2B751C2C00457DA1 /* WorldPeacePreviewView.swift in Sources */,
 				9748BE3A2893D0E3006DF0BE /* Frog.swift in Sources */,
 				97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */,
 				97AD53242B70E48F0034FB5D /* PlayButton.swift in Sources */,

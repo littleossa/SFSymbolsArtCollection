@@ -174,5 +174,4 @@ struct CrayonBoyPreviewView: View {
 #Preview {
     CrayonBoyPreviewView()
         .environment(ArtWorkModel.preview)
-//        .environment(ArtWorkModel.init(screenSize: .init(width: 4600, height: 4600)))
 }

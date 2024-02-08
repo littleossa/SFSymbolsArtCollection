@@ -97,226 +97,247 @@ struct ImWearingPantsArtView: View {
                     
                     // MARK: - 􁗅 Pose
                     Image(systemName: "figure.arms.open")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.6),
-                               height: model.calculatingProportionalValue(withRatio: 1))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            width: model.calculatingProportionalValue(withRatio: 0.6),
+                            height: model.calculatingProportionalValue(withRatio: 1)
+                        )
                     
                     // MARK: - 􀆹 Chest shadow
                     Image(systemName: "moon")
-                        .resizable()
-                        .foregroundStyle(.black.opacity(0.6))
-                        .fontWeight(.ultraLight)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.06),
-                               height: model.calculatingProportionalValue(withRatio: 0.015))
-                        .rotationEffect(.degrees(-10))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.09),
-                                y: model.calculatingProportionalValue(withRatio: -0.125))
+                        .arrangeShape(
+                            primaryColor: .black.opacity(0.6),
+                            fontWeight: .ultraLight,
+                            width: model.calculatingProportionalValue(withRatio: 0.06),
+                            height: model.calculatingProportionalValue(withRatio: 0.015),
+                            rotationDegrees: -10,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.09),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.125)
+                        )
                     
                     Image(systemName: "moon")
-                        .resizable()
-                        .foregroundStyle(.black.opacity(0.6))
-                        .fontWeight(.ultraLight)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.06),
-                               height: model.calculatingProportionalValue(withRatio: 0.015))
-                        .rotation3DEffect(
-                            .degrees(160),
-                            axis: (x: 0, y: 1, z: 0)
+                        .arrangeShape(
+                            primaryColor: .black.opacity(0.6),
+                            fontWeight: .ultraLight,
+                            width: model.calculatingProportionalValue(withRatio: 0.06),
+                            height: model.calculatingProportionalValue(withRatio: 0.015),
+                            rotationDegrees: -10,
+                            flip: .horizontal,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: 0.085),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.125)
                         )
-                        .offset(x: model.calculatingProportionalValue(withRatio: 0.085),
-                                y: model.calculatingProportionalValue(withRatio: -0.125))
                     
                     // MARK: - 􀏄 Parts for shaping
                     Image(systemName: "rectangle.fill")
-                        .resizable()
-                        .foregroundStyle(Color.systemBackground)
-                        .fontWeight(.black)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.3),
-                               height: model.calculatingProportionalValue(withRatio: 0.4))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.25),
-                                y: model.calculatingProportionalValue(withRatio: -0.1))
+                        .arrangeShape(
+                            primaryColor: .systemBackground,
+                            fontWeight: .black,
+                            width: model.calculatingProportionalValue(withRatio: 0.3),
+                            height: model.calculatingProportionalValue(withRatio: 0.4),
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.25),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.1)
+                        )
                     
                     Image(systemName: "rectangle.fill")
-                        .resizable()
-                        .foregroundStyle(Color.systemBackground)
-                        .fontWeight(.black)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.3),
-                               height: model.calculatingProportionalValue(withRatio: 0.4))
-                        .offset(x: model.calculatingProportionalValue(withRatio: 0.25),
-                                y: model.calculatingProportionalValue(withRatio: -0.1))
+                        .arrangeShape(
+                            primaryColor: .systemBackground,
+                            fontWeight: .black,
+                            width: model.calculatingProportionalValue(withRatio: 0.3),
+                            height: model.calculatingProportionalValue(withRatio: 0.4),
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: 0.25),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.1)
+                        )
                     
                     // MARK: - 􀊡 Neck
                     Image(systemName: "speaker.fill")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.2),
-                               height: model.calculatingProportionalValue(withRatio: 0.38))
-                        .rotationEffect(.degrees(90))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.005),
-                                y: model.calculatingProportionalValue(withRatio: -0.27))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            width: model.calculatingProportionalValue(withRatio: 0.2),
+                            height: model.calculatingProportionalValue(withRatio: 0.38),
+                            rotationDegrees: 90,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.005),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.27)
+                        )
                     
                     // MARK: - 􀂓 Parts for shaping
                     Image(systemName: "square.fill")
-                        .resizable()
-                        .foregroundStyle(Color.systemBackground)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.2),
-                               height: model.calculatingProportionalValue(withRatio: 0.2))
-                        .offset(x: model.calculatingProportionalValue(withRatio: 0.14),
-                                y: model.calculatingProportionalValue(withRatio: -0.385))
+                        .arrangeShape(
+                            primaryColor: .systemBackground,
+                            width: model.calculatingProportionalValue(withRatio: 0.2),
+                            height: model.calculatingProportionalValue(withRatio: 0.2),
+                            rotationDegrees: 90,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: 0.14),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.385)
+                        )
                     
                     Image(systemName: "square.fill")
-                        .resizable()
-                        .foregroundStyle(Color.systemBackground)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.2),
-                               height: model.calculatingProportionalValue(withRatio: 0.2))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.14),
-                                y: model.calculatingProportionalValue(withRatio: -0.385))
+                        .arrangeShape(
+                            primaryColor: .systemBackground,
+                            width: model.calculatingProportionalValue(withRatio: 0.2),
+                            height: model.calculatingProportionalValue(withRatio: 0.2),
+                            rotationDegrees: 90,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.14),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.385)
+                        )
                     
                     // MARK: - 􀆺 Chest
                     Image(systemName: "moon.fill")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .fontWeight(.ultraLight)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.06),
-                               height: model.calculatingProportionalValue(withRatio: 0.04))
-                        .rotationEffect(.degrees(-10))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.09),
-                                y: model.calculatingProportionalValue(withRatio: -0.138))
-                    
-                    Image(systemName: "moon.fill")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.06),
-                               height: model.calculatingProportionalValue(withRatio: 0.04))
-                        .rotation3DEffect(
-                            .degrees(160),
-                            axis: (x: 0, y: 1, z: 0)
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            width: model.calculatingProportionalValue(withRatio: 0.06),
+                            height: model.calculatingProportionalValue(withRatio: 0.04),
+                            rotationDegrees: -10,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.09),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.138)
                         )
-                        .offset(x: model.calculatingProportionalValue(withRatio: 0.085),
-                                y: model.calculatingProportionalValue(withRatio: -0.138))
+                        
+                    Image(systemName: "moon.fill")
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            width: model.calculatingProportionalValue(withRatio: 0.06),
+                            height: model.calculatingProportionalValue(withRatio: 0.04),
+                            rotationDegrees: -10,
+                            flip: .horizontal,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: 0.085),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.138)
+                        )
                     
                     // MARK: - 􀆉 Left arm
                     Image(systemName: "chevron.left")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .fontWeight(.black)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.2),
-                               height: model.calculatingProportionalValue(withRatio: 0.3))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.2),
-                                y: model.calculatingProportionalValue(withRatio: -0.08))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            fontWeight: .black,
+                            width: model.calculatingProportionalValue(withRatio: 0.2),
+                            height: model.calculatingProportionalValue(withRatio: 0.3),
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.2),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.08)
+                        )
                     
                     // MARK: - 􀆊 Right artm
                     Image(systemName: "chevron.right")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .fontWeight(.black)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.2),
-                               height: model.calculatingProportionalValue(withRatio: 0.3))
-                        .offset(x: model.calculatingProportionalValue(withRatio: 0.2),
-                                y: model.calculatingProportionalValue(withRatio: -0.08))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            fontWeight: .black,
+                            width: model.calculatingProportionalValue(withRatio: 0.2),
+                            height: model.calculatingProportionalValue(withRatio: 0.3),
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: 0.2),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.08)
+                        )
                 }
                 .transition(.symbolEffect(.appear))
                 
                 Group {
                     // MARK: - 􀀁 Pant center hole cover
                     Image(systemName: "circle.fill")
-                        .resizable()
-                        .foregroundStyle(.palePink)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.06),
-                               height: model.calculatingProportionalValue(withRatio: 0.06))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.01),
-                                y: model.calculatingProportionalValue(withRatio: 0.04))
+                        .arrangeShape(
+                            primaryColor: .palePink,
+                            width: model.calculatingProportionalValue(withRatio: 0.06),
+                            height: model.calculatingProportionalValue(withRatio: 0.06),
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.01),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: 0.04)
+                        )
                     
                     // MARK: - 􁁌 Patterns on pants
                     Image(systemName: "fan.fill")
-                        .resizable()
-                        .foregroundStyle(.white)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.04),
-                               height: model.calculatingProportionalValue(withRatio: 0.04))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.01),
-                                y: model.calculatingProportionalValue(withRatio: 0.04))
+                        .arrangeShape(
+                            primaryColor: .white,
+                            width: model.calculatingProportionalValue(withRatio: 0.04),
+                            height: model.calculatingProportionalValue(withRatio: 0.04),
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.01),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: 0.04)
+                        )
                     
                     Image(systemName: "fan.fill")
-                        .resizable()
-                        .foregroundStyle(.white)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.04),
-                               height: model.calculatingProportionalValue(withRatio: 0.04))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.08),
-                                y: model.calculatingProportionalValue(withRatio: 0.02))
+                        .arrangeShape(
+                            primaryColor: .white,
+                            width: model.calculatingProportionalValue(withRatio: 0.04),
+                            height: model.calculatingProportionalValue(withRatio: 0.04),
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.08),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: 0.02)
+                        )
                     
                     Image(systemName: "fan.fill")
-                        .resizable()
-                        .foregroundStyle(.white)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.04),
-                               height: model.calculatingProportionalValue(withRatio: 0.04))
-                        .offset(x: model.calculatingProportionalValue(withRatio: 0.08),
-                                y: model.calculatingProportionalValue(withRatio: 0.02))
+                        .arrangeShape(
+                            primaryColor: .white,
+                            width: model.calculatingProportionalValue(withRatio: 0.04),
+                            height: model.calculatingProportionalValue(withRatio: 0.04),
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: 0.08),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: 0.02)
+                        )
                     
                     Image(systemName: "fan.fill")
-                        .resizable()
-                        .foregroundStyle(.white)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.04),
-                               height: model.calculatingProportionalValue(withRatio: 0.04))
-                        .offset(y: model.calculatingProportionalValue(withRatio: 0.099))
+                        .arrangeShape(
+                            primaryColor: .white,
+                            width: model.calculatingProportionalValue(withRatio: 0.04),
+                            height: model.calculatingProportionalValue(withRatio: 0.04),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: 0.099)
+                        )
                     
                     // MARK: - 􀲟 Concealing part for pants
                     Image(systemName: "oval.fill")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.11),
-                               height: model.calculatingProportionalValue(withRatio: 0.03))
-                        .rotationEffect(.degrees(45))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.07),
-                                y: model.calculatingProportionalValue(withRatio: 0.09))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            width: model.calculatingProportionalValue(withRatio: 0.11),
+                            height: model.calculatingProportionalValue(withRatio: 0.03),
+                            rotationDegrees: 45,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.07),
+                            verticalOffset:  model.calculatingProportionalValue(withRatio: 0.09)
+                        )
                     
                     Image(systemName: "oval.fill")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.11),
-                               height: model.calculatingProportionalValue(withRatio: 0.03))
-                        .rotationEffect(.degrees(-47))
-                        .offset(x: model.calculatingProportionalValue(withRatio: 0.06),
-                                y: model.calculatingProportionalValue(withRatio: 0.089))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            width: model.calculatingProportionalValue(withRatio: 0.11),
+                            height: model.calculatingProportionalValue(withRatio: 0.03),
+                            rotationDegrees: -47,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: 0.06),
+                            verticalOffset:  model.calculatingProportionalValue(withRatio: 0.089)
+                        )
                     
                     // MARK: - 􁎘 Abdomen
                     Image(systemName: "visionpro.fill")
-                        .resizable()
-                        .foregroundStyle(.yellow)
-                        .fontWeight(.ultraLight)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.25),
-                               height: model.calculatingProportionalValue(withRatio: 0.15))
-                        .rotationEffect(.degrees(180))
-                        .offset(y: model.calculatingProportionalValue(withRatio: -0.045))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            fontWeight: .ultraLight,
+                            width: model.calculatingProportionalValue(withRatio: 0.25),
+                            height: model.calculatingProportionalValue(withRatio: 0.15),
+                            rotationDegrees: 180,
+                            verticalOffset:  model.calculatingProportionalValue(withRatio: -0.045)
+                        )
                     
                     // MARK: - 􀥤 Belly button
                     Image(systemName: "poweron")
-                        .resizable()
-                        .foregroundStyle(.black)
-                        .fontWeight(.ultraLight)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.02),
-                               height: model.calculatingProportionalValue(withRatio: 0.002))
-                        .rotationEffect(.degrees(180))
+                        .arrangeShape(
+                            fontWeight: .ultraLight,
+                            width: model.calculatingProportionalValue(withRatio: 0.02),
+                            height: model.calculatingProportionalValue(withRatio: 0.002),
+                            rotationDegrees: 180
+                        )
                     
                     // MARK: - 􀕩 Niple
                     Image(systemName: "smallcircle.filled.circle.fill")
-                        .resizable()
-                        .foregroundStyle(.brown)
-                        .fontWeight(.ultraLight)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.02),
-                               height: model.calculatingProportionalValue(withRatio: 0.01))
-                        .rotationEffect(.degrees(15))
-                        .offset(x: model.calculatingProportionalValue(withRatio: 0.09),
-                                y: model.calculatingProportionalValue(withRatio: -0.138))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            secondaryColor: .brown,
+                            fontWeight: .ultraLight,
+                            width: model.calculatingProportionalValue(withRatio: 0.02),
+                            height: model.calculatingProportionalValue(withRatio: 0.01),
+                            rotationDegrees: 15,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: 0.09),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.138)
+                        )
                     
                     Image(systemName: "smallcircle.filled.circle.fill")
-                        .resizable()
-                        .foregroundStyle(.brown)
-                        .fontWeight(.ultraLight)
-                        .frame(width: model.calculatingProportionalValue(withRatio: 0.02),
-                               height: model.calculatingProportionalValue(withRatio: 0.01))
-                        .rotationEffect(.degrees(-15))
-                        .offset(x: model.calculatingProportionalValue(withRatio: -0.09),
-                                y: model.calculatingProportionalValue(withRatio: -0.14))
+                        .arrangeShape(
+                            primaryColor: .yellow,
+                            secondaryColor: .brown,
+                            fontWeight: .ultraLight,
+                            width: model.calculatingProportionalValue(withRatio: 0.02),
+                            height: model.calculatingProportionalValue(withRatio: 0.01),
+                            rotationDegrees: -15,
+                            horizontalOffset: model.calculatingProportionalValue(withRatio: -0.09),
+                            verticalOffset: model.calculatingProportionalValue(withRatio: -0.14)
+                        )
                 }
                 .zIndex(0.2)
                 .transition(.symbolEffect(.appear))
@@ -435,7 +456,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: -0.035,
                 verticalOffsetRatio: -0.396,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 2
+                symbolCountToWaitFor: 5
             )
             
             AnimatableSymbolView(
@@ -448,7 +469,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: 0.035,
                 verticalOffsetRatio: -0.396,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 2
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀋭 Right eye

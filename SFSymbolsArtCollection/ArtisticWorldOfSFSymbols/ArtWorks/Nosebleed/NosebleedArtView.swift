@@ -25,7 +25,7 @@ struct NosebleedArtView: View {
                 widthRatio: 0.65,
                 heightRatio: 0.65,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 0
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀭧 Nosebleed bottom
@@ -39,7 +39,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: 0.09,
                 verticalOffsetRatio: 0.074,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 1
+                symbolCountToWaitFor: 0
             )
             .symbolEffect(.variableColor.hideInactiveLayers,
                           options: .speed(0.6).repeating,
@@ -55,7 +55,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: 0.09,
                 verticalOffsetRatio: 0.15,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 2
+                symbolCountToWaitFor: 3
             )
             
             // MARK: - 􀓩 Mouth
@@ -69,7 +69,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: 0.01,
                 verticalOffsetRatio: 0.05,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 3
+                symbolCountToWaitFor: 1
             )
                         
             // MARK: - 􀏄 Concealing part for Mouth
@@ -82,7 +82,7 @@ struct NosebleedArtView: View {
                 rotationDegrees: 176,
                 verticalOffsetRatio: -0.03,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 4
+                symbolCountToWaitFor: 3
             )
             
             // MARK: - 􀭧 Nosebleed top
@@ -96,7 +96,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: 0.035,
                 verticalOffsetRatio: 0.097,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 5
+                symbolCountToWaitFor: 0
             )
             .symbolEffect(.variableColor.hideInactiveLayers,
                           options: .speed(0.6).repeating,
@@ -112,7 +112,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: 0.09,
                 verticalOffsetRatio: 0.06,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 6
+                symbolCountToWaitFor: 3
             )
             
             // MARK: - 􀏄 Concealing part for nosebleed top left
@@ -125,7 +125,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: -0.047,
                 verticalOffsetRatio: 0.09,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 6
+                symbolCountToWaitFor: 3
             )
             
             // MARK: - 􀀁 Right eye
@@ -137,7 +137,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: 0.117,
                 verticalOffsetRatio: -0.176,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 7
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀀁 Left eye
@@ -149,7 +149,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: -0.113,
                 verticalOffsetRatio: -0.17,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 7
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀥨 Tissue
@@ -164,7 +164,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: -0.052,
                 verticalOffsetRatio: 0.083,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 8
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀉆 Tissue frame
@@ -178,7 +178,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: -0.052,
                 verticalOffsetRatio: 0.083,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 8
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀥰 Nose
@@ -192,7 +192,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: -0.013,
                 verticalOffsetRatio: -0.02,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 9
+                symbolCountToWaitFor: 4
             )
             
             // MARK: - 􀏄 Concealing part for nose
@@ -206,7 +206,7 @@ struct NosebleedArtView: View {
                 horizontalOffsetRatio: 0.007,
                 verticalOffsetRatio: -0.046,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 10
+                symbolCountToWaitFor: 3
             )
         }
         .navigationTitle("Nosebleed")
@@ -225,7 +225,7 @@ struct NosebleedArtView: View {
         .onChange(of: isAnimating) { _, newValue in
             if newValue {
                 Timer.scheduledTimer(
-                    withTimeInterval: model.waitingTime(forCount: 13),
+                    withTimeInterval: model.waitingTime(forCount: 6),
                     repeats: false
                 ) { _ in
                     isEffectActivated = true

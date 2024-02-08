@@ -129,7 +129,7 @@ struct ImWearingPantsArtView: View {
                     // MARK: - 􀏄 Parts for shaping
                     Image(systemName: "rectangle.fill")
                         .resizable()
-                        .foregroundStyle(Color(uiColor: .systemBackground))
+                        .foregroundStyle(Color.systemBackground)
                         .fontWeight(.black)
                         .frame(width: model.calculatingProportionalValue(withRatio: 0.3),
                                height: model.calculatingProportionalValue(withRatio: 0.4))
@@ -138,7 +138,7 @@ struct ImWearingPantsArtView: View {
                     
                     Image(systemName: "rectangle.fill")
                         .resizable()
-                        .foregroundStyle(Color(uiColor: .systemBackground))
+                        .foregroundStyle(Color.systemBackground)
                         .fontWeight(.black)
                         .frame(width: model.calculatingProportionalValue(withRatio: 0.3),
                                height: model.calculatingProportionalValue(withRatio: 0.4))
@@ -158,7 +158,7 @@ struct ImWearingPantsArtView: View {
                     // MARK: - 􀂓 Parts for shaping
                     Image(systemName: "square.fill")
                         .resizable()
-                        .foregroundStyle(Color(uiColor: .systemBackground))
+                        .foregroundStyle(Color.systemBackground)
                         .frame(width: model.calculatingProportionalValue(withRatio: 0.2),
                                height: model.calculatingProportionalValue(withRatio: 0.2))
                         .offset(x: model.calculatingProportionalValue(withRatio: 0.14),
@@ -166,7 +166,7 @@ struct ImWearingPantsArtView: View {
                     
                     Image(systemName: "square.fill")
                         .resizable()
-                        .foregroundStyle(Color(uiColor: .systemBackground))
+                        .foregroundStyle(Color.systemBackground)
                         .frame(width: model.calculatingProportionalValue(withRatio: 0.2),
                                height: model.calculatingProportionalValue(withRatio: 0.2))
                         .offset(x: model.calculatingProportionalValue(withRatio: -0.14),

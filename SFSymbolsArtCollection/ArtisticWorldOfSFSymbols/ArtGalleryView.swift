@@ -48,6 +48,13 @@ struct ArtGalleryView: View {
                             }
                             
                             NavigationLink {
+                                CrayonBoyArtView()
+                            } label: {
+                                CrayonBoyPreviewView()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
                                 AfroBoyArtView()
                             } label: {
                                 AfroBoyPreviewView()
@@ -65,13 +72,6 @@ struct ArtGalleryView: View {
                                 ImWearingPantsArtView()
                             } label: {
                                 ImWearingPantsPreviewView()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                CrayonBoyArtView()
-                            } label: {
-                                CrayonBoyPreviewView()
                                     .galleryGridItemView(length: model.galleryColumnLength)
                             }
                         }

@@ -18,7 +18,7 @@ struct NosebleedArtView: View {
         ZStack {
             
             // MARK: - 􀀁 Contour
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "circle.fill",
                 initialPosition: .third(.first),
                 primaryColor: .awesomeYellow,
@@ -29,7 +29,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀭧 Nosebleed bottom
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "cellularbars",
                 initialPosition: .third(.second),
                 primaryColor: .red,
@@ -46,7 +46,7 @@ struct NosebleedArtView: View {
                           isActive: isEffectActivated)
             
             // MARK: - 􀏄 Concealing part for nosebleed bottom
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .third(.third),
                 primaryColor: .awesomeYellow,
@@ -59,7 +59,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀓩 Mouth
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "lasso",
                 initialPosition: .third(.fourth),
                 fontWeight: .ultraLight,
@@ -73,7 +73,7 @@ struct NosebleedArtView: View {
             )
                         
             // MARK: - 􀏄 Concealing part for Mouth
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .third(.third),
                 primaryColor: .awesomeYellow,
@@ -86,7 +86,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀭧 Nosebleed top
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "cellularbars",
                 initialPosition: .third(.second),
                 primaryColor: .red,
@@ -103,7 +103,7 @@ struct NosebleedArtView: View {
                           isActive: isEffectActivated)
             
             // MARK: - 􀏄 Concealing part for nosebleed top right
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .third(.third),
                 primaryColor: .awesomeYellow,
@@ -116,7 +116,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀏄 Concealing part for nosebleed top left
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .third(.third),
                 primaryColor: .awesomeYellow,
@@ -129,7 +129,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀀁 Right eye
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "circle.fill",
                 initialPosition: .third(.first),
                 widthRatio: 0.06,
@@ -141,7 +141,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀀁 Left eye
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "circle.fill",
                 initialPosition: .third(.first),
                 widthRatio: 0.06,
@@ -153,7 +153,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀥨 Tissue
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "doc.plaintext.fill",
                 initialPosition: .third(.fifth),
                 primaryColor: .white,
@@ -168,7 +168,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀉆 Tissue frame
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "doc.plaintext",
                 initialPosition: .third(.sixth),
                 fontWeight: .light,
@@ -182,7 +182,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀥰 Nose
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "triangleshape",
                 initialPosition: .third(.seventh),
                 fontWeight: .light,
@@ -196,7 +196,7 @@ struct NosebleedArtView: View {
             )
             
             // MARK: - 􀏄 Concealing part for nose
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .third(.third),
                 primaryColor: .awesomeYellow,

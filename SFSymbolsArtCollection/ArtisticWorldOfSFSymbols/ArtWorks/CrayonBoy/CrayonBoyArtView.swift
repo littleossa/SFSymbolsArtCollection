@@ -16,7 +16,7 @@ struct CrayonBoyArtView: View {
         
         ZStack {
             // MARK: - 􀇃 Outline
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "cloud.fill",
                 initialPosition: .second(.first),
                 primaryColor: .paleOrange,
@@ -30,7 +30,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀀁 Hair top
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "circle.fill",
                 initialPosition: .second(.second),
                 widthRatio: 0.44,
@@ -42,7 +42,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀏄 Concealing part for hair
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .third(.fifth),
                 primaryColor: .paleOrange,
@@ -55,7 +55,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀆍 Eyebrow
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "control",
                 initialPosition: .third(.sixth),
                 fontWeight: .black,
@@ -68,7 +68,7 @@ struct CrayonBoyArtView: View {
                 symbolCountToWaitFor: 4
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "control",
                 initialPosition: .third(.sixth),
                 fontWeight: .black,
@@ -82,7 +82,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀀀 Eyelid
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "circle",
                 initialPosition: .second(.third),
                 fontWeight: .ultraLight,
@@ -94,7 +94,7 @@ struct CrayonBoyArtView: View {
                 symbolCountToWaitFor: 5
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "circle",
                 initialPosition: .second(.third),
                 fontWeight: .ultraLight,
@@ -107,7 +107,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀏄 Concealing part for Eyelid
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .third(.fifth),
                 primaryColor: .paleOrange,
@@ -119,7 +119,7 @@ struct CrayonBoyArtView: View {
                 symbolCountToWaitFor: 6
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .third(.fifth),
                 primaryColor: .paleOrange,
@@ -132,7 +132,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀢚 Eye
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "record.circle.fill",
                 initialPrimaryColor: .systemBackground,
                 initialPosition: .third(.seventh),
@@ -145,7 +145,7 @@ struct CrayonBoyArtView: View {
                 symbolCountToWaitFor: 7
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "record.circle.fill",
                 initialPrimaryColor: .systemBackground,
                 initialPosition: .third(.seventh),
@@ -159,7 +159,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀇂 Outline frame
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "cloud",
                 initialPosition: .third(.first),
                 fontWeight: .ultraLight,
@@ -172,7 +172,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀧷 Mouth
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "capsule.portrait.fill",
                 initialPosition: .third(.second),
                 primaryColor: .red,
@@ -187,7 +187,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􀧶 Mouth frame
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "capsule.portrait",
                 initialPosition: .third(.third),
                 fontWeight: .ultraLight,
@@ -201,7 +201,7 @@ struct CrayonBoyArtView: View {
             )
             
             // MARK: - 􁹬 Sideburns
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "righttriangle.fill",
                 initialPosition: .third(.fourth),
                 widthRatio: 0.064,

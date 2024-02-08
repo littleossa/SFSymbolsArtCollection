@@ -16,7 +16,7 @@ struct AfroBoyArtView: View {
         ZStack {
             
             // MARK: - 􁝰 Hair
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "tree.fill",
                 initialPosition: .third(.first),
                 widthRatio: 0.9,
@@ -26,7 +26,7 @@ struct AfroBoyArtView: View {
             )
             
             // MARK: - 􀙧 Contour
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "shield.fill",
                 initialPosition: .third(.second),
                 primaryColor: .paleOrange,
@@ -38,7 +38,7 @@ struct AfroBoyArtView: View {
             )
             
             // MARK: - 􀎽 Face
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "faceid",
                 initialPosition: .third(.third),
                 secondaryColor: .paleOrange,
@@ -50,7 +50,7 @@ struct AfroBoyArtView: View {
             )
             
             // MARK: - 􀦉 Comb
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "comb.fill",
                 initialPosition: .third(.fourth),
                 primaryColor: .red,

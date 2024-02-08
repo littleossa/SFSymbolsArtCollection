@@ -48,7 +48,7 @@
 		97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53112B70DEB60034FB5D /* UIDevice+.swift */; };
 		97AD53182B70DFF30034FB5D /* AnimationValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53172B70DFF30034FB5D /* AnimationValues.swift */; };
 		97AD531A2B70E0530034FB5D /* Font.Weight+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53192B70E0530034FB5D /* Font.Weight+.swift */; };
-		97AD53222B70E3FA0034FB5D /* ArtComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53212B70E3FA0034FB5D /* ArtComponentView.swift */; };
+		97AD53222B70E3FA0034FB5D /* AnimatableSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53212B70E3FA0034FB5D /* AnimatableSymbolView.swift */; };
 		97AD53242B70E48F0034FB5D /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53232B70E48F0034FB5D /* PlayButton.swift */; };
 		97AD53292B7100670034FB5D /* ArtWorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53282B7100670034FB5D /* ArtWorkModel.swift */; };
 		97AD532B2B71068B0034FB5D /* AfroBoyArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD532A2B71068B0034FB5D /* AfroBoyArtView.swift */; };
@@ -117,7 +117,7 @@
 		97AD53112B70DEB60034FB5D /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		97AD53172B70DFF30034FB5D /* AnimationValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationValues.swift; sourceTree = "<group>"; };
 		97AD53192B70E0530034FB5D /* Font.Weight+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font.Weight+.swift"; sourceTree = "<group>"; };
-		97AD53212B70E3FA0034FB5D /* ArtComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtComponentView.swift; sourceTree = "<group>"; };
+		97AD53212B70E3FA0034FB5D /* AnimatableSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableSymbolView.swift; sourceTree = "<group>"; };
 		97AD53232B70E48F0034FB5D /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		97AD53282B7100670034FB5D /* ArtWorkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkModel.swift; sourceTree = "<group>"; };
 		97AD532A2B71068B0034FB5D /* AfroBoyArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfroBoyArtView.swift; sourceTree = "<group>"; };
@@ -339,7 +339,7 @@
 		97AD53132B70DF5A0034FB5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				97AD53252B70E4DA0034FB5D /* ArtComponentView */,
+				97AD53252B70E4DA0034FB5D /* AnimatableSymbolView */,
 				97AD53302B71A5130034FB5D /* GalleryGridView.swift */,
 				97AD53232B70E48F0034FB5D /* PlayButton.swift */,
 			);
@@ -376,13 +376,13 @@
 			path = AfroBoy;
 			sourceTree = "<group>";
 		};
-		97AD53252B70E4DA0034FB5D /* ArtComponentView */ = {
+		97AD53252B70E4DA0034FB5D /* AnimatableSymbolView */ = {
 			isa = PBXGroup;
 			children = (
-				97AD53212B70E3FA0034FB5D /* ArtComponentView.swift */,
+				97AD53212B70E3FA0034FB5D /* AnimatableSymbolView.swift */,
 				97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */,
 			);
-			path = ArtComponentView;
+			path = AnimatableSymbolView;
 			sourceTree = "<group>";
 		};
 		97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */ = {
@@ -619,7 +619,7 @@
 				97EF43A52B74F27D003648F5 /* CrayonBoyArtView.swift in Sources */,
 				9748BE352893CB67006DF0BE /* Lion.swift in Sources */,
 				97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */,
-				97AD53222B70E3FA0034FB5D /* ArtComponentView.swift in Sources */,
+				97AD53222B70E3FA0034FB5D /* AnimatableSymbolView.swift in Sources */,
 				97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */,
 				97EF43A12B74CA38003648F5 /* CrayonBoyPreviewView.swift in Sources */,
 				9748BE4A28995877006DF0BE /* DemonWrestlerOutline.swift in Sources */,

@@ -15,7 +15,7 @@ struct ArtWorkView: View {
         
         switch artwork {
         case .crayonBoy:
-            CrayonBoy()
+            EmptyView()
         case .magician:
 EmptyView()
         case .worldPeace:

@@ -1,5 +1,5 @@
 //
-//  ArtComponentView.swift
+//  AnimatableSymbolView.swift
 //  SFSymbolsArtCollection
 //
 //  Created by Lil Ossa
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ArtComponentView: View {
+struct AnimatableSymbolView: View {
     
     init(
         name: String,
@@ -192,7 +192,7 @@ struct ArtComponentView: View {
 }
 
 #Preview {
-    ArtComponentView(
+    AnimatableSymbolView(
         name: "nose",
         initialPosition: .third(.first),
         primaryColor: .red,

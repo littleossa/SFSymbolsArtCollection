@@ -64,7 +64,7 @@ struct ImWearingPantsArtView: View {
         ZStack {
             
             // MARK: - Current pose
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: currentPose.rawValue,
                 initialPosition: .third(.second),
                 primaryColor: .yellow,
@@ -77,7 +77,7 @@ struct ImWearingPantsArtView: View {
             .offset(x: model.calculatingProportionalValue(withRatio: currentPose.offsetXRatio))
             
             // MARK: - 􁉨 Pants
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "parkingsign.steeringwheel",
                 initialPosition: .third(.first),
                 primaryColor: .palePink,
@@ -323,7 +323,7 @@ struct ImWearingPantsArtView: View {
             }
             
             // MARK: - 􀑪 Music
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "music.note",
                 initialPosition: .second(.first),
                 widthRatio: 0.1,
@@ -336,7 +336,7 @@ struct ImWearingPantsArtView: View {
             .symbolEffect(.bounce, value: musicCount)
             
             // MARK: - 􀫀 Music 3
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "music.quarternote.3",
                 initialPosition: .second(.second),
                 widthRatio: 0.2,
@@ -349,7 +349,7 @@ struct ImWearingPantsArtView: View {
             .symbolEffect(.bounce, value: musicCount)
             
             // MARK: - 􀀁 Face background
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "circle.fill",
                 initialPosition: .second(.third),
                 primaryColor: .systemBackground,
@@ -361,7 +361,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀧷 Contour
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "capsule.portrait.fill",
                 initialPosition: .second(.fourth),
                 primaryColor: .yellow,
@@ -374,7 +374,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀧷 Contour bottom
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "capsule.portrait.fill",
                 initialPosition: .second(.fourth),
                 primaryColor: .yellow,
@@ -386,7 +386,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀨯 nose
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "nose",
                 initialPosition: .second(.fifth),
                 fontWeight: .ultraLight,
@@ -398,7 +398,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀦭 Right eyebrow
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "eyebrow",
                 initialPosition: .second(.sixth),
                 fontWeight: .ultraLight,
@@ -411,7 +411,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀦭 Left eyebrow
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "eyebrow",
                 initialPosition: .second(.sixth),
                 fontWeight: .ultraLight,
@@ -425,7 +425,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀧷 Concealing part for eyebrow
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "capsule.portrait.fill",
                 initialPosition: .second(.fourth),
                 primaryColor: .yellow,
@@ -438,7 +438,7 @@ struct ImWearingPantsArtView: View {
                 symbolCountToWaitFor: 2
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "capsule.portrait.fill",
                 initialPosition: .second(.fourth),
                 primaryColor: .yellow,
@@ -452,7 +452,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀋭 Right eye
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "eye",
                 initialPosition: .second(.seventh),
                 fontWeight: .ultraLight,
@@ -465,7 +465,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀋭 Left eye
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "eye",
                 initialPosition: .second(.seventh),
                 fontWeight: .ultraLight,
@@ -478,7 +478,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀋮 Right eye.fill
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "eye.fill",
                 initialPosition: .third(.seventh),
                 primaryColor: .white,
@@ -491,7 +491,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀋮 Left eye.fill
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "eye.fill",
                 initialPosition: .third(.seventh),
                 primaryColor: .white,
@@ -504,7 +504,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀦪 Mouth
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "mouth.fill",
                 initialPosition: .third(.third),
                 primaryColor: .red,
@@ -515,7 +515,7 @@ struct ImWearingPantsArtView: View {
                 symbolCountToWaitFor: 6
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "mouth.fill",
                 initialPosition: .third(.third),
                 primaryColor: .red,
@@ -527,7 +527,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􁒀 Teeth
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "window.casement.closed",
                 initialSecondaryColor: .clear,
                 initialPosition: .third(.fourth),
@@ -542,7 +542,7 @@ struct ImWearingPantsArtView: View {
                 symbolCountToWaitFor: 7
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "window.casement.closed",
                 initialSecondaryColor: .clear,
                 initialPosition: .third(.fourth),
@@ -558,7 +558,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀲟 Hair
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "oval.fill",
                 initialPosition: .third(.fifth),
                 fontWeight: .ultraLight,
@@ -571,7 +571,7 @@ struct ImWearingPantsArtView: View {
             )
             
             // MARK: - 􀠒 Hair
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "drop.fill",
                 initialPosition: .third(.sixth),
                 fontWeight: .ultraLight,
@@ -584,7 +584,7 @@ struct ImWearingPantsArtView: View {
                 symbolCountToWaitFor: 9
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "drop.fill",
                 initialPosition: .third(.sixth),
                 fontWeight: .ultraLight,

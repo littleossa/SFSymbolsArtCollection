@@ -16,7 +16,7 @@ struct MagicianArtView: View {
         ZStack {
             
             // MARK: - 􀠒 Outline
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "drop.fill",
                 initialPosition: .second(.first),
                 primaryColor: .paleOrange,
@@ -29,7 +29,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀏄 Hat band
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .second(.second),
                 primaryColor: .red,
@@ -42,7 +42,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀈮 Hat
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "archivebox.fill",
                 initialPosition: .third(.first),
                 widthRatio: 0.525,
@@ -54,7 +54,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀏄 Hat brim
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "rectangle.fill",
                 initialPosition: .second(.second),
                 widthRatio: 0.625,
@@ -65,7 +65,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀆐 Eyebrow
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "chevron.compact.up",
                 initialPosition: .third(.second),
                 fontWeight: .thin,
@@ -77,7 +77,7 @@ struct MagicianArtView: View {
                 symbolCountToWaitFor: 4
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "chevron.compact.up",
                 initialPosition: .third(.second),
                 fontWeight: .thin,
@@ -90,7 +90,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀅽 Sunglasses frame
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "minus",
                 initialPosition: .third(.third),
                 fontWeight: .thin,
@@ -101,7 +101,7 @@ struct MagicianArtView: View {
                 symbolCountToWaitFor: 5
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "minus",
                 initialPosition: .third(.third),
                 fontWeight: .thin,
@@ -113,7 +113,7 @@ struct MagicianArtView: View {
                 symbolCountToWaitFor: 5
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "minus",
                 initialPosition: .third(.third),
                 fontWeight: .thin,
@@ -126,7 +126,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀆼 Sunglasses lens
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "moon.circle.fill",
                 initialPrimaryColor: .white,
                 initialPosition: .third(.fourth),
@@ -139,7 +139,7 @@ struct MagicianArtView: View {
                 symbolCountToWaitFor: 6
             )
             
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "moon.circle.fill",
                 initialPrimaryColor: .white,
                 initialPosition: .third(.fourth),
@@ -153,7 +153,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀇈 Nose
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "cloud.heavyrain",
                 initialPosition: .third(.fifth),
                 fontWeight: .light,
@@ -166,7 +166,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀩻 Inside mouth
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "button.roundedbottom.horizontal.fill",
                 initialPosition: .third(.sixth),
                 primaryColor: .red,
@@ -179,7 +179,7 @@ struct MagicianArtView: View {
             )
             
             // MARK: - 􀝷 Tongue capsule.fill
-            ArtComponentView(
+            AnimatableSymbolView(
                 name: "capsule.fill",
                 initialPosition: .third(.seventh),
                 primaryColor: .orange,

@@ -81,6 +81,7 @@
 		97EF43952B72DA69003648F5 /* ImWearingPantsArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43942B72DA69003648F5 /* ImWearingPantsArtView.swift */; };
 		97EF43982B733337003648F5 /* MagicianArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43972B733337003648F5 /* MagicianArtView.swift */; };
 		97EF439C2B7421A7003648F5 /* MagicianPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */; };
+		97EF439E2B744C4C003648F5 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF439D2B744C4C003648F5 /* Color+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +160,7 @@
 		97EF43942B72DA69003648F5 /* ImWearingPantsArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImWearingPantsArtView.swift; sourceTree = "<group>"; };
 		97EF43972B733337003648F5 /* MagicianArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianArtView.swift; sourceTree = "<group>"; };
 		97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianPreviewView.swift; sourceTree = "<group>"; };
+		97EF439D2B744C4C003648F5 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,6 +493,7 @@
 		97E11E412819727A00B2AB32 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				97EF439D2B744C4C003648F5 /* Color+.swift */,
 				97624C3228C4F43F004E1720 /* GeometryProxy+.swift */,
 				97AD53112B70DEB60034FB5D /* UIDevice+.swift */,
 				97AD53192B70E0530034FB5D /* Font.Weight+.swift */,
@@ -611,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97EF43932B72D3E2003648F5 /* ImWearingPantsPreviewView.swift in Sources */,
+				97EF439E2B744C4C003648F5 /* Color+.swift in Sources */,
 				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
 				9748BE232893B35A006DF0BE /* WorldPeace.swift in Sources */,
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,

@@ -18,79 +18,48 @@ struct AfroBoyArtView: View {
             // MARK: - 􁝰 Hair
             ArtComponentView(
                 name: "tree.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.first)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.first))
-                ),
-                finalValue: .init(
-                    width: model.calculatingProportionalValue(withRatio: 0.9),
-                    height: model.calculatingProportionalValue(withRatio: 0.9)
-                ),
+                initialPosition: .third(.first),
+                widthRatio: 0.9,
+                heightRatio: 0.9,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: 0.001
+                symbolCountToWaitFor: 0
             )
             
             // MARK: - 􀙧 Contour
             ArtComponentView(
                 name: "shield.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.second))
-                ),
-                finalValue: .init(
-                    primaryColor: .paleOrange,
-                    width: model.calculatingProportionalValue(withRatio: 0.5),
-                    height: model.calculatingProportionalValue(withRatio: 0.6),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.17)
-                ),
+                initialPosition: .third(.second),
+                primaryColor: .paleOrange,
+                widthRatio: 0.5,
+                heightRatio: 0.6,
+                verticalOffsetRatio: 0.17,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 1)
+                symbolCountToWaitFor: 1
             )
             
             // MARK: - 􀎽 Face
             ArtComponentView(
                 name: "faceid",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    secondaryColor: .paleOrange,
-                    width: model.calculatingProportionalValue(withRatio: 0.3),
-                    height: model.calculatingProportionalValue(withRatio: 0.3),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.16)
-                ),
+                initialPosition: .third(.third),
+                secondaryColor: .paleOrange,
+                widthRatio: 0.3,
+                heightRatio: 0.3,
+                verticalOffsetRatio: 0.16,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 2)
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀦉 Comb
             ArtComponentView(
                 name: "comb.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .red,
-                    width: model.calculatingProportionalValue(withRatio: 0.2),
-                    height: model.calculatingProportionalValue(withRatio: 0.2),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.2),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.2)
-                ),
+                initialPosition: .third(.fourth),
+                primaryColor: .red,
+                widthRatio: 0.2,
+                heightRatio: 0.2,
+                horizontalOffsetRatio: -0.2,
+                verticalOffsetRatio: -0.2,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 3)
+                symbolCountToWaitFor: 3
             )
         }
         .navigationTitle("Afro boy")

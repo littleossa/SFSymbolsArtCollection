@@ -18,290 +18,177 @@ struct MagicianArtView: View {
             // MARK: - 􀠒 Outline
             ArtComponentView(
                 name: "drop.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.first)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.first))
-                ),
-                finalValue: .init(
-                    primaryColor: .paleOrange,
-                    width: model.calculatingProportionalValue(withRatio: 0.5),
-                    height: model.calculatingProportionalValue(withRatio: 0.75),
-                    rotationDegrees: 180,
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.15)
-                ),
+                initialPosition: .second(.first),
+                primaryColor: .paleOrange,
+                widthRatio: 0.5,
+                heightRatio: 0.75,
+                rotationDegrees: 180,
+                verticalOffsetRatio: 0.15,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: 0.001
+                symbolCountToWaitFor: 0
             )
             
             // MARK: - 􀏄 Hat band
             ArtComponentView(
                 name: "rectangle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.second))
-                ),
-                finalValue: .init(
-                    primaryColor: .red,
-                    width: model.calculatingProportionalValue(withRatio: 0.446),
-                    height: model.calculatingProportionalValue(withRatio: 0.1),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.01),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.15)
-                ),
+                initialPosition: .second(.second),
+                primaryColor: .red,
+                widthRatio: 0.446,
+                heightRatio: 0.1,
+                horizontalOffsetRatio: 0.01,
+                verticalOffsetRatio: -0.15,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 1)
+                symbolCountToWaitFor: 1
             )
             
             // MARK: - 􀈮 Hat
             ArtComponentView(
                 name: "archivebox.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.first)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.first))
-                ),
-                finalValue: .init(
-                    width: model.calculatingProportionalValue(withRatio: 0.525),
-                    height: model.calculatingProportionalValue(withRatio: 0.525),
-                    rotationDegrees: 180,
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.25)
-                ),
+                initialPosition: .third(.first),
+                widthRatio: 0.525,
+                heightRatio: 0.525,
+                rotationDegrees: 180,
+                verticalOffsetRatio: -0.25,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 2)
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀏄 Hat brim
             ArtComponentView(
                 name: "rectangle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.second))
-                ),
-                finalValue: .init(
-                    width: model.calculatingProportionalValue(withRatio: 0.625),
-                    height: model.calculatingProportionalValue(withRatio: 0.125),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.05)
-                ),
+                initialPosition: .second(.second),
+                widthRatio: 0.625,
+                heightRatio: 0.125,
+                verticalOffsetRatio: -0.05,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 3)
+                symbolCountToWaitFor: 3
             )
             
             // MARK: - 􀆐 Eyebrow
             ArtComponentView(
                 name: "chevron.compact.up",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.second))
-                ),
-                finalValue: .init(
-                    fontWeight: .thin,
-                    width: model.calculatingProportionalValue(withRatio: 0.1),
-                    height: model.calculatingProportionalValue(withRatio: 0.04),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.1),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.03)
-                ),
+                initialPosition: .third(.second),
+                fontWeight: .thin,
+                widthRatio: 0.1,
+                heightRatio: 0.04,
+                horizontalOffsetRatio: 0.1,
+                verticalOffsetRatio: 0.03,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 4)
+                symbolCountToWaitFor: 4
             )
             
             ArtComponentView(
                 name: "chevron.compact.up",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.second))
-                ),
-                finalValue: .init(
-                    fontWeight: .thin,
-                    width: model.calculatingProportionalValue(withRatio: 0.1),
-                    height: model.calculatingProportionalValue(withRatio: 0.04),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.1),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.03)
-                ),
+                initialPosition: .third(.second),
+                fontWeight: .thin,
+                widthRatio: 0.1,
+                heightRatio: 0.04,
+                horizontalOffsetRatio: -0.1,
+                verticalOffsetRatio: 0.03,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 4)
+                symbolCountToWaitFor: 4
             )
             
             // MARK: - 􀅽 Sunglasses frame
             ArtComponentView(
                 name: "minus",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    fontWeight: .thin,
-                    width: model.calculatingProportionalValue(withRatio: 0.06),
-                    height: model.calculatingProportionalValue(withRatio: 0.0125),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.12)
-                ),
+                initialPosition: .third(.third),
+                fontWeight: .thin,
+                widthRatio: 0.06,
+                heightRatio: 0.0125,
+                verticalOffsetRatio: 0.12,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 5)
+                symbolCountToWaitFor: 5
             )
             
             ArtComponentView(
                 name: "minus",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    fontWeight: .thin,
-                    width: model.calculatingProportionalValue(withRatio: 0.06),
-                    height: model.calculatingProportionalValue(withRatio: 0.0125),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.2),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.12)
-                ),
+                initialPosition: .third(.third),
+                fontWeight: .thin,
+                widthRatio: 0.06,
+                heightRatio: 0.0125,
+                horizontalOffsetRatio: 0.2,
+                verticalOffsetRatio: 0.12,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 5)
+                symbolCountToWaitFor: 5
             )
             
             ArtComponentView(
                 name: "minus",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    fontWeight: .thin,
-                    width: model.calculatingProportionalValue(withRatio: 0.04),
-                    height: model.calculatingProportionalValue(withRatio: 0.0125),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.2),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.12)
-                ),
+                initialPosition: .third(.third),
+                fontWeight: .thin,
+                widthRatio: 0.04,
+                heightRatio: 0.0125,
+                horizontalOffsetRatio: -0.2,
+                verticalOffsetRatio: 0.12,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 5)
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀆼 Sunglasses lens
             ArtComponentView(
                 name: "moon.circle.fill",
-                initialValue: .init(
-                    primaryColor: .white,
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.fourth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .white,
-                    width: model.calculatingProportionalValue(withRatio: 0.125),
-                    height: model.calculatingProportionalValue(withRatio: 0.125),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.1),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.12)
-                ),
+                initialPrimaryColor: .white,
+                initialPosition: .third(.fourth),
+                primaryColor: .white,
+                widthRatio: 0.125,
+                heightRatio: 0.125,
+                horizontalOffsetRatio: 0.1,
+                verticalOffsetRatio: 0.12,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 6)
+                symbolCountToWaitFor: 6
             )
             
             ArtComponentView(
                 name: "moon.circle.fill",
-                initialValue: .init(
-                    primaryColor: .white,
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.fourth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .white,
-                    secondaryColor: .black,
-                    width: model.calculatingProportionalValue(withRatio: 0.125),
-                    height: model.calculatingProportionalValue(withRatio: 0.125),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.1),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.12)
-                ),
+                initialPrimaryColor: .white,
+                initialPosition: .third(.fourth),
+                primaryColor: .white,
+                widthRatio: 0.125,
+                heightRatio: 0.125,
+                horizontalOffsetRatio: -0.1,
+                verticalOffsetRatio: 0.12,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 6)
+                symbolCountToWaitFor: 6
             )
             
             // MARK: - 􀇈 Nose
             ArtComponentView(
                 name: "cloud.heavyrain",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.fifth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fifth))
-                ),
-                finalValue: .init(
-                    fontWeight: .light,
-                    width: model.calculatingProportionalValue(withRatio: 0.15),
-                    height: model.calculatingProportionalValue(withRatio: 0.15),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.01),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.27)
-                ),
+                initialPosition: .third(.fifth),
+                fontWeight: .light,
+                widthRatio: 0.15,
+                heightRatio: 0.15,
+                horizontalOffsetRatio: 0.01,
+                verticalOffsetRatio: 0.27,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 7)
+                symbolCountToWaitFor: 7
             )
             
             // MARK: - 􀩻 Inside mouth
             ArtComponentView(
                 name: "button.roundedbottom.horizontal.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.sixth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.sixth))
-                ),
-                finalValue: .init(
-                    primaryColor: .red,
-                    width: model.calculatingProportionalValue(withRatio: 0.15),
-                    height: model.calculatingProportionalValue(withRatio: 0.075),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.01),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.4)
-                ),
+                initialPosition: .third(.sixth),
+                primaryColor: .red,
+                widthRatio: 0.15,
+                heightRatio: 0.075,
+                horizontalOffsetRatio: 0.01,
+                verticalOffsetRatio: 0.4,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 8)
+                symbolCountToWaitFor: 8
             )
             
             // MARK: - 􀝷 Tongue capsule.fill
             ArtComponentView(
                 name: "capsule.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.seventh)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.seventh))
-                ),
-                finalValue: .init(
-                    primaryColor: .orange,
-                    width: model.calculatingProportionalValue(withRatio: 0.145),
-                    height: model.calculatingProportionalValue(withRatio: 0.025),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.01),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.424)
-                ),
+                initialPosition: .third(.seventh),
+                primaryColor: .orange,
+                widthRatio: 0.145,
+                heightRatio: 0.025,
+                horizontalOffsetRatio: 0.01,
+                verticalOffsetRatio: 0.424,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 9)
+                symbolCountToWaitFor: 9
             )
         }
         .navigationTitle("Magician")

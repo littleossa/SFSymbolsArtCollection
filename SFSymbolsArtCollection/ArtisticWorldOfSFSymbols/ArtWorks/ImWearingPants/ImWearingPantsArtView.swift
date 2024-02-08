@@ -66,20 +66,12 @@ struct ImWearingPantsArtView: View {
             // MARK: - Current pose
             ArtComponentView(
                 name: currentPose.rawValue,
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.second))
-                ),
-                finalValue: .init(
-                    primaryColor: .yellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.6),
-                    height: model.calculatingProportionalValue(withRatio: 1)
-                ),
+                initialPosition: .third(.second),
+                primaryColor: .yellow,
+                widthRatio: 0.6,
+                heightRatio: 1,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 10)
+                symbolCountToWaitFor: 10
             )
             .contentTransition(isChangingPose ? .symbolEffect(.replace) : .identity)
             .offset(x: model.calculatingProportionalValue(withRatio: currentPose.offsetXRatio))
@@ -87,23 +79,15 @@ struct ImWearingPantsArtView: View {
             // MARK: - 􁉨 Pants
             ArtComponentView(
                 name: "parkingsign.steeringwheel",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.first)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.first))
-                ),
-                finalValue: .init(
-                    primaryColor: .palePink,
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.35),
-                    height: model.calculatingProportionalValue(withRatio: 0.2),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.07),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.03)
-                ),
+                initialPosition: .third(.first),
+                primaryColor: .palePink,
+                fontWeight: .ultraLight,
+                widthRatio: 0.35,
+                heightRatio: 0.2,
+                horizontalOffsetRatio: -0.07,
+                verticalOffsetRatio: 0.03,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 16)
+                symbolCountToWaitFor: 16
             )
             .zIndex(0.1)
             
@@ -341,444 +325,277 @@ struct ImWearingPantsArtView: View {
             // MARK: - 􀑪 Music
             ArtComponentView(
                 name: "music.note",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.first)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.first))
-                ),
-                finalValue: .init(
-                    width: model.calculatingProportionalValue(withRatio: 0.1),
-                    height: model.calculatingProportionalValue(withRatio: 0.15),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.35),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.5)
-                ),
+                initialPosition: .second(.first),
+                widthRatio: 0.1,
+                heightRatio: 0.15,
+                horizontalOffsetRatio: 0.35,
+                verticalOffsetRatio: -0.5,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: 0.001
+                symbolCountToWaitFor: 0
             )
             .symbolEffect(.bounce, value: musicCount)
             
             // MARK: - 􀫀 Music 3
             ArtComponentView(
                 name: "music.quarternote.3",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.second))
-                ),
-                finalValue: .init(
-                    width: model.calculatingProportionalValue(withRatio: 0.2),
-                    height: model.calculatingProportionalValue(withRatio: 0.15),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.34),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.38)
-                ),
+                initialPosition: .second(.second),
+                widthRatio: 0.2,
+                heightRatio: 0.15,
+                horizontalOffsetRatio: -0.34,
+                verticalOffsetRatio: -0.38,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 1)
+                symbolCountToWaitFor: 1
             )
             .symbolEffect(.bounce, value: musicCount)
             
             // MARK: - 􀀁 Face background
             ArtComponentView(
                 name: "circle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.third))
-                ),
-                finalValue: .init(
-                    primaryColor: Color(uiColor: .systemBackground),
-                    width: model.calculatingProportionalValue(withRatio: 0.2),
-                    height: model.calculatingProportionalValue(withRatio: 0.2),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.4)
-                ),
+                initialPosition: .second(.third),
+                primaryColor: .systemBackground,
+                widthRatio: 0.2,
+                heightRatio: 0.2,
+                verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 2)
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀧷 Contour
             ArtComponentView(
                 name: "capsule.portrait.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .yellow,
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.16),
-                    height: model.calculatingProportionalValue(withRatio: 0.22),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.4)
-                ),
+                initialPosition: .second(.fourth),
+                primaryColor: .yellow,
+                fontWeight: .ultraLight,
+                widthRatio: 0.16,
+                heightRatio: 0.22,
+                verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 2)
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀧷 Contour bottom
             ArtComponentView(
                 name: "capsule.portrait.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .yellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.1),
-                    height: model.calculatingProportionalValue(withRatio: 0.16),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.35)
-                ),
+                initialPosition: .second(.fourth),
+                primaryColor: .yellow,
+                widthRatio: 0.1,
+                heightRatio: 0.16,
+                verticalOffsetRatio: -0.35,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 3)
+                symbolCountToWaitFor: 3
             )
             
             // MARK: - 􀨯 nose
             ArtComponentView(
                 name: "nose",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.fifth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fifth))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.045),
-                    height: model.calculatingProportionalValue(withRatio: 0.06),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.38)
-                ),
+                initialPosition: .second(.fifth),
+                fontWeight: .ultraLight,
+                widthRatio: 0.045,
+                heightRatio: 0.06,
+                verticalOffsetRatio: -0.38,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 4)
+                symbolCountToWaitFor: 4
             )
             
             // MARK: - 􀦭 Right eyebrow
             ArtComponentView(
                 name: "eyebrow",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.sixth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.sixth))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.04),
-                    height: model.calculatingProportionalValue(withRatio: 0.04),
-                    rotationDegrees: 10,
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.03),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.41)
-                ),
+                initialPosition: .second(.sixth),
+                fontWeight: .ultraLight,
+                widthRatio: 0.04,
+                heightRatio: 0.04,
+                horizontalOffsetRatio: 0.03,
+                verticalOffsetRatio: -0.41,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 5)
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀦭 Left eyebrow
             ArtComponentView(
                 name: "eyebrow",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.sixth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.sixth))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.045),
-                    height: model.calculatingProportionalValue(withRatio: 0.04),
-                    rotationDegrees: 180,
-                    rotationAxis: (x: 0, y: 1, z: 0),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.03),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.408)
-                ),
+                initialPosition: .second(.sixth),
+                fontWeight: .ultraLight,
+                widthRatio: 0.045,
+                heightRatio: 0.04,
+                rotationDegrees: 180,
+                rotationAxis: (x: 0, y: 1, z: 0),
+                horizontalOffsetRatio: -0.03,
+                verticalOffsetRatio: -0.408,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 5)
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀧷 Concealing part for eyebrow
             ArtComponentView(
                 name: "capsule.portrait.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.fourth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .yellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.05),
-                    height: model.calculatingProportionalValue(withRatio: 0.02),
-                    rotationDegrees: -10,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.035),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.396)
-                ),
+                initialPosition: .second(.fourth),
+                primaryColor: .yellow,
+                widthRatio: 0.05,
+                heightRatio: 0.02,
+                rotationDegrees: -10,
+                horizontalOffsetRatio: -0.035,
+                verticalOffsetRatio: -0.396,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 5)
+                symbolCountToWaitFor: 5
             )
             
             ArtComponentView(
                 name: "capsule.portrait.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.fourth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .yellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.05),
-                    height: model.calculatingProportionalValue(withRatio: 0.02),
-                    rotationDegrees: 10,
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.035),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.396)
-                ),
+                initialPosition: .second(.fourth),
+                primaryColor: .yellow,
+                widthRatio: 0.05,
+                heightRatio: 0.02,
+                rotationDegrees: 10,
+                horizontalOffsetRatio: 0.035,
+                verticalOffsetRatio: -0.396,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 5)
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀋭 Right eye
             ArtComponentView(
                 name: "eye",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.seventh)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.seventh))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.04),
-                    height: model.calculatingProportionalValue(withRatio: 0.02),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.03),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.4)
-                ),
+                initialPosition: .second(.seventh),
+                fontWeight: .ultraLight,
+                widthRatio: 0.04,
+                heightRatio: 0.02,
+                horizontalOffsetRatio: 0.03,
+                verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 6)
+                symbolCountToWaitFor: 6
             )
             
             // MARK: - 􀋭 Left eye
             ArtComponentView(
                 name: "eye",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .second(.seventh)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .second(.seventh))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.04),
-                    height: model.calculatingProportionalValue(withRatio: 0.02),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.03),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.4)
-                ),
+                initialPosition: .second(.seventh),
+                fontWeight: .ultraLight,
+                widthRatio: 0.04,
+                heightRatio: 0.02,
+                horizontalOffsetRatio: -0.03,
+                verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 6)
+                symbolCountToWaitFor: 6
             )
             
             // MARK: - 􀋮 Right eye.fill
             ArtComponentView(
                 name: "eye.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.seventh)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.seventh))
-                ),
-                finalValue: .init(
-                    primaryColor: .white,
-                    width: model.calculatingProportionalValue(withRatio: 0.04),
-                    height: model.calculatingProportionalValue(withRatio: 0.02),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.03),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.4)
-                ),
+                initialPosition: .third(.seventh),
+                primaryColor: .white,
+                widthRatio: 0.04,
+                heightRatio: 0.02,
+                horizontalOffsetRatio: 0.03,
+                verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 6)
+                symbolCountToWaitFor: 6
             )
             
             // MARK: - 􀋮 Left eye.fill
             ArtComponentView(
                 name: "eye.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.seventh)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.seventh))
-                ),
-                finalValue: .init(
-                    primaryColor: .white,
-                    width: model.calculatingProportionalValue(withRatio: 0.04),
-                    height: model.calculatingProportionalValue(withRatio: 0.02),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.03),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.4)
-                ),
+                initialPosition: .third(.seventh),
+                primaryColor: .white,
+                widthRatio: 0.04,
+                heightRatio: 0.02,
+                horizontalOffsetRatio: -0.03,
+                verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 6)
+                symbolCountToWaitFor: 6
             )
             
             // MARK: - 􀦪 Mouth
             ArtComponentView(
                 name: "mouth.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    primaryColor: .red,
-                    width: model.calculatingProportionalValue(withRatio: 0.06),
-                    height: model.calculatingProportionalValue(withRatio: 0.02),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.32)
-                ),
+                initialPosition: .third(.third),
+                primaryColor: .red,
+                widthRatio: 0.06,
+                heightRatio: 0.02,
+                verticalOffsetRatio: -0.32,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 7)
+                symbolCountToWaitFor: 7
             )
             
             ArtComponentView(
                 name: "mouth.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    primaryColor: .red,
-                    width: model.calculatingProportionalValue(withRatio: 0.06),
-                    height: model.calculatingProportionalValue(withRatio: 0.02),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.33)
-                ),
+                initialPosition: .third(.third),
+                primaryColor: .red,
+                widthRatio: 0.06,
+                heightRatio: 0.02,
+                verticalOffsetRatio: -0.33,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 7)
+                symbolCountToWaitFor: 7
             )
             
             // MARK: - 􁒀 Teeth
             ArtComponentView(
                 name: "window.casement.closed",
-                initialValue: .init(
-                    secondaryColor: .clear,
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .black,
-                    secondaryColor: .white,
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.015),
-                    height: model.calculatingProportionalValue(withRatio: 0.029),
-                    rotationDegrees: 90,
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.013),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.328)
-                ),
+                initialSecondaryColor: .clear,
+                initialPosition: .third(.fourth),
+                secondaryColor: .white,
+                fontWeight: .ultraLight,
+                widthRatio: 0.015,
+                heightRatio: 0.029,
+                rotationDegrees: 90,
+                horizontalOffsetRatio: 0.013,
+                verticalOffsetRatio: -0.328,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 8)
+                symbolCountToWaitFor: 8
             )
             
             ArtComponentView(
                 name: "window.casement.closed",
-                initialValue: .init(
-                    secondaryColor: .clear,
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
-                ),
-                finalValue: .init(
-                    primaryColor: .black,
-                    secondaryColor: .white,
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.015),
-                    height: model.calculatingProportionalValue(withRatio: 0.029),
-                    rotationDegrees: 90,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.014),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.328)
-                ),
+                initialSecondaryColor: .clear,
+                initialPosition: .third(.fourth),
+                secondaryColor: .white,
+                fontWeight: .ultraLight,
+                widthRatio: 0.015,
+                heightRatio: 0.029,
+                rotationDegrees: 90,
+                horizontalOffsetRatio: -0.014,
+                verticalOffsetRatio: -0.328,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 8)
+                symbolCountToWaitFor: 8
             )
             
             // MARK: - 􀲟 Hair
             ArtComponentView(
                 name: "oval.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.fifth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fifth))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.14),
-                    height: model.calculatingProportionalValue(withRatio: 0.057),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.001),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.49)
-                ),
+                initialPosition: .third(.fifth),
+                fontWeight: .ultraLight,
+                widthRatio: 0.14,
+                heightRatio: 0.057,
+                horizontalOffsetRatio: -0.001,
+                verticalOffsetRatio: -0.49,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 9)
+                symbolCountToWaitFor: 9
             )
             
             // MARK: - 􀠒 Hair
             ArtComponentView(
                 name: "drop.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.sixth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.sixth))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.05),
-                    height: model.calculatingProportionalValue(withRatio: 0.06),
-                    rotationDegrees: -65,
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.04),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.48)
-                ),
+                initialPosition: .third(.sixth),
+                fontWeight: .ultraLight,
+                widthRatio: 0.05,
+                heightRatio: 0.06,
+                rotationDegrees: -65,
+                horizontalOffsetRatio: 0.04,
+                verticalOffsetRatio: -0.48,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 9)
+                symbolCountToWaitFor: 9
             )
             
             ArtComponentView(
                 name: "drop.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.sixth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.sixth))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.05),
-                    height: model.calculatingProportionalValue(withRatio: 0.1),
-                    rotationDegrees: 95,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.03),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.47)
-                ),
+                initialPosition: .third(.sixth),
+                fontWeight: .ultraLight,
+                widthRatio: 0.05,
+                heightRatio: 0.1,
+                rotationDegrees: 95,
+                horizontalOffsetRatio: -0.03,
+                verticalOffsetRatio: -0.47,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 9)
+                symbolCountToWaitFor: 9
             )
         }
         .navigationTitle("I'm wearing pants")

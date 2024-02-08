@@ -20,43 +20,26 @@ struct NosebleedArtView: View {
             // MARK: - 􀀁 Contour
             ArtComponentView(
                 name: "circle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.first)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.first))
-                ),
-                finalValue: .init(
-                    primaryColor: .awesomeYellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.65),
-                    height: model.calculatingProportionalValue(withRatio: 0.65)
-                ),
+                initialPosition: .third(.first),
+                primaryColor: .awesomeYellow,
+                widthRatio: 0.65,
+                heightRatio: 0.65,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: 0.001
+                symbolCountToWaitFor: 0
             )
             
             // MARK: - 􀭧 Nosebleed bottom
             ArtComponentView(
                 name: "cellularbars",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.second))
-                ),
-                finalValue: .init(
-                    primaryColor: .red,
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.2),
-                    height: model.calculatingProportionalValue(withRatio: 0.5),
-                    rotationDegrees: 180,
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.09),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.074)
-                ),
+                initialPosition: .third(.second),
+                primaryColor: .red,
+                widthRatio: 0.2,
+                heightRatio: 0.5,
+                rotationDegrees: 180,
+                horizontalOffsetRatio: 0.09,
+                verticalOffsetRatio: 0.074,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 1)
+                symbolCountToWaitFor: 1
             )
             .symbolEffect(.variableColor.hideInactiveLayers,
                           options: .speed(0.6).repeating,
@@ -65,87 +48,55 @@ struct NosebleedArtView: View {
             // MARK: - 􀏄 Concealing part for nosebleed bottom
             ArtComponentView(
                 name: "rectangle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    primaryColor: .awesomeYellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.1),
-                    height: model.calculatingProportionalValue(withRatio: 0.14),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.09),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.15)
-                ),
+                initialPosition: .third(.third),
+                primaryColor: .awesomeYellow,
+                widthRatio: 0.1,
+                heightRatio: 0.14,
+                horizontalOffsetRatio: 0.09,
+                verticalOffsetRatio: 0.15,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 2)
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀓩 Mouth
             ArtComponentView(
                 name: "lasso",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fourth))
-                ),
-                finalValue: .init(
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.4),
-                    height: model.calculatingProportionalValue(withRatio: 0.3),
-                    rotationDegrees: 170,
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.01),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.05)
-                ),
+                initialPosition: .third(.fourth),
+                fontWeight: .ultraLight,
+                widthRatio: 0.4,
+                heightRatio: 0.3,
+                rotationDegrees: 170,
+                horizontalOffsetRatio: 0.01,
+                verticalOffsetRatio: 0.05,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 3)
+                symbolCountToWaitFor: 3
             )
                         
             // MARK: - 􀏄 Concealing part for Mouth
             ArtComponentView(
                 name: "rectangle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    primaryColor: .awesomeYellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.5),
-                    height: model.calculatingProportionalValue(withRatio: 0.3),
-                    rotationDegrees: 176,
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.03)
-                ),
+                initialPosition: .third(.third),
+                primaryColor: .awesomeYellow,
+                widthRatio: 0.5,
+                heightRatio: 0.3,
+                rotationDegrees: 176,
+                verticalOffsetRatio: -0.03,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 4)
+                symbolCountToWaitFor: 4
             )
             
             // MARK: - 􀭧 Nosebleed top
             ArtComponentView(
                 name: "cellularbars",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.second)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.second))
-                ),
-                finalValue: .init(
-                    primaryColor: .red,
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.2),
-                    height: model.calculatingProportionalValue(withRatio: 0.12),
-                    rotationDegrees: 180,
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.033),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.096)
-                ),
+                initialPosition: .third(.second),
+                primaryColor: .red,
+                widthRatio: 0.2,
+                heightRatio: 0.12,
+                rotationDegrees: 180,
+                horizontalOffsetRatio: 0.035,
+                verticalOffsetRatio: 0.097,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 5)
+                symbolCountToWaitFor: 5
             )
             .symbolEffect(.variableColor.hideInactiveLayers,
                           options: .speed(0.6).repeating,
@@ -154,172 +105,108 @@ struct NosebleedArtView: View {
             // MARK: - 􀏄 Concealing part for nosebleed top right
             ArtComponentView(
                 name: "rectangle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    primaryColor: .awesomeYellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.1),
-                    height: model.calculatingProportionalValue(withRatio: 0.1),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.09),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.06)
-                ),
+                initialPosition: .third(.third),
+                primaryColor: .awesomeYellow,
+                widthRatio: 0.1,
+                heightRatio: 0.1,
+                horizontalOffsetRatio: 0.09,
+                verticalOffsetRatio: 0.06,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 6)
+                symbolCountToWaitFor: 6
             )
             
             // MARK: - 􀏄 Concealing part for nosebleed top left
             ArtComponentView(
                 name: "rectangle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    primaryColor: .awesomeYellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.03),
-                    height: model.calculatingProportionalValue(withRatio: 0.14),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.053),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.09)
-                ),
+                initialPosition: .third(.third),
+                primaryColor: .awesomeYellow,
+                widthRatio: 0.04,
+                heightRatio: 0.14,
+                horizontalOffsetRatio: -0.047,
+                verticalOffsetRatio: 0.09,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 6)
+                symbolCountToWaitFor: 6
             )
             
             // MARK: - 􀀁 Right eye
             ArtComponentView(
                 name: "circle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.first)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.first))
-                ),
-                finalValue: .init(
-                    width: model.calculatingProportionalValue(withRatio: 0.06),
-                    height: model.calculatingProportionalValue(withRatio: 0.06),
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.117),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.176)
-                ),
+                initialPosition: .third(.first),
+                widthRatio: 0.06,
+                heightRatio: 0.06,
+                horizontalOffsetRatio: 0.117,
+                verticalOffsetRatio: -0.176,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 7)
+                symbolCountToWaitFor: 7
             )
             
             // MARK: - 􀀁 Left eye
             ArtComponentView(
                 name: "circle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.first)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.first))
-                ),
-                finalValue: .init(
-                    width: model.calculatingProportionalValue(withRatio: 0.06),
-                    height: model.calculatingProportionalValue(withRatio: 0.06),
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.113),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.17)
-                ),
+                initialPosition: .third(.first),
+                widthRatio: 0.06,
+                heightRatio: 0.06,
+                horizontalOffsetRatio: -0.113,
+                verticalOffsetRatio: -0.17,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 7)
+                symbolCountToWaitFor: 7
             )
             
             // MARK: - 􀥨 Tissue
             ArtComponentView(
                 name: "doc.plaintext.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.fifth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.fifth))
-                ),
-                finalValue: .init(
-                    primaryColor: .white,
-                    fontWeight: .ultraLight,
-                    width: model.calculatingProportionalValue(withRatio: 0.04),
-                    height: model.calculatingProportionalValue(withRatio: 0.08),
-                    rotationDegrees: 188,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.052),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.083)
-                ),
+                initialPosition: .third(.fifth),
+                primaryColor: .white,
+                fontWeight: .ultraLight,
+                widthRatio: 0.04,
+                heightRatio: 0.08,
+                rotationDegrees: 188,
+                horizontalOffsetRatio: -0.052,
+                verticalOffsetRatio: 0.083,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 8)
+                symbolCountToWaitFor: 8
             )
             
             // MARK: - 􀉆 Tissue frame
             ArtComponentView(
                 name: "doc.plaintext",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.sixth)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.sixth))
-                ),
-                finalValue: .init(
-                    fontWeight: .light,
-                    width: model.calculatingProportionalValue(withRatio: 0.04),
-                    height: model.calculatingProportionalValue(withRatio: 0.08),
-                    rotationDegrees: 188,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.052),
-                    offsetY: model.calculatingProportionalValue(withRatio: 0.083)
-                ),
+                initialPosition: .third(.sixth),
+                fontWeight: .light,
+                widthRatio: 0.04,
+                heightRatio: 0.08,
+                rotationDegrees: 188,
+                horizontalOffsetRatio: -0.052,
+                verticalOffsetRatio: 0.083,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 8)
+                symbolCountToWaitFor: 8
             )
             
             // MARK: - 􀥰 Nose
             ArtComponentView(
                 name: "triangleshape",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.seventh)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.seventh))
-                ),
-                finalValue: .init(
-                    fontWeight: .light,
-                    width: model.calculatingProportionalValue(withRatio: 0.15),
-                    height: model.calculatingProportionalValue(withRatio: 0.14),
-                    rotationDegrees: -4,
-                    offsetX: model.calculatingProportionalValue(withRatio: -0.013),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.02)
-                ),
+                initialPosition: .third(.seventh),
+                fontWeight: .light,
+                widthRatio: 0.15,
+                heightRatio: 0.14,
+                rotationDegrees: -4,
+                horizontalOffsetRatio: -0.013,
+                verticalOffsetRatio: -0.02,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 9)
+                symbolCountToWaitFor: 9
             )
             
             // MARK: - 􀏄 Concealing part for nose
             ArtComponentView(
                 name: "rectangle.fill",
-                initialValue: .init(
-                    width: model.initialSymbolLength,
-                    height: model.initialSymbolLength,
-                    offsetX: model.calculatingInitialOffsetX(forPosition: .third(.third)),
-                    offsetY: model.calculatingInitialOffsetY(forPosition: .third(.third))
-                ),
-                finalValue: .init(
-                    primaryColor: .awesomeYellow,
-                    width: model.calculatingProportionalValue(withRatio: 0.02),
-                    height: model.calculatingProportionalValue(withRatio: 0.13),
-                    rotationDegrees: 148,
-                    offsetX: model.calculatingProportionalValue(withRatio: 0.007),
-                    offsetY: model.calculatingProportionalValue(withRatio: -0.046)
-                ),
+                initialPosition: .third(.third),
+                primaryColor: .awesomeYellow,
+                widthRatio: 0.02,
+                heightRatio: 0.13,
+                rotationDegrees: 148,
+                horizontalOffsetRatio: 0.007,
+                verticalOffsetRatio: -0.046,
                 isAnimating: isAnimating,
-                animationDuration: model.animationDurationPerSymbol,
-                waitingTime: model.waitingTime(forCount: 10)
+                symbolCountToWaitFor: 10
             )
         }
         .navigationTitle("Nosebleed")

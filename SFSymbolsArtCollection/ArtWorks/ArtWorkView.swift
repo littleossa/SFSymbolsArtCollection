@@ -17,9 +17,9 @@ struct ArtWorkView: View {
         case .crayonBoy:
             EmptyView()
         case .magician:
-EmptyView()
+            EmptyView()
         case .worldPeace:
-            WorldPeace()
+            EmptyView()
         case .partyAnimals:
             PartyAnimals()
         case .armHair:

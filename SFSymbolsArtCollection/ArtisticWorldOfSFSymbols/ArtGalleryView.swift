@@ -55,6 +55,13 @@ struct ArtGalleryView: View {
                             }
                             
                             NavigationLink {
+                                WorldPeaceArtView()
+                            } label: {
+                                WorldPeacePreviewView()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
                                 AfroBoyArtView()
                             } label: {
                                 AfroBoyPreviewView()

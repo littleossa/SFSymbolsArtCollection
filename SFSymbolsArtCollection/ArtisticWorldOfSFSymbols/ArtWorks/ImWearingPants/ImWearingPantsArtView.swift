@@ -382,7 +382,7 @@ struct ImWearingPantsArtView: View {
                 heightRatio: 0.16,
                 verticalOffsetRatio: -0.35,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 3
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀨯 nose
@@ -394,7 +394,7 @@ struct ImWearingPantsArtView: View {
                 heightRatio: 0.06,
                 verticalOffsetRatio: -0.38,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 4
+                symbolCountToWaitFor: 3
             )
             
             // MARK: - 􀦭 Right eyebrow
@@ -407,7 +407,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: 0.03,
                 verticalOffsetRatio: -0.41,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 5
+                symbolCountToWaitFor: 4
             )
             
             // MARK: - 􀦭 Left eyebrow
@@ -422,7 +422,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: -0.03,
                 verticalOffsetRatio: -0.408,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 5
+                symbolCountToWaitFor: 4
             )
             
             // MARK: - 􀧷 Concealing part for eyebrow
@@ -436,7 +436,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: -0.035,
                 verticalOffsetRatio: -0.396,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 5
+                symbolCountToWaitFor: 2
             )
             
             ArtComponentView(
@@ -449,7 +449,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: 0.035,
                 verticalOffsetRatio: -0.396,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 5
+                symbolCountToWaitFor: 2
             )
             
             // MARK: - 􀋭 Right eye
@@ -462,7 +462,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: 0.03,
                 verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 6
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀋭 Left eye
@@ -475,7 +475,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: -0.03,
                 verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 6
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀋮 Right eye.fill
@@ -488,7 +488,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: 0.03,
                 verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 6
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀋮 Left eye.fill
@@ -501,7 +501,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: -0.03,
                 verticalOffsetRatio: -0.4,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 6
+                symbolCountToWaitFor: 5
             )
             
             // MARK: - 􀦪 Mouth
@@ -513,7 +513,7 @@ struct ImWearingPantsArtView: View {
                 heightRatio: 0.02,
                 verticalOffsetRatio: -0.32,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 7
+                symbolCountToWaitFor: 6
             )
             
             ArtComponentView(
@@ -524,7 +524,7 @@ struct ImWearingPantsArtView: View {
                 heightRatio: 0.02,
                 verticalOffsetRatio: -0.33,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 7
+                symbolCountToWaitFor: 6
             )
             
             // MARK: - 􁒀 Teeth
@@ -540,7 +540,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: 0.013,
                 verticalOffsetRatio: -0.328,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 8
+                symbolCountToWaitFor: 7
             )
             
             ArtComponentView(
@@ -555,7 +555,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: -0.014,
                 verticalOffsetRatio: -0.328,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 8
+                symbolCountToWaitFor: 7
             )
             
             // MARK: - 􀲟 Hair
@@ -568,7 +568,7 @@ struct ImWearingPantsArtView: View {
                 horizontalOffsetRatio: -0.001,
                 verticalOffsetRatio: -0.49,
                 isAnimating: isAnimating,
-                symbolCountToWaitFor: 9
+                symbolCountToWaitFor: 8
             )
             
             // MARK: - 􀠒 Hair

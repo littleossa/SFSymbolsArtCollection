@@ -11,6 +11,7 @@ import SwiftUI
 extension ArtWorkModel {
     
     enum InitialSymbolRow {
+        case none
         case first(InitialSymbolColumn)
         case second(InitialSymbolColumn)
         case third(InitialSymbolColumn)
@@ -46,6 +47,8 @@ extension ArtWorkModel {
         
         var offsetYRatio: CGFloat {
             switch self {
+            case .none:
+                0
             case .first:
                 0.63
             case .second:

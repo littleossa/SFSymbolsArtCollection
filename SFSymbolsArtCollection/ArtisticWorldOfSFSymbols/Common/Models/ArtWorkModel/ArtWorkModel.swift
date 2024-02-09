@@ -44,6 +44,8 @@ class ArtWorkModel {
     func calculatingInitialOffsetX(forPosition symbolRow: InitialSymbolRow) -> CGFloat {
         let ratio: CGFloat
         switch symbolRow {
+        case .none:
+            ratio = 0
         case let .first(symbolColumn):
             ratio = symbolColumn.offsetXRatio
         case let .second(symbolColumn):

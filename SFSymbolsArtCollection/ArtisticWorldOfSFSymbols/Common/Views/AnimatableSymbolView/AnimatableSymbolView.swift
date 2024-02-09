@@ -23,7 +23,6 @@ struct AnimatableSymbolView: View {
         self.rotationAxis = element.flip.axis
         self.horizontalOffsetRatio = element.horizontalOffsetRatio
         self.verticalOffsetRatio = element.verticalOffsetRatio
-        self.zIndex = element.zIndex
         self.isAnimating = isAnimating
         self.symbolCountToWaitFor = element.symbolCountToWaitFor
     }
@@ -42,7 +41,6 @@ struct AnimatableSymbolView: View {
     var rotationAxis: (x: CGFloat, y: CGFloat, z: CGFloat)
     let horizontalOffsetRatio: CGFloat
     let verticalOffsetRatio: CGFloat
-    let zIndex: CGFloat
     let isAnimating: Bool
     let symbolCountToWaitFor: Int
     
@@ -174,7 +172,6 @@ struct AnimatableSymbolView: View {
                     CubicKeyframe(0, duration: model.animationDurationPerSymbol * 0.2)
                 }
             }
-            .zIndex(zIndex)
     }
 }
 

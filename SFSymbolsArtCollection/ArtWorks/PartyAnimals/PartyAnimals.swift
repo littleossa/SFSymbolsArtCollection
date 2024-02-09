@@ -70,5 +70,6 @@ struct PartyAnimals: View {
 struct PartyAnimals_Previews: PreviewProvider {
     static var previews: some View {
         PartyAnimals()
+            .scaleEffect(0.7)
     }
 }

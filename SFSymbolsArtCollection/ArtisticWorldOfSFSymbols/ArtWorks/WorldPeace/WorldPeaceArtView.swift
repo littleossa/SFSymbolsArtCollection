@@ -17,7 +17,7 @@ struct WorldPeaceArtView: View {
         ZStack {
             
             // MARK: - Characters black shadow
-            ForEach(WorldPeaceArtView.CharacterPosition.allCases) {
+            ForEach(CharacterPosition.allCases) {
                 
                 AnimatableSymbolView(
                     name: "\($0.value.character).circle",

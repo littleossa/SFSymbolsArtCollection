@@ -60,10 +60,15 @@ class ArtWorkModel {
         return calculatingProportionalValue(withRatio: symbolRow.offsetYRatio)
     }
     
-    /// The value calculated from baseLength using the given ratio.
-    func calculatingProportionalValue(withRatio ratio: CGFloat, forPreview isForPreview: Bool = false) -> CGFloat {
+    /// Calculates and returns the proportional value based on the provided ratio.
+    ///
+    /// - Parameters:
+    ///   - ratio: The ratio used for calculation.
+    ///   - shouldResizeForCoverImage: A Boolean value indicating whether the value should be adjusted for cover images. Default is false.
+    /// - Returns: The calculated proportional value.
+    func calculatingProportionalValue(withRatio ratio: CGFloat, shouldResizeForCoverImage: Bool = false) -> CGFloat {
         
-        if isForPreview {
+        if shouldResizeForCoverImage {
             return (galleryColumnLength - galleryColumnSpacing) * ratio
         }
         return baseLength * ratio

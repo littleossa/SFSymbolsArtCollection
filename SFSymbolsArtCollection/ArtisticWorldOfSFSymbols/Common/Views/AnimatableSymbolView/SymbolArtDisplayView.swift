@@ -26,11 +26,11 @@ struct SymbolArtDisplayView: View {
             .frame(
                 width: model.calculatingProportionalValue(
                     withRatio: element.widthRatio,
-                    forPreview: shouldResizeForCoverImage
+                    shouldResizeForCoverImage: shouldResizeForCoverImage
                 ),
                 height: model.calculatingProportionalValue(
                     withRatio: element.heightRatio,
-                    forPreview: shouldResizeForCoverImage
+                    shouldResizeForCoverImage: shouldResizeForCoverImage
                 )
             )
             .rotationEffect(.degrees(element.rotationDegrees))
@@ -38,11 +38,11 @@ struct SymbolArtDisplayView: View {
             .offset(
                 x: model.calculatingProportionalValue(
                     withRatio: element.horizontalOffsetRatio,
-                    forPreview: shouldResizeForCoverImage
+                    shouldResizeForCoverImage: shouldResizeForCoverImage
                 ),
                 y: model.calculatingProportionalValue(
                     withRatio: element.verticalOffsetRatio,
-                    forPreview: shouldResizeForCoverImage
+                    shouldResizeForCoverImage: shouldResizeForCoverImage
                 )
             )
             .zIndex(element.zIndex)

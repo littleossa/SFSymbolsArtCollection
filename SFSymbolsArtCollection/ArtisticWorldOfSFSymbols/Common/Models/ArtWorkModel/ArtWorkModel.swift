@@ -64,11 +64,11 @@ class ArtWorkModel {
     ///
     /// - Parameters:
     ///   - ratio: The ratio used for calculation.
-    ///   - shouldResizeForCoverImage: A Boolean value indicating whether the value should be adjusted for cover images. Default is false.
+    ///   - shouldResizeForCoverImage: A Boolean value indicating whether the value should be adjusted for cover arts. Default is false.
     /// - Returns: The calculated proportional value.
-    func calculatingProportionalValue(withRatio ratio: CGFloat, shouldResizeForCoverImage: Bool = false) -> CGFloat {
+    func calculatingProportionalValue(withRatio ratio: CGFloat, shouldResizeForCoverArt: Bool = false) -> CGFloat {
         
-        if shouldResizeForCoverImage {
+        if shouldResizeForCoverArt {
             return (galleryColumnLength - galleryColumnSpacing) * ratio
         }
         return baseLength * ratio

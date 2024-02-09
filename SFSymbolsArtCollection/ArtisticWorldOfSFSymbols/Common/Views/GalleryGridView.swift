@@ -51,7 +51,7 @@ struct GalleryGridItemView<Content: View>: View {
 }
 
 #Preview {
-    AfroBoyPreviewView()
+    AfroBoyArtView.CoverArt()
         .environment(ArtWorkModel.preview)
         .galleryGridItemView(length: 1024 / 4)
 }

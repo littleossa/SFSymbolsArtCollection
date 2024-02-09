@@ -31,7 +31,7 @@ struct ImWearingPantsArtView: View {
                 if $0 == .pants {
                     AnimatableSymbolView(element: $0.value, isAnimating: isAnimating)
                 } else if currentPose.isFinished {
-                    SymbolArtDisplayView(shouldResizeForCoverImage: false, element: $0.value)
+                    SymbolArtDisplayView(shouldResizeForCoverArt: false, element: $0.value)
                         .transition(.symbolEffect(.appear))
                 }
             }

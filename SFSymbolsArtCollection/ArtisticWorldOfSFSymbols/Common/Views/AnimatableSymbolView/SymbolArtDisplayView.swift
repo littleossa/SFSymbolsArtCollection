@@ -10,11 +10,11 @@ import SwiftUI
 struct SymbolArtDisplayView: View {
     
     @Environment(ArtWorkModel.self) var model
-    let shouldResizeForCoverImage: Bool
+    let shouldResizeForCoverArt: Bool
     let element: SymbolArtElement
     
-    init(shouldResizeForCoverImage: Bool = true, element: SymbolArtElement) {
-        self.shouldResizeForCoverImage = shouldResizeForCoverImage
+    init(shouldResizeForCoverArt: Bool = true, element: SymbolArtElement) {
+        self.shouldResizeForCoverArt = shouldResizeForCoverArt
         self.element = element
     }
 
@@ -26,11 +26,11 @@ struct SymbolArtDisplayView: View {
             .frame(
                 width: model.calculatingProportionalValue(
                     withRatio: element.widthRatio,
-                    shouldResizeForCoverImage: shouldResizeForCoverImage
+                    shouldResizeForCoverArt: shouldResizeForCoverArt
                 ),
                 height: model.calculatingProportionalValue(
                     withRatio: element.heightRatio,
-                    shouldResizeForCoverImage: shouldResizeForCoverImage
+                    shouldResizeForCoverArt: shouldResizeForCoverArt
                 )
             )
             .rotationEffect(.degrees(element.rotationDegrees))
@@ -38,11 +38,11 @@ struct SymbolArtDisplayView: View {
             .offset(
                 x: model.calculatingProportionalValue(
                     withRatio: element.horizontalOffsetRatio,
-                    shouldResizeForCoverImage: shouldResizeForCoverImage
+                    shouldResizeForCoverArt: shouldResizeForCoverArt
                 ),
                 y: model.calculatingProportionalValue(
                     withRatio: element.verticalOffsetRatio,
-                    shouldResizeForCoverImage: shouldResizeForCoverImage
+                    shouldResizeForCoverArt: shouldResizeForCoverArt
                 )
             )
             .zIndex(element.zIndex)
@@ -54,7 +54,7 @@ struct SymbolArtDisplayView: View {
         SymbolArtDisplayView(element: AfroBoyArtView.Element.face.value)
         
         SymbolArtDisplayView(
-            shouldResizeForCoverImage: false,
+            shouldResizeForCoverArt: false,
             element: AfroBoyArtView.Element.face.value
         )
     }

@@ -23,7 +23,6 @@
 		9748BE59289DCE17006DF0BE /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE58289DCE17006DF0BE /* Fireworks.swift */; };
 		9748BE5D289DD696006DF0BE /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5C289DD696006DF0BE /* Building.swift */; };
 		9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5E289F194E006DF0BE /* RocketFirework.swift */; };
-		9748BE6428A3936E006DF0BE /* ArtWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE6328A3936E006DF0BE /* ArtWorkView.swift */; };
 		9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE6528A395D5006DF0BE /* ArtWork.swift */; };
 		97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2928C2BC9A004E1720 /* MediumFirework.swift */; };
 		97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2B28C2DDAA004E1720 /* Buildings.swift */; };
@@ -52,7 +51,6 @@
 		97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */; };
 		97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
-		97E11D522817381100B2AB32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D512817381100B2AB32 /* ContentView.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
 		97E11D572817381200B2AB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D562817381200B2AB32 /* Preview Assets.xcassets */; };
 		97E11DF028176A0D00B2AB32 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */; };
@@ -86,7 +84,6 @@
 		9748BE5C289DD696006DF0BE /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		9748BE5E289F194E006DF0BE /* RocketFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFirework.swift; sourceTree = "<group>"; };
 		9748BE62289F4BFB006DF0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		9748BE6328A3936E006DF0BE /* ArtWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkView.swift; sourceTree = "<group>"; };
 		9748BE6528A395D5006DF0BE /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
 		97624C2928C2BC9A004E1720 /* MediumFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumFirework.swift; sourceTree = "<group>"; };
 		97624C2B28C2DDAA004E1720 /* Buildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
@@ -116,7 +113,6 @@
 		97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Logo.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsArtCollectionApp.swift; sourceTree = "<group>"; };
-		97E11D512817381100B2AB32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97E11D532817381200B2AB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97E11D562817381200B2AB32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97EF438A2B725E02003648F5 /* NosebleedArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosebleedArtView.swift; sourceTree = "<group>"; };
@@ -239,7 +235,6 @@
 		97624C3628C74AA0004E1720 /* ArtWorks */ = {
 			isa = PBXGroup;
 			children = (
-				9748BE6328A3936E006DF0BE /* ArtWorkView.swift */,
 				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
 				9748BE55289DCB82006DF0BE /* Fireworks */,
 				9748BE4428980FE4006DF0BE /* DemonWrestler */,
@@ -376,7 +371,6 @@
 				9748BE62289F4BFB006DF0BE /* Info.plist */,
 				97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */,
 				97AD530D2B70DBC70034FB5D /* ArtisticWorldOfSFSymbols */,
-				97E11D512817381100B2AB32 /* ContentView.swift */,
 				97624C3628C74AA0004E1720 /* ArtWorks */,
 				971D9DE628C93EB500136A36 /* Common */,
 				97E11D532817381200B2AB32 /* Assets.xcassets */,
@@ -544,7 +538,6 @@
 				97AD53242B70E48F0034FB5D /* PlayButton.swift in Sources */,
 				9748BE2028939B04006DF0BE /* FlipType.swift in Sources */,
 				97AD531A2B70E0530034FB5D /* Font.Weight+.swift in Sources */,
-				9748BE6428A3936E006DF0BE /* ArtWorkView.swift in Sources */,
 				97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */,
 				9767DF092B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift in Sources */,
 				9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */,
@@ -556,7 +549,6 @@
 				97AD532B2B71068B0034FB5D /* AfroBoyArtView.swift in Sources */,
 				973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */,
 				9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */,
-				97E11D522817381100B2AB32 /* ContentView.swift in Sources */,
 				9748BE412897CD6C006DF0BE /* Arm.swift in Sources */,
 				9748BE4328980C4D006DF0BE /* Hair.swift in Sources */,
 				97624C3328C4F43F004E1720 /* GeometryProxy+.swift in Sources */,

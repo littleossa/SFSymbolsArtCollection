@@ -65,7 +65,6 @@
 		97EF439C2B7421A7003648F5 /* MagicianPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */; };
 		97EF439E2B744C4C003648F5 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF439D2B744C4C003648F5 /* Color+.swift */; };
 		97EF43A12B74CA38003648F5 /* CrayonBoyPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43A02B74CA38003648F5 /* CrayonBoyPreviewView.swift */; };
-		97EF43A32B74D9BA003648F5 /* Image+arrangeShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43A22B74D9BA003648F5 /* Image+arrangeShape.swift */; };
 		97EF43A52B74F27D003648F5 /* CrayonBoyArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43A42B74F27D003648F5 /* CrayonBoyArtView.swift */; };
 /* End PBXBuildFile section */
 
@@ -129,7 +128,6 @@
 		97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianPreviewView.swift; sourceTree = "<group>"; };
 		97EF439D2B744C4C003648F5 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		97EF43A02B74CA38003648F5 /* CrayonBoyPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonBoyPreviewView.swift; sourceTree = "<group>"; };
-		97EF43A22B74D9BA003648F5 /* Image+arrangeShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+arrangeShape.swift"; sourceTree = "<group>"; };
 		97EF43A42B74F27D003648F5 /* CrayonBoyArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonBoyArtView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -400,7 +398,6 @@
 			children = (
 				97EF439D2B744C4C003648F5 /* Color+.swift */,
 				97624C3228C4F43F004E1720 /* GeometryProxy+.swift */,
-				97EF43A22B74D9BA003648F5 /* Image+arrangeShape.swift */,
 				97AD53112B70DEB60034FB5D /* UIDevice+.swift */,
 				97AD53192B70E0530034FB5D /* Font.Weight+.swift */,
 			);
@@ -554,7 +551,6 @@
 				9748BE59289DCE17006DF0BE /* Fireworks.swift in Sources */,
 				9748BE5D289DD696006DF0BE /* Building.swift in Sources */,
 				97AD53312B71A5130034FB5D /* GalleryGridView.swift in Sources */,
-				97EF43A32B74D9BA003648F5 /* Image+arrangeShape.swift in Sources */,
 				97AD530C2B70DA2F0034FB5D /* ArtGalleryView.swift in Sources */,
 				9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */,
 				97AD532B2B71068B0034FB5D /* AfroBoyArtView.swift in Sources */,

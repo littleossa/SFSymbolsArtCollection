@@ -14,18 +14,7 @@ struct AfroBoyArtView: View {
     var body: some View {
         ZStack {
             ForEach(Element.allCases) {
-                AnimatableSymbolView(
-                    name: $0.value.name,
-                    initialPosition: $0.value.initialPosition,
-                    primaryColor: $0.value.primaryColor,
-                    secondaryColor: $0.value.secondaryColor,
-                    widthRatio: $0.value.widthRatio,
-                    heightRatio: $0.value.heightRatio,
-                    horizontalOffsetRatio: $0.value.horizontalOffsetRatio,
-                    verticalOffsetRatio: $0.value.verticalOffsetRatio,
-                    isAnimating: isAnimating,
-                    symbolCountToWaitFor: $0.value.symbolCountToWaitFor
-                )
+                AnimatableSymbolView(element: $0.value, isAnimating: isAnimating)
             }
         }
         .navigationTitle("Afro boy")

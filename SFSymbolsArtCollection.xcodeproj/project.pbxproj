@@ -11,9 +11,6 @@
 		973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */; };
 		973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */; };
 		9748BE2028939B04006DF0BE /* FlipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE1F28939B04006DF0BE /* FlipType.swift */; };
-		9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE3E2897AE68006DF0BE /* ArmHair.swift */; };
-		9748BE412897CD6C006DF0BE /* Arm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE402897CD6C006DF0BE /* Arm.swift */; };
-		9748BE4328980C4D006DF0BE /* Hair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4228980C4D006DF0BE /* Hair.swift */; };
 		9748BE4628981011006DF0BE /* DemonWrestler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4528981011006DF0BE /* DemonWrestler.swift */; };
 		9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4728981096006DF0BE /* DemonWrestlerFace.swift */; };
 		9748BE4A28995877006DF0BE /* DemonWrestlerOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE4928995877006DF0BE /* DemonWrestlerOutline.swift */; };
@@ -80,9 +77,6 @@
 		973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithFont.swift; sourceTree = "<group>"; };
 		973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithWidthAndHeight.swift; sourceTree = "<group>"; };
 		9748BE1F28939B04006DF0BE /* FlipType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipType.swift; sourceTree = "<group>"; };
-		9748BE3E2897AE68006DF0BE /* ArmHair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmHair.swift; sourceTree = "<group>"; };
-		9748BE402897CD6C006DF0BE /* Arm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arm.swift; sourceTree = "<group>"; };
-		9748BE4228980C4D006DF0BE /* Hair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hair.swift; sourceTree = "<group>"; };
 		9748BE4528981011006DF0BE /* DemonWrestler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestler.swift; sourceTree = "<group>"; };
 		9748BE4728981096006DF0BE /* DemonWrestlerFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestlerFace.swift; sourceTree = "<group>"; };
 		9748BE4928995877006DF0BE /* DemonWrestlerOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestlerOutline.swift; sourceTree = "<group>"; };
@@ -190,16 +184,6 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		9748BE3D2897ADBD006DF0BE /* ArmHair */ = {
-			isa = PBXGroup;
-			children = (
-				9748BE3E2897AE68006DF0BE /* ArmHair.swift */,
-				9748BE402897CD6C006DF0BE /* Arm.swift */,
-				9748BE4228980C4D006DF0BE /* Hair.swift */,
-			);
-			path = ArmHair;
-			sourceTree = "<group>";
-		};
 		9748BE4428980FE4006DF0BE /* DemonWrestler */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +240,6 @@
 				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
 				9748BE55289DCB82006DF0BE /* Fireworks */,
 				9748BE4428980FE4006DF0BE /* DemonWrestler */,
-				9748BE3D2897ADBD006DF0BE /* ArmHair */,
 				97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */,
 			);
 			path = ArtWorks;
@@ -594,9 +577,6 @@
 				9767DF272B76CCE300457DA1 /* ArmHairArtView+Element.swift in Sources */,
 				97AD532B2B71068B0034FB5D /* AfroBoyArtView.swift in Sources */,
 				973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */,
-				9748BE3F2897AE68006DF0BE /* ArmHair.swift in Sources */,
-				9748BE412897CD6C006DF0BE /* Arm.swift in Sources */,
-				9748BE4328980C4D006DF0BE /* Hair.swift in Sources */,
 				97624C3328C4F43F004E1720 /* GeometryProxy+.swift in Sources */,
 				97EF43952B72DA69003648F5 /* ImWearingPantsArtView.swift in Sources */,
 				9748BE50289AB439006DF0BE /* DemonWrestlerHand.swift in Sources */,

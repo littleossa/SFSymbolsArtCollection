@@ -265,16 +265,6 @@
 			path = PartyAnimals;
 			sourceTree = "<group>";
 		};
-		9767DF202B762EF300457DA1 /* Element */ = {
-			isa = PBXGroup;
-			children = (
-				9767DF1E2B762E9000457DA1 /* ImWearingPantsArtView+FaceElement.swift */,
-				9767DF1A2B762DA000457DA1 /* ImWearingPantsArtView+FinishPoseElement.swift */,
-				9767DF1C2B762E1200457DA1 /* ImWearingPantsArtView+Pose.swift */,
-			);
-			path = Element;
-			sourceTree = "<group>";
-		};
 		9767DF212B7658CB00457DA1 /* ArmHair */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,8 +433,10 @@
 			isa = PBXGroup;
 			children = (
 				97EF43942B72DA69003648F5 /* ImWearingPantsArtView.swift */,
-				9767DF202B762EF300457DA1 /* Element */,
 				97EF43922B72D3E2003648F5 /* ImWearingPantsArtView+CoverArt.swift */,
+				9767DF1E2B762E9000457DA1 /* ImWearingPantsArtView+FaceElement.swift */,
+				9767DF1A2B762DA000457DA1 /* ImWearingPantsArtView+FinishPoseElement.swift */,
+				9767DF1C2B762E1200457DA1 /* ImWearingPantsArtView+Pose.swift */,
 			);
 			path = ImWearingPants;
 			sourceTree = "<group>";

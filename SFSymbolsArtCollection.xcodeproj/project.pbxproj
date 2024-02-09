@@ -35,6 +35,8 @@
 		9767DF032B759B2D00457DA1 /* PartyAnimalsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF022B759B2D00457DA1 /* PartyAnimalsPreviewView.swift */; };
 		9767DF052B75AFE200457DA1 /* PartyAnimalsArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */; };
 		9767DF092B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF082B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift */; };
+		9767DF0B2B75D1A100457DA1 /* SymbolArtElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF0A2B75D1A100457DA1 /* SymbolArtElement.swift */; };
+		9767DF0D2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF0C2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift */; };
 		97AD530C2B70DA2F0034FB5D /* ArtGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */; };
 		97AD53102B70DE230034FB5D /* SymbolNameFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */; };
 		97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53112B70DEB60034FB5D /* UIDevice+.swift */; };
@@ -96,6 +98,8 @@
 		9767DF022B759B2D00457DA1 /* PartyAnimalsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimalsPreviewView.swift; sourceTree = "<group>"; };
 		9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimalsArtView.swift; sourceTree = "<group>"; };
 		9767DF082B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PartyAnimalsArtView+RawPosition.swift"; sourceTree = "<group>"; };
+		9767DF0A2B75D1A100457DA1 /* SymbolArtElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolArtElement.swift; sourceTree = "<group>"; };
+		9767DF0C2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AfroBoyArtView+Element.swift"; sourceTree = "<group>"; };
 		97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryView.swift; sourceTree = "<group>"; };
 		97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolNameFrameView.swift; sourceTree = "<group>"; };
 		97AD53112B70DEB60034FB5D /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
@@ -301,6 +305,7 @@
 			children = (
 				97EF438E2B726D66003648F5 /* ArtWorkModel */,
 				97AD53172B70DFF30034FB5D /* AnimationValues.swift */,
+				9767DF0A2B75D1A100457DA1 /* SymbolArtElement.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				97AD532A2B71068B0034FB5D /* AfroBoyArtView.swift */,
+				9767DF0C2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift */,
 				97AD532C2B717C950034FB5D /* AfroBoyPreviewView.swift */,
 			);
 			path = AfroBoy;
@@ -519,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9767DF0D2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift in Sources */,
 				97EF43932B72D3E2003648F5 /* ImWearingPantsPreviewView.swift in Sources */,
 				97EF439E2B744C4C003648F5 /* Color+.swift in Sources */,
 				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
@@ -566,6 +573,7 @@
 				97AD53222B70E3FA0034FB5D /* AnimatableSymbolView.swift in Sources */,
 				9767DF032B759B2D00457DA1 /* PartyAnimalsPreviewView.swift in Sources */,
 				97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */,
+				9767DF0B2B75D1A100457DA1 /* SymbolArtElement.swift in Sources */,
 				97EF43A12B74CA38003648F5 /* CrayonBoyPreviewView.swift in Sources */,
 				9748BE4A28995877006DF0BE /* DemonWrestlerOutline.swift in Sources */,
 				97EF43902B72D2E4003648F5 /* NosebleedPreviewView.swift in Sources */,

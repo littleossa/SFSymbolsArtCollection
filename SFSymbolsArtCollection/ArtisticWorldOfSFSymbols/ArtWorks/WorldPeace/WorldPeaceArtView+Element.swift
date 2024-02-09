@@ -5,7 +5,7 @@
 //  Created by Lil Ossa
 //
 
-import Foundation
+import SwiftUI
 
 extension WorldPeaceArtView {
     

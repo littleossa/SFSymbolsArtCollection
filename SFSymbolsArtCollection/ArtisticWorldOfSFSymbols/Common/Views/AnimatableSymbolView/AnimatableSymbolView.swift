@@ -9,38 +9,23 @@ import SwiftUI
 
 struct AnimatableSymbolView: View {
     
-    init(
-        name: String,
-        initialPrimaryColor: Color = .black,
-        initialSecondaryColor: Color = .black,
-        initialPosition: ArtWorkModel.InitialSymbolRow,
-        primaryColor: Color = .black,
-        secondaryColor: Color = .black,
-        fontWeight: Font.Weight = .regular,
-        widthRatio: CGFloat,
-        heightRatio: CGFloat,
-        rotationDegrees: CGFloat = 0,
-        flip: FlipType = .none,
-        horizontalOffsetRatio: CGFloat = 0,
-        verticalOffsetRatio: CGFloat = 0,
-        isAnimating: Bool,
-        symbolCountToWaitFor: Int
-    ) {
-        self.name = name
-        self.initialPrimaryColor = initialPrimaryColor
-        self.initialSecondaryColor = initialSecondaryColor
-        self.initialPosition = initialPosition
-        self.primaryColor = primaryColor
-        self.secondaryColor = secondaryColor
-        self.fontWeight = fontWeight
-        self.widthRatio = widthRatio
-        self.heightRatio = heightRatio
-        self.rotationDegrees = rotationDegrees
-        self.rotationAxis = flip.axis
-        self.horizontalOffsetRatio = horizontalOffsetRatio
-        self.verticalOffsetRatio = verticalOffsetRatio
+    init(element: SymbolArtElement, isAnimating: Bool) {
+        self.name = element.name
+        self.initialPrimaryColor = element.initialPrimaryColor
+        self.initialSecondaryColor = element.initialSecondaryColor
+        self.initialPosition = element.initialPosition
+        self.primaryColor = element.primaryColor
+        self.secondaryColor = element.secondaryColor
+        self.fontWeight = element.fontWeight
+        self.widthRatio = element.widthRatio
+        self.heightRatio = element.heightRatio
+        self.rotationDegrees = element.rotationDegrees
+        self.rotationAxis = element.flip.axis
+        self.horizontalOffsetRatio = element.horizontalOffsetRatio
+        self.verticalOffsetRatio = element.verticalOffsetRatio
+        self.zIndex = element.zIndex
         self.isAnimating = isAnimating
-        self.symbolCountToWaitFor = symbolCountToWaitFor
+        self.symbolCountToWaitFor = element.symbolCountToWaitFor
     }
     
     @Environment(ArtWorkModel.self) var model
@@ -57,6 +42,7 @@ struct AnimatableSymbolView: View {
     var rotationAxis: (x: CGFloat, y: CGFloat, z: CGFloat)
     let horizontalOffsetRatio: CGFloat
     let verticalOffsetRatio: CGFloat
+    let zIndex: CGFloat
     let isAnimating: Bool
     let symbolCountToWaitFor: Int
     
@@ -188,18 +174,14 @@ struct AnimatableSymbolView: View {
                     CubicKeyframe(0, duration: model.animationDurationPerSymbol * 0.2)
                 }
             }
+            .zIndex(zIndex)
     }
 }
 
 #Preview {
     AnimatableSymbolView(
-        name: "nose",
-        initialPosition: .third(.first),
-        primaryColor: .red,
-        widthRatio: 1,
-        heightRatio: 1,
-        isAnimating: true,
-        symbolCountToWaitFor: 0
+        element: AfroBoyArtView.Element.hair.value,
+        isAnimating: true
     )
     .environment(ArtWorkModel.preview)
 }

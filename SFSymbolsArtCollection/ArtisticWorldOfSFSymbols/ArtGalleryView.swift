@@ -69,6 +69,13 @@ struct ArtGalleryView: View {
                             }
                             
                             NavigationLink {
+                                ArmHairArtView()
+                            } label: {
+                                ArmHairArtView.CoverArt()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
                                 AfroBoyArtView()
                             } label: {
                                 AfroBoyPreviewView()

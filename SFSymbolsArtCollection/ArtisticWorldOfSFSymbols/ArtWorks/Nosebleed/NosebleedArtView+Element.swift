@@ -230,6 +230,6 @@ extension NosebleedArtView {
 }
 
 #Preview {
-    NosebleedArtPreviewView()
+    NosebleedArtView.CoverArt()
         .environment(ArtWorkModel.preview)
 }

@@ -355,6 +355,6 @@ extension WorldPeaceArtView {
 }
 
 #Preview {
-    WorldPeacePreviewView()
+    WorldPeaceArtView.CoverArt()
         .environment(ArtWorkModel.preview)
 }

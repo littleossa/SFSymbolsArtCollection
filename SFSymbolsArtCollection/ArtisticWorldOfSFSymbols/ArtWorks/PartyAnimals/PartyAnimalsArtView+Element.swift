@@ -451,6 +451,6 @@ extension PartyAnimalsArtView {
 }
 
 #Preview {
-    PartyAnimalsPreviewView()
+    PartyAnimalsArtView.CoverArt()
         .environment(ArtWorkModel.preview)
 }

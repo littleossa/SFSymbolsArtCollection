@@ -43,28 +43,28 @@ struct ArtGalleryView: View {
                             NavigationLink {
                                 MagicianArtView()
                             } label: {
-                                MagicianPreviewView()
+                                MagicianArtView.CoverArt()
                                     .galleryGridItemView(length: model.galleryColumnLength)
                             }
                             
                             NavigationLink {
                                 CrayonBoyArtView()
                             } label: {
-                                CrayonBoyPreviewView()
+                                CrayonBoyArtView.CoverArt()
                                     .galleryGridItemView(length: model.galleryColumnLength)
                             }
                             
                             NavigationLink {
                                 WorldPeaceArtView()
                             } label: {
-                                WorldPeacePreviewView()
+                                WorldPeaceArtView.CoverArt()
                                     .galleryGridItemView(length: model.galleryColumnLength)
                             }
                             
                             NavigationLink {
                                 PartyAnimalsArtView()
                             } label: {
-                                PartyAnimalsPreviewView()
+                                PartyAnimalsArtView.CoverArt()
                                     .galleryGridItemView(length: model.galleryColumnLength)
                             }
                             
@@ -78,21 +78,21 @@ struct ArtGalleryView: View {
                             NavigationLink {
                                 AfroBoyArtView()
                             } label: {
-                                AfroBoyPreviewView()
+                                AfroBoyArtView.CoverArt()
                                     .galleryGridItemView(length: model.galleryColumnLength)
                             }
                             
                             NavigationLink {
                                 NosebleedArtView()
                             } label: {
-                                NosebleedArtPreviewView()
+                                NosebleedArtView.CoverArt()
                                     .galleryGridItemView(length: model.galleryColumnLength)
                             }
                             
                             NavigationLink {
                                 ImWearingPantsArtView()
                             } label: {
-                                ImWearingPantsPreviewView()
+                                ImWearingPantsArtView.CoverArt()
                                     .galleryGridItemView(length: model.galleryColumnLength)
                             }
                         }

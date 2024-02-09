@@ -25,9 +25,9 @@
 		97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2B28C2DDAA004E1720 /* Buildings.swift */; };
 		97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2E28C2E608004E1720 /* SmallFirework.swift */; };
 		97624C3328C4F43F004E1720 /* GeometryProxy+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3228C4F43F004E1720 /* GeometryProxy+.swift */; };
-		9767DEFA2B751C2C00457DA1 /* WorldPeacePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEF92B751C2C00457DA1 /* WorldPeacePreviewView.swift */; };
+		9767DEFA2B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEF92B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift */; };
 		9767DF002B752E4700457DA1 /* WorldPeaceArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEFF2B752E4700457DA1 /* WorldPeaceArtView.swift */; };
-		9767DF032B759B2D00457DA1 /* PartyAnimalsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF022B759B2D00457DA1 /* PartyAnimalsPreviewView.swift */; };
+		9767DF032B759B2D00457DA1 /* PartyAnimalsArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF022B759B2D00457DA1 /* PartyAnimalsArtView+CoverArt.swift */; };
 		9767DF052B75AFE200457DA1 /* PartyAnimalsArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */; };
 		9767DF0B2B75D1A100457DA1 /* SymbolArtElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF0A2B75D1A100457DA1 /* SymbolArtElement.swift */; };
 		9767DF0D2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF0C2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift */; };
@@ -52,7 +52,7 @@
 		97AD53242B70E48F0034FB5D /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53232B70E48F0034FB5D /* PlayButton.swift */; };
 		97AD53292B7100670034FB5D /* ArtWorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53282B7100670034FB5D /* ArtWorkModel.swift */; };
 		97AD532B2B71068B0034FB5D /* AfroBoyArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD532A2B71068B0034FB5D /* AfroBoyArtView.swift */; };
-		97AD532D2B717C950034FB5D /* AfroBoyPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD532C2B717C950034FB5D /* AfroBoyPreviewView.swift */; };
+		97AD532D2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD532C2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift */; };
 		97AD53312B71A5130034FB5D /* GalleryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53302B71A5130034FB5D /* GalleryGridView.swift */; };
 		97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */; };
 		97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */; };
@@ -62,13 +62,13 @@
 		97E11DF028176A0D00B2AB32 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */; };
 		97EF438B2B725E02003648F5 /* NosebleedArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438A2B725E02003648F5 /* NosebleedArtView.swift */; };
 		97EF438D2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438C2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift */; };
-		97EF43902B72D2E4003648F5 /* NosebleedPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438F2B72D2E4003648F5 /* NosebleedPreviewView.swift */; };
-		97EF43932B72D3E2003648F5 /* ImWearingPantsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43922B72D3E2003648F5 /* ImWearingPantsPreviewView.swift */; };
+		97EF43902B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438F2B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift */; };
+		97EF43932B72D3E2003648F5 /* ImWearingPantsArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43922B72D3E2003648F5 /* ImWearingPantsArtView+CoverArt.swift */; };
 		97EF43952B72DA69003648F5 /* ImWearingPantsArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43942B72DA69003648F5 /* ImWearingPantsArtView.swift */; };
 		97EF43982B733337003648F5 /* MagicianArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43972B733337003648F5 /* MagicianArtView.swift */; };
-		97EF439C2B7421A7003648F5 /* MagicianPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */; };
+		97EF439C2B7421A7003648F5 /* MagicianArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF439B2B7421A7003648F5 /* MagicianArtView+CoverArt.swift */; };
 		97EF439E2B744C4C003648F5 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF439D2B744C4C003648F5 /* Color+.swift */; };
-		97EF43A12B74CA38003648F5 /* CrayonBoyPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43A02B74CA38003648F5 /* CrayonBoyPreviewView.swift */; };
+		97EF43A12B74CA38003648F5 /* CrayonBoyArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43A02B74CA38003648F5 /* CrayonBoyArtView+CoverArt.swift */; };
 		97EF43A52B74F27D003648F5 /* CrayonBoyArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF43A42B74F27D003648F5 /* CrayonBoyArtView.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,9 +92,9 @@
 		97624C2B28C2DDAA004E1720 /* Buildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		97624C2E28C2E608004E1720 /* SmallFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFirework.swift; sourceTree = "<group>"; };
 		97624C3228C4F43F004E1720 /* GeometryProxy+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryProxy+.swift"; sourceTree = "<group>"; };
-		9767DEF92B751C2C00457DA1 /* WorldPeacePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPeacePreviewView.swift; sourceTree = "<group>"; };
+		9767DEF92B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorldPeaceArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		9767DEFF2B752E4700457DA1 /* WorldPeaceArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPeaceArtView.swift; sourceTree = "<group>"; };
-		9767DF022B759B2D00457DA1 /* PartyAnimalsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimalsPreviewView.swift; sourceTree = "<group>"; };
+		9767DF022B759B2D00457DA1 /* PartyAnimalsArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PartyAnimalsArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimalsArtView.swift; sourceTree = "<group>"; };
 		9767DF0A2B75D1A100457DA1 /* SymbolArtElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolArtElement.swift; sourceTree = "<group>"; };
 		9767DF0C2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AfroBoyArtView+Element.swift"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		97AD53232B70E48F0034FB5D /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		97AD53282B7100670034FB5D /* ArtWorkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWorkModel.swift; sourceTree = "<group>"; };
 		97AD532A2B71068B0034FB5D /* AfroBoyArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfroBoyArtView.swift; sourceTree = "<group>"; };
-		97AD532C2B717C950034FB5D /* AfroBoyPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfroBoyPreviewView.swift; sourceTree = "<group>"; };
+		97AD532C2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AfroBoyArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		97AD53302B71A5130034FB5D /* GalleryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryGridView.swift; sourceTree = "<group>"; };
 		97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Symbol.swift; sourceTree = "<group>"; };
 		97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Logo.swift; sourceTree = "<group>"; };
@@ -129,13 +129,13 @@
 		97E11D562817381200B2AB32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97EF438A2B725E02003648F5 /* NosebleedArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosebleedArtView.swift; sourceTree = "<group>"; };
 		97EF438C2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArtWorkModel+InitialSymbolRow.swift"; sourceTree = "<group>"; };
-		97EF438F2B72D2E4003648F5 /* NosebleedPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosebleedPreviewView.swift; sourceTree = "<group>"; };
-		97EF43922B72D3E2003648F5 /* ImWearingPantsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImWearingPantsPreviewView.swift; sourceTree = "<group>"; };
+		97EF438F2B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NosebleedArtView+CoverArt.swift"; sourceTree = "<group>"; };
+		97EF43922B72D3E2003648F5 /* ImWearingPantsArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImWearingPantsArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		97EF43942B72DA69003648F5 /* ImWearingPantsArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImWearingPantsArtView.swift; sourceTree = "<group>"; };
 		97EF43972B733337003648F5 /* MagicianArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianArtView.swift; sourceTree = "<group>"; };
-		97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicianPreviewView.swift; sourceTree = "<group>"; };
+		97EF439B2B7421A7003648F5 /* MagicianArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MagicianArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		97EF439D2B744C4C003648F5 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
-		97EF43A02B74CA38003648F5 /* CrayonBoyPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonBoyPreviewView.swift; sourceTree = "<group>"; };
+		97EF43A02B74CA38003648F5 /* CrayonBoyArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CrayonBoyArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		97EF43A42B74F27D003648F5 /* CrayonBoyArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonBoyArtView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,7 +250,7 @@
 			children = (
 				9767DEFF2B752E4700457DA1 /* WorldPeaceArtView.swift */,
 				9767DF142B75F7BE00457DA1 /* WorldPeaceArtView+Element.swift */,
-				9767DEF92B751C2C00457DA1 /* WorldPeacePreviewView.swift */,
+				9767DEF92B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift */,
 			);
 			path = WorldPeace;
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 			children = (
 				9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */,
 				9767DF162B75FF0700457DA1 /* PartyAnimalsArtView+Element.swift */,
-				9767DF022B759B2D00457DA1 /* PartyAnimalsPreviewView.swift */,
+				9767DF022B759B2D00457DA1 /* PartyAnimalsArtView+CoverArt.swift */,
 			);
 			path = PartyAnimals;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 			children = (
 				97AD532A2B71068B0034FB5D /* AfroBoyArtView.swift */,
 				9767DF0C2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift */,
-				97AD532C2B717C950034FB5D /* AfroBoyPreviewView.swift */,
+				97AD532C2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift */,
 			);
 			path = AfroBoy;
 			sourceTree = "<group>";
@@ -425,7 +425,7 @@
 			children = (
 				97EF438A2B725E02003648F5 /* NosebleedArtView.swift */,
 				9767DF182B76032600457DA1 /* NosebleedArtView+Element.swift */,
-				97EF438F2B72D2E4003648F5 /* NosebleedPreviewView.swift */,
+				97EF438F2B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift */,
 			);
 			path = Nosebleed;
 			sourceTree = "<group>";
@@ -444,7 +444,7 @@
 			children = (
 				97EF43942B72DA69003648F5 /* ImWearingPantsArtView.swift */,
 				9767DF202B762EF300457DA1 /* Element */,
-				97EF43922B72D3E2003648F5 /* ImWearingPantsPreviewView.swift */,
+				97EF43922B72D3E2003648F5 /* ImWearingPantsArtView+CoverArt.swift */,
 			);
 			path = ImWearingPants;
 			sourceTree = "<group>";
@@ -454,7 +454,7 @@
 			children = (
 				97EF43972B733337003648F5 /* MagicianArtView.swift */,
 				9767DF102B75E8FC00457DA1 /* MagicianArtView+Element.swift */,
-				97EF439B2B7421A7003648F5 /* MagicianPreviewView.swift */,
+				97EF439B2B7421A7003648F5 /* MagicianArtView+CoverArt.swift */,
 			);
 			path = Magician;
 			sourceTree = "<group>";
@@ -464,7 +464,7 @@
 			children = (
 				97EF43A42B74F27D003648F5 /* CrayonBoyArtView.swift */,
 				9767DF122B75EDB700457DA1 /* CrayonBoyArtView+Element.swift */,
-				97EF43A02B74CA38003648F5 /* CrayonBoyPreviewView.swift */,
+				97EF43A02B74CA38003648F5 /* CrayonBoyArtView+CoverArt.swift */,
 			);
 			path = CrayonBoy;
 			sourceTree = "<group>";
@@ -548,21 +548,21 @@
 				9767DF192B76032600457DA1 /* NosebleedArtView+Element.swift in Sources */,
 				9767DF172B75FF0700457DA1 /* PartyAnimalsArtView+Element.swift in Sources */,
 				9767DF0D2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift in Sources */,
-				97EF43932B72D3E2003648F5 /* ImWearingPantsPreviewView.swift in Sources */,
+				97EF43932B72D3E2003648F5 /* ImWearingPantsArtView+CoverArt.swift in Sources */,
 				97EF439E2B744C4C003648F5 /* Color+.swift in Sources */,
 				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
 				9767DF002B752E4700457DA1 /* WorldPeaceArtView.swift in Sources */,
 				9767DF132B75EDB700457DA1 /* CrayonBoyArtView+Element.swift in Sources */,
 				9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */,
-				97AD532D2B717C950034FB5D /* AfroBoyPreviewView.swift in Sources */,
+				97AD532D2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift in Sources */,
 				97EF438B2B725E02003648F5 /* NosebleedArtView.swift in Sources */,
 				971D9DEA28C9731D00136A36 /* iOSDCJapan2022SymbolType.swift in Sources */,
 				97AD53182B70DFF30034FB5D /* AnimationValues.swift in Sources */,
 				9767DF152B75F7BE00457DA1 /* WorldPeaceArtView+Element.swift in Sources */,
 				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,
 				97EF43982B733337003648F5 /* MagicianArtView.swift in Sources */,
-				9767DEFA2B751C2C00457DA1 /* WorldPeacePreviewView.swift in Sources */,
+				9767DEFA2B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift in Sources */,
 				97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */,
 				97AD53242B70E48F0034FB5D /* PlayButton.swift in Sources */,
 				9748BE2028939B04006DF0BE /* FlipType.swift in Sources */,
@@ -583,7 +583,7 @@
 				9767DF232B7658E200457DA1 /* ArmHairArtView+CoverArt.swift in Sources */,
 				9767DF1D2B762E1200457DA1 /* ImWearingPantsArtView+Pose.swift in Sources */,
 				97AD53292B7100670034FB5D /* ArtWorkModel.swift in Sources */,
-				97EF439C2B7421A7003648F5 /* MagicianPreviewView.swift in Sources */,
+				97EF439C2B7421A7003648F5 /* MagicianArtView+CoverArt.swift in Sources */,
 				973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */,
 				97EF438D2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift in Sources */,
 				9767DF1B2B762DA000457DA1 /* ImWearingPantsArtView+FinishPoseElement.swift in Sources */,
@@ -592,12 +592,12 @@
 				9767DF1F2B762E9000457DA1 /* ImWearingPantsArtView+FaceElement.swift in Sources */,
 				97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */,
 				97AD53222B70E3FA0034FB5D /* AnimatableSymbolView.swift in Sources */,
-				9767DF032B759B2D00457DA1 /* PartyAnimalsPreviewView.swift in Sources */,
+				9767DF032B759B2D00457DA1 /* PartyAnimalsArtView+CoverArt.swift in Sources */,
 				97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */,
 				9767DF0B2B75D1A100457DA1 /* SymbolArtElement.swift in Sources */,
-				97EF43A12B74CA38003648F5 /* CrayonBoyPreviewView.swift in Sources */,
+				97EF43A12B74CA38003648F5 /* CrayonBoyArtView+CoverArt.swift in Sources */,
 				9748BE4A28995877006DF0BE /* DemonWrestlerOutline.swift in Sources */,
-				97EF43902B72D2E4003648F5 /* NosebleedPreviewView.swift in Sources */,
+				97EF43902B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift in Sources */,
 				9767DF112B75E8FC00457DA1 /* MagicianArtView+Element.swift in Sources */,
 				9767DF0F2B75DFB400457DA1 /* SymbolArtDisplayView.swift in Sources */,
 				9767DF252B76C9BE00457DA1 /* ArmHairArtView.swift in Sources */,

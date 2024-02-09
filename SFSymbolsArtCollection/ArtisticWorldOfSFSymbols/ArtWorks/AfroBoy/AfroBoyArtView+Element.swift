@@ -77,6 +77,6 @@ extension AfroBoyArtView {
 }
 
 #Preview {
-    AfroBoyPreviewView()
+    AfroBoyArtView.CoverArt()
         .environment(ArtWorkModel.preview)
 }

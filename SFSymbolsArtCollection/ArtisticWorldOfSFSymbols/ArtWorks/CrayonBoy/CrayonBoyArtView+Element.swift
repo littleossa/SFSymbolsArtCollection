@@ -238,6 +238,6 @@ extension CrayonBoyArtView {
 }
 
 #Preview {
-    CrayonBoyPreviewView()
+    CrayonBoyArtView.CoverArt()
         .environment(ArtWorkModel.preview)
 }

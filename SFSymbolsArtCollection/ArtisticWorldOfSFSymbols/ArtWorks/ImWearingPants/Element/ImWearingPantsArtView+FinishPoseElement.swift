@@ -363,6 +363,6 @@ extension ImWearingPantsArtView {
 }
 
 #Preview {
-    ImWearingPantsPreviewView()
+    ImWearingPantsArtView.CoverArt()
         .environment(ArtWorkModel.preview)
 }

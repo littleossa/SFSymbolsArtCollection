@@ -216,6 +216,6 @@ extension MagicianArtView {
 }
 
 #Preview {
-    MagicianPreviewView()
+    MagicianArtView.CoverArt()
         .environment(ArtWorkModel.preview)
 }

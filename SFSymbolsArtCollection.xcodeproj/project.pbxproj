@@ -42,6 +42,7 @@
 		9767DF002B752E4700457DA1 /* WorldPeaceArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEFF2B752E4700457DA1 /* WorldPeaceArtView.swift */; };
 		9767DF032B759B2D00457DA1 /* PartyAnimalsPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF022B759B2D00457DA1 /* PartyAnimalsPreviewView.swift */; };
 		9767DF052B75AFE200457DA1 /* PartyAnimalsArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */; };
+		9767DF092B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF082B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift */; };
 		97AD530C2B70DA2F0034FB5D /* ArtGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */; };
 		97AD53102B70DE230034FB5D /* SymbolNameFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */; };
 		97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53112B70DEB60034FB5D /* UIDevice+.swift */; };
@@ -110,6 +111,7 @@
 		9767DEFF2B752E4700457DA1 /* WorldPeaceArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPeaceArtView.swift; sourceTree = "<group>"; };
 		9767DF022B759B2D00457DA1 /* PartyAnimalsPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimalsPreviewView.swift; sourceTree = "<group>"; };
 		9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimalsArtView.swift; sourceTree = "<group>"; };
+		9767DF082B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PartyAnimalsArtView+RawPosition.swift"; sourceTree = "<group>"; };
 		97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryView.swift; sourceTree = "<group>"; };
 		97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolNameFrameView.swift; sourceTree = "<group>"; };
 		97AD53112B70DEB60034FB5D /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 			children = (
 				9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */,
 				9767DF022B759B2D00457DA1 /* PartyAnimalsPreviewView.swift */,
+				9767DF082B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift */,
 			);
 			path = PartyAnimals;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				97AD531A2B70E0530034FB5D /* Font.Weight+.swift in Sources */,
 				9748BE6428A3936E006DF0BE /* ArtWorkView.swift in Sources */,
 				97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */,
+				9767DF092B75C0B500457DA1 /* PartyAnimalsArtView+RawPosition.swift in Sources */,
 				9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */,
 				9748BE2E2893C688006DF0BE /* AnimalOutline.swift in Sources */,
 				9748BE322893C91F006DF0BE /* AnimalEye.swift in Sources */,

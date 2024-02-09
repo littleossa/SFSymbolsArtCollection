@@ -137,7 +137,7 @@ struct PartyAnimalsPreviewView: View {
     // MARK: - Flog
     private func flog() -> some View {
         ZStack {
-            // MARK: - 􀀁 Flog eye
+            // MARK: - 􀀁 Flog eye outline
             Image(systemName: "circle.fill")
                 .arrangeShape(
                     primaryColor: .green,
@@ -181,11 +181,10 @@ struct PartyAnimalsPreviewView: View {
                     primaryColor: .green,
                     width: model.calculatingProportionalValue(withRatio: 0.4, forPreview: true),
                     height: model.calculatingProportionalValue(withRatio: 0.325, forPreview: true),
-                    horizontalOffset: model.calculatingProportionalValue(withRatio: -0.2, forPreview: true),
-                    verticalOffset: model.calculatingProportionalValue(withRatio: 0, forPreview: true)
+                    horizontalOffset: model.calculatingProportionalValue(withRatio: -0.2, forPreview: true)
                 )
             
-            // MARK: - 􀆈 Flog outline
+            // MARK: - 􀆈 Flog mouth
             Image(systemName: "chevron.down")
                 .arrangeShape(
                     fontWeight: .bold,
@@ -223,7 +222,7 @@ struct PartyAnimalsPreviewView: View {
                     verticalOffset: model.calculatingProportionalValue(withRatio: 0.26, forPreview: true)
                 )
             
-            // MARK: - 􀀁 Bear ear
+            // MARK: - 􀀁 Lion ear
             Image(systemName: "circle.fill")
                 .arrangeShape(
                     primaryColor: .yellow,

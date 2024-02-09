@@ -62,6 +62,13 @@ struct ArtGalleryView: View {
                             }
                             
                             NavigationLink {
+                                PartyAnimalsArtView()
+                            } label: {
+                                PartyAnimalsPreviewView()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
                                 AfroBoyArtView()
                             } label: {
                                 AfroBoyPreviewView()

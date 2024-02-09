@@ -36,7 +36,7 @@ struct ArmHairArtView: View {
     }
     
     var randomRotationDegrees: CGFloat {
-        CGFloat.random(in: -720...7200)
+        CGFloat.random(in: -720...720)
     }
     
     var body: some View {
@@ -45,7 +45,7 @@ struct ArmHairArtView: View {
                 AnimatableSymbolView(element: $0.value, isAnimating: isAnimating)
             }
 
-            ForEach(0..<250) { _ in
+            ForEach(0..<260) { _ in
                 Image(systemName: "alternatingcurrent")
                     .resizable()
                     .foregroundStyle(.black)
@@ -124,7 +124,8 @@ struct ArmHairArtView: View {
                             LinearKeyframe(randomRotationDegrees, duration: hairAnimationDuration * 0.1)
                             LinearKeyframe(randomRotationDegrees, duration: hairAnimationDuration * 0.1)
                             LinearKeyframe(randomRotationDegrees, duration: hairAnimationDuration * 0.1)
-                            LinearKeyframe(100, duration: hairAnimationDuration * 0.3)
+                            LinearKeyframe(randomRotationDegrees, duration: hairAnimationDuration * 0.1)
+                            LinearKeyframe(100, duration: hairAnimationDuration * 0.1)
                         }
                         
                         KeyframeTrack(\.offset) {

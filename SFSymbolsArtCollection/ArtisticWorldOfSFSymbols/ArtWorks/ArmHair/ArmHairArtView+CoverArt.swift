@@ -30,7 +30,7 @@ extension ArmHairArtView {
                     SymbolArtDisplayView(shouldResizeForCoverImage: true, element: $0.value)
                 }
                 
-                ForEach(0..<250) { _ in
+                ForEach(0..<260) { _ in
                     Image(systemName: "alternatingcurrent")
                         .foregroundStyle(.black)
                         .font(.system(size: model.calculatingProportionalValue(withRatio: 0.0825, shouldResizeForCoverImage: true)))

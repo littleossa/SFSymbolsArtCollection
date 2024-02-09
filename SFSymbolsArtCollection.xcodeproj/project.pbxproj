@@ -34,7 +34,7 @@
 		9767DF052B75AFE200457DA1 /* PartyAnimalsArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */; };
 		9767DF0B2B75D1A100457DA1 /* SymbolArtElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF0A2B75D1A100457DA1 /* SymbolArtElement.swift */; };
 		9767DF0D2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF0C2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift */; };
-		9767DF0F2B75DFB400457DA1 /* SymbolArtPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF0E2B75DFB400457DA1 /* SymbolArtPreviewView.swift */; };
+		9767DF0F2B75DFB400457DA1 /* SymbolArtDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF0E2B75DFB400457DA1 /* SymbolArtDisplayView.swift */; };
 		9767DF112B75E8FC00457DA1 /* MagicianArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF102B75E8FC00457DA1 /* MagicianArtView+Element.swift */; };
 		9767DF132B75EDB700457DA1 /* CrayonBoyArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF122B75EDB700457DA1 /* CrayonBoyArtView+Element.swift */; };
 		9767DF152B75F7BE00457DA1 /* WorldPeaceArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF142B75F7BE00457DA1 /* WorldPeaceArtView+Element.swift */; };
@@ -101,7 +101,7 @@
 		9767DF042B75AFE200457DA1 /* PartyAnimalsArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAnimalsArtView.swift; sourceTree = "<group>"; };
 		9767DF0A2B75D1A100457DA1 /* SymbolArtElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolArtElement.swift; sourceTree = "<group>"; };
 		9767DF0C2B75DDEC00457DA1 /* AfroBoyArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AfroBoyArtView+Element.swift"; sourceTree = "<group>"; };
-		9767DF0E2B75DFB400457DA1 /* SymbolArtPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolArtPreviewView.swift; sourceTree = "<group>"; };
+		9767DF0E2B75DFB400457DA1 /* SymbolArtDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolArtDisplayView.swift; sourceTree = "<group>"; };
 		9767DF102B75E8FC00457DA1 /* MagicianArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MagicianArtView+Element.swift"; sourceTree = "<group>"; };
 		9767DF122B75EDB700457DA1 /* CrayonBoyArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CrayonBoyArtView+Element.swift"; sourceTree = "<group>"; };
 		9767DF142B75F7BE00457DA1 /* WorldPeaceArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorldPeaceArtView+Element.swift"; sourceTree = "<group>"; };
@@ -355,7 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				97AD53212B70E3FA0034FB5D /* AnimatableSymbolView.swift */,
-				9767DF0E2B75DFB400457DA1 /* SymbolArtPreviewView.swift */,
+				9767DF0E2B75DFB400457DA1 /* SymbolArtDisplayView.swift */,
 				97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */,
 			);
 			path = AnimatableSymbolView;
@@ -600,7 +600,7 @@
 				9748BE4A28995877006DF0BE /* DemonWrestlerOutline.swift in Sources */,
 				97EF43902B72D2E4003648F5 /* NosebleedPreviewView.swift in Sources */,
 				9767DF112B75E8FC00457DA1 /* MagicianArtView+Element.swift in Sources */,
-				9767DF0F2B75DFB400457DA1 /* SymbolArtPreviewView.swift in Sources */,
+				9767DF0F2B75DFB400457DA1 /* SymbolArtDisplayView.swift in Sources */,
 				9748BE4C28995A43006DF0BE /* DemonWrestlerBody.swift in Sources */,
 				97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */,
 				97AD53102B70DE230034FB5D /* SymbolNameFrameView.swift in Sources */,

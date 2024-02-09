@@ -12,11 +12,11 @@ struct ImWearingPantsPreviewView: View {
     var body: some View {
         ZStack {
             ForEach(ImWearingPantsArtView.FinishPoseElement.allCases) {
-                SymbolArtPreviewView(element: $0.value)
+                SymbolArtDisplayView(element: $0.value)
             }
             
             ForEach(ImWearingPantsArtView.FaceElement.allCases) {
-                SymbolArtPreviewView(element: $0.value)
+                SymbolArtDisplayView(element: $0.value)
             }
         }
     }

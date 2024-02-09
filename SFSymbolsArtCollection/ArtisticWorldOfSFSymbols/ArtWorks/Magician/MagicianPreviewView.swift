@@ -12,7 +12,7 @@ struct MagicianPreviewView: View {
     var body: some View {
         ZStack {
             ForEach(MagicianArtView.Element.allCases) {
-                SymbolArtPreviewView(element: $0.value)
+                SymbolArtDisplayView(element: $0.value)
             }
         }
     }

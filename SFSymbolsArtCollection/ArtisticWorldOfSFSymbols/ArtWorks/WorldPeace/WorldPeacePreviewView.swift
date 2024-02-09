@@ -13,7 +13,7 @@ struct WorldPeacePreviewView: View {
         
         ZStack {
             ForEach(WorldPeaceArtView.Element.allCases) {
-                SymbolArtPreviewView(element: $0.value)
+                SymbolArtDisplayView(element: $0.value)
             }
         }
     }

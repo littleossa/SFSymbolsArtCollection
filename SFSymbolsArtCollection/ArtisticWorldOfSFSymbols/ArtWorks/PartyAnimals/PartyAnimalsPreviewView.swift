@@ -12,7 +12,7 @@ struct PartyAnimalsPreviewView: View {
     var body: some View {
         ZStack {
             ForEach(PartyAnimalsArtView.Element.allCases) {
-                SymbolArtPreviewView(element: $0.value)
+                SymbolArtDisplayView(element: $0.value)
             }
         }
     }

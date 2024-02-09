@@ -13,7 +13,7 @@ struct NosebleedArtPreviewView: View {
         
         ZStack {
             ForEach(NosebleedArtView.Element.allCases) {
-                SymbolArtPreviewView(element: $0.value)
+                SymbolArtDisplayView(element: $0.value)
             }
         }
     }

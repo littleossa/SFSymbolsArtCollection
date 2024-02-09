@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct SymbolArtPreviewView: View {
+struct SymbolArtDisplayView: View {
     
     @Environment(ArtWorkModel.self) var model
-    let forPreview: Bool
+    let shouldResizeForCoverImage: Bool
     let element: SymbolArtElement
     
-    init(forPreview: Bool = true, element: SymbolArtElement) {
-        self.forPreview = forPreview
+    init(shouldResizeForCoverImage: Bool = true, element: SymbolArtElement) {
+        self.shouldResizeForCoverImage = shouldResizeForCoverImage
         self.element = element
     }
 
@@ -26,11 +26,11 @@ struct SymbolArtPreviewView: View {
             .frame(
                 width: model.calculatingProportionalValue(
                     withRatio: element.widthRatio,
-                    forPreview: forPreview
+                    forPreview: shouldResizeForCoverImage
                 ),
                 height: model.calculatingProportionalValue(
                     withRatio: element.heightRatio,
-                    forPreview: forPreview
+                    forPreview: shouldResizeForCoverImage
                 )
             )
             .rotationEffect(.degrees(element.rotationDegrees))
@@ -38,11 +38,11 @@ struct SymbolArtPreviewView: View {
             .offset(
                 x: model.calculatingProportionalValue(
                     withRatio: element.horizontalOffsetRatio,
-                    forPreview: forPreview
+                    forPreview: shouldResizeForCoverImage
                 ),
                 y: model.calculatingProportionalValue(
                     withRatio: element.verticalOffsetRatio,
-                    forPreview: forPreview
+                    forPreview: shouldResizeForCoverImage
                 )
             )
             .zIndex(element.zIndex)
@@ -51,10 +51,10 @@ struct SymbolArtPreviewView: View {
 
 #Preview {
     VStack {
-        SymbolArtPreviewView(element: AfroBoyArtView.Element.face.value)
+        SymbolArtDisplayView(element: AfroBoyArtView.Element.face.value)
         
-        SymbolArtPreviewView(
-            forPreview: false,
+        SymbolArtDisplayView(
+            shouldResizeForCoverImage: false,
             element: AfroBoyArtView.Element.face.value
         )
     }

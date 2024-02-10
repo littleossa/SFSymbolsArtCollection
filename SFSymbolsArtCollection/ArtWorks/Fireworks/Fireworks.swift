@@ -17,10 +17,10 @@ struct Fireworks: View {
             
             // Background
             ZStack {
-                Image(symbol: .rectangleFill)
-                    .arrangeShape(color: .midnightNavy,
-                                  width: proxy.size.width * 1.5,
-                                  height: proxy.size.height * 1.5)
+//                Image(symbol: .rectangleFill)
+//                    .arrangeShape(color: .midnightNavy,
+//                                  width: proxy.size.width * 1.5,
+//                                  height: proxy.size.height * 1.5)
             }
             .position(proxy.localCenter)
             
@@ -91,11 +91,11 @@ struct Fireworks: View {
                     
                     HStack(spacing: 0) {
                         
-                        // Audience
-                        ForEach(0..<4) { _ in
-                            Image(symbol: .person3SequenceFill)
-                                .arrangeShape(fontSize: baseLength * 0.13)
-                        }
+//                        // Audience
+//                        ForEach(0..<4) { _ in
+//                            Image(symbol: .person3SequenceFill)
+//                                .arrangeShape(fontSize: baseLength * 0.13)
+//                        }
                     }
                 }
             }

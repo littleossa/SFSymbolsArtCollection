@@ -15,12 +15,13 @@ struct SmallFirework: View {
     let offsetY: CGFloat
     
     var body: some View {
+        ZStack {}
         
-        Image(symbol: .timelapse)
-            .arrangeShape(color: color,
-                          fontSize: fontSize,
-                          offsetX: offsetX,
-                          offsetY: offsetY)
+//        Image(symbol: .timelapse)
+//            .arrangeShape(color: color,
+//                          fontSize: fontSize,
+//                          offsetX: offsetX,
+//                          offsetY: offsetY)
     }
 }
 

@@ -16,17 +16,17 @@ struct MediumFirework: View {
     var body: some View {
         
         ZStack {
-            Image(symbol: .helm)
-                .arrangeShape(color: color,
-                              fontSize: baseLength * 0.25)
-            
-            Image(symbol: .circleDotted)
-                .arrangeShape(color: dotColor,
-                              fontSize: baseLength * 0.30)
-            
-            Image(symbol: .circleFill)
-                .arrangeShape(color: dotColor,
-                              fontSize: baseLength * 0.037)
+//            Image(symbol: .helm)
+//                .arrangeShape(color: color,
+//                              fontSize: baseLength * 0.25)
+//            
+//            Image(symbol: .circleDotted)
+//                .arrangeShape(color: dotColor,
+//                              fontSize: baseLength * 0.30)
+//            
+//            Image(symbol: .circleFill)
+//                .arrangeShape(color: dotColor,
+//                              fontSize: baseLength * 0.037)
         }
     }
 }

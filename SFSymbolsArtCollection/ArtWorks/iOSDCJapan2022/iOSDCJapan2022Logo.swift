@@ -25,9 +25,9 @@ struct iOSDCJapan2022Logo: View {
                             y: baseLength * appearance.offsetYMagnification)
                 }
                 
-                Image(symbol: .circleSquareFill)
-                    .arrangeShape(color: .white,
-                                  fontSize: baseLength)
+//                Image(symbol: .circleSquareFill)
+//                    .arrangeShape(color: .white,
+//                                  fontSize: baseLength)
             }
             .position(proxy.localCenter)
         }

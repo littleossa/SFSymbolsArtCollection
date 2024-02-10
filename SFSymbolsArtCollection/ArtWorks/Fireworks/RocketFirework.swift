@@ -15,32 +15,32 @@ struct RocketFirework: View {
     var body: some View {
         
         ZStack {
-            Image(symbol: .circleFill)
-                .arrangeShape(color: color,
-                              fontSize: baseLength * 0.05,
-                              offsetY: baseLength * -0.35)
+//            Image(symbol: .circleFill)
+//                .arrangeShape(color: color,
+//                              fontSize: baseLength * 0.05,
+//                              offsetY: baseLength * -0.35)
             
             // AlternatingCurrents
             Group {
-                Image(symbol: .alternatingcurrent)
-                    .arrangeShape(color: color,
-                                  width: baseLength * 0.25,
-                                  height: baseLength * 0.025,
-                                  rotationDegrees: 90,
-                                  offsetY: baseLength * -0.22)
-                
-                Image(symbol: .alternatingcurrent)
-                    .arrangeShape(color: color,
-                                  width: baseLength * 0.25,
-                                  height: baseLength * 0.025,
-                                  rotationDegrees: 90)
-                
-                Image(symbol: .alternatingcurrent)
-                    .arrangeShape(color: color,
-                                  width: baseLength * 0.25,
-                                  height: baseLength * 0.025,
-                                  rotationDegrees: 90,
-                                  offsetY: baseLength * 0.22)
+//                Image(symbol: .alternatingcurrent)
+//                    .arrangeShape(color: color,
+//                                  width: baseLength * 0.25,
+//                                  height: baseLength * 0.025,
+//                                  rotationDegrees: 90,
+//                                  offsetY: baseLength * -0.22)
+//                
+//                Image(symbol: .alternatingcurrent)
+//                    .arrangeShape(color: color,
+//                                  width: baseLength * 0.25,
+//                                  height: baseLength * 0.025,
+//                                  rotationDegrees: 90)
+//                
+//                Image(symbol: .alternatingcurrent)
+//                    .arrangeShape(color: color,
+//                                  width: baseLength * 0.25,
+//                                  height: baseLength * 0.025,
+//                                  rotationDegrees: 90,
+//                                  offsetY: baseLength * 0.22)
             }
         }
     }

@@ -20,43 +20,43 @@ struct LargeFirework: View {
             // DotRadiowaves
             Group {
                 
-                Image(symbol: .dotRadiowavesRight)
-                    .arrangeShape(color: color,
-                                  fontSize: baseLength * 0.25,
-                                  fontWeight: .bold,
-                                  offsetX: baseLength * 0.095)
+//                Image(symbol: .dotRadiowavesRight)
+//                    .arrangeShape(color: color,
+//                                  fontSize: baseLength * 0.25,
+//                                  fontWeight: .bold,
+//                                  offsetX: baseLength * 0.095)
                 
-                Image(symbol: .dotRadiowavesRight)
-                    .arrangeShape(color: color,
-                                  fontSize: baseLength * 0.25,
-                                  fontWeight: .bold,
-                                  flipType: .horizontal,
-                                  offsetX: baseLength * -0.095)
+//                Image(symbol: .dotRadiowavesRight)
+//                    .arrangeShape(color: color,
+//                                  fontSize: baseLength * 0.25,
+//                                  fontWeight: .bold,
+//                                  flipType: .horizontal,
+//                                  offsetX: baseLength * -0.095)
+//                
+//                Image(symbol: .dotRadiowavesRight)
+//                    .arrangeShape(color: color,
+//                                  fontSize: baseLength * 0.25,
+//                                  fontWeight: .bold,
+//                                  rotationDegrees: 90,
+//                                  offsetY: baseLength * -0.095)
                 
-                Image(symbol: .dotRadiowavesRight)
-                    .arrangeShape(color: color,
-                                  fontSize: baseLength * 0.25,
-                                  fontWeight: .bold,
-                                  rotationDegrees: 90,
-                                  offsetY: baseLength * -0.095)
-                
-                Image(symbol: .dotRadiowavesRight)
-                    .arrangeShape(color: color,
-                                  fontSize: baseLength * 0.25,
-                                  fontWeight: .bold,
-                                  rotationDegrees: -90,
-                                  offsetY: baseLength * 0.095)
+//                Image(symbol: .dotRadiowavesRight)
+//                    .arrangeShape(color: color,
+//                                  fontSize: baseLength * 0.25,
+//                                  fontWeight: .bold,
+//                                  rotationDegrees: -90,
+//                                  offsetY: baseLength * 0.095)
             }
             
-            Image(symbol: .circleDotted)
-                .arrangeShape(color: dotColor,
-                              fontSize: baseLength * 0.55,
-                              fontWeight: .ultraLight,
-                              rotationDegrees: baseLength * 0.225)
-            
-            Image(symbol: .circleFill)
-                .arrangeShape(color: dotColor,
-                              fontSize: baseLength * 0.085)
+//            Image(symbol: .circleDotted)
+//                .arrangeShape(color: dotColor,
+//                              fontSize: baseLength * 0.55,
+//                              fontWeight: .ultraLight,
+//                              rotationDegrees: baseLength * 0.225)
+//            
+//            Image(symbol: .circleFill)
+//                .arrangeShape(color: dotColor,
+//                              fontSize: baseLength * 0.085)
         }
     }
 }

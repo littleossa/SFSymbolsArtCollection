@@ -50,7 +50,7 @@ extension ArtWorkModel {
             case .none:
                 0
             case .first:
-                0.63
+                0.18
             case .second:
                 0.34
             case .third:

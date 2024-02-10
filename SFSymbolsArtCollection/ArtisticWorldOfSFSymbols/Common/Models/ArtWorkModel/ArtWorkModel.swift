@@ -10,6 +10,7 @@ import SwiftUI
 @Observable
 class ArtWorkModel {
     
+    /// this model is for Xcode preview that provides base length for iPad Pro 12.9.
     static let preview = ArtWorkModel(screenSize: CGSize(width: 1024, height: 1024))
         
     init(screenSize: CGSize) {

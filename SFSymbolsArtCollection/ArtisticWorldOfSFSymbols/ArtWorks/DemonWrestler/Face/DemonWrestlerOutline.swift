@@ -62,7 +62,8 @@ struct DemonWrestlerOutline: View {
                                       fontWeight: .bold)
                     
                     Image(symbol: ._4AltCircleFill)
-                        .arrangeShape(fontSize: baseLength * 0.15,
+                        .arrangeShape(color: .blue,
+                                      fontSize: baseLength * 0.15,
                                       fontWeight: .bold)
                 }
                 .offset(x: 0, y: baseLength * -0.175)

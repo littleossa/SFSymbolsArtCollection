@@ -43,6 +43,9 @@
 		9767DF232B7658E200457DA1 /* ArmHairArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF222B7658E200457DA1 /* ArmHairArtView+CoverArt.swift */; };
 		9767DF252B76C9BE00457DA1 /* ArmHairArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF242B76C9BE00457DA1 /* ArmHairArtView.swift */; };
 		9767DF272B76CCE300457DA1 /* ArmHairArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF262B76CCE300457DA1 /* ArmHairArtView+Element.swift */; };
+		9767DF292B76FF0400457DA1 /* DemonWrestlerArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF282B76FF0400457DA1 /* DemonWrestlerArtView.swift */; };
+		9767DF2B2B776D5800457DA1 /* DemonWrestlerArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF2A2B776D5800457DA1 /* DemonWrestlerArtView+CoverArt.swift */; };
+		9767DF2D2B776DA100457DA1 /* DemonWrestlerArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DF2C2B776DA100457DA1 /* DemonWrestlerArtView+Element.swift */; };
 		97AD530C2B70DA2F0034FB5D /* ArtGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */; };
 		97AD53102B70DE230034FB5D /* SymbolNameFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */; };
 		97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53112B70DEB60034FB5D /* UIDevice+.swift */; };
@@ -110,6 +113,9 @@
 		9767DF222B7658E200457DA1 /* ArmHairArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArmHairArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		9767DF242B76C9BE00457DA1 /* ArmHairArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmHairArtView.swift; sourceTree = "<group>"; };
 		9767DF262B76CCE300457DA1 /* ArmHairArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArmHairArtView+Element.swift"; sourceTree = "<group>"; };
+		9767DF282B76FF0400457DA1 /* DemonWrestlerArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonWrestlerArtView.swift; sourceTree = "<group>"; };
+		9767DF2A2B776D5800457DA1 /* DemonWrestlerArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemonWrestlerArtView+CoverArt.swift"; sourceTree = "<group>"; };
+		9767DF2C2B776DA100457DA1 /* DemonWrestlerArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemonWrestlerArtView+Element.swift"; sourceTree = "<group>"; };
 		97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryView.swift; sourceTree = "<group>"; };
 		97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolNameFrameView.swift; sourceTree = "<group>"; };
 		97AD53112B70DEB60034FB5D /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
@@ -187,6 +193,9 @@
 		9748BE4428980FE4006DF0BE /* DemonWrestler */ = {
 			isa = PBXGroup;
 			children = (
+				9767DF282B76FF0400457DA1 /* DemonWrestlerArtView.swift */,
+				9767DF2C2B776DA100457DA1 /* DemonWrestlerArtView+Element.swift */,
+				9767DF2A2B776D5800457DA1 /* DemonWrestlerArtView+CoverArt.swift */,
 				9748BE4528981011006DF0BE /* DemonWrestler.swift */,
 				97624C3428C74A41004E1720 /* Face */,
 				97624C3528C74A50004E1720 /* Body */,
@@ -239,7 +248,6 @@
 			children = (
 				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
 				9748BE55289DCB82006DF0BE /* Fireworks */,
-				9748BE4428980FE4006DF0BE /* DemonWrestler */,
 				97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */,
 			);
 			path = ArtWorks;
@@ -324,6 +332,7 @@
 				9767DEF82B751C1300457DA1 /* WorldPeace */,
 				9767DF012B759AFC00457DA1 /* PartyAnimals */,
 				9767DF212B7658CB00457DA1 /* ArmHair */,
+				9748BE4428980FE4006DF0BE /* DemonWrestler */,
 				97AD531E2B70E2770034FB5D /* AfroBoy */,
 				97EF43892B725DE7003648F5 /* Nosebleed */,
 				97EF43912B72D3AF003648F5 /* ImWearingPants */,
@@ -543,7 +552,9 @@
 				97EF43932B72D3E2003648F5 /* ImWearingPantsArtView+CoverArt.swift in Sources */,
 				97EF439E2B744C4C003648F5 /* Color+.swift in Sources */,
 				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
+				9767DF2B2B776D5800457DA1 /* DemonWrestlerArtView+CoverArt.swift in Sources */,
 				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
+				9767DF2D2B776DA100457DA1 /* DemonWrestlerArtView+Element.swift in Sources */,
 				9767DF002B752E4700457DA1 /* WorldPeaceArtView.swift in Sources */,
 				9767DF132B75EDB700457DA1 /* CrayonBoyArtView+Element.swift in Sources */,
 				9748BE4828981096006DF0BE /* DemonWrestlerFace.swift in Sources */,
@@ -567,6 +578,7 @@
 				97AD530C2B70DA2F0034FB5D /* ArtGalleryView.swift in Sources */,
 				9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */,
 				9767DF272B76CCE300457DA1 /* ArmHairArtView+Element.swift in Sources */,
+				9767DF292B76FF0400457DA1 /* DemonWrestlerArtView.swift in Sources */,
 				97AD532B2B71068B0034FB5D /* AfroBoyArtView.swift in Sources */,
 				973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */,
 				97624C3328C4F43F004E1720 /* GeometryProxy+.swift in Sources */,

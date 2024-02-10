@@ -76,6 +76,13 @@ struct ArtGalleryView: View {
                             }
                             
                             NavigationLink {
+                                DemonWrestlerArtView()
+                            } label: {
+                                DemonWrestlerArtView.CoverArt()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
                                 AfroBoyArtView()
                             } label: {
                                 AfroBoyArtView.CoverArt()

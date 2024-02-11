@@ -47,7 +47,6 @@
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
 		97E11D572817381200B2AB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D562817381200B2AB32 /* Preview Assets.xcassets */; };
-		97E11DF028176A0D00B2AB32 /* SFUserFriendlySymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */; };
 		97EF438B2B725E02003648F5 /* NosebleedArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438A2B725E02003648F5 /* NosebleedArtView.swift */; };
 		97EF438D2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438C2B726CE6003648F5 /* ArtWorkModel+InitialSymbolRow.swift */; };
 		97EF43902B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF438F2B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift */; };
@@ -120,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97E11DF028176A0D00B2AB32 /* SFUserFriendlySymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +376,6 @@
 			);
 			name = SFSymbolsArtCollection;
 			packageProductDependencies = (
-				97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */,
 			);
 			productName = SFSymbolsArtCollection;
 			productReference = 97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */;
@@ -409,7 +406,6 @@
 			);
 			mainGroup = 97E11D432817381100B2AB32;
 			packageReferences = (
-				97E11DEE28176A0D00B2AB32 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */,
 			);
 			productRefGroup = 97E11D4D2817381100B2AB32 /* Products */;
 			projectDirPath = "";
@@ -693,25 +689,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		97E11DEE28176A0D00B2AB32 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/littleossa/SFUserFriendlySymbols.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		97E11DEF28176A0D00B2AB32 /* SFUserFriendlySymbols */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 97E11DEE28176A0D00B2AB32 /* XCRemoteSwiftPackageReference "SFUserFriendlySymbols" */;
-			productName = SFUserFriendlySymbols;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97E11D442817381100B2AB32 /* Project object */;
 }

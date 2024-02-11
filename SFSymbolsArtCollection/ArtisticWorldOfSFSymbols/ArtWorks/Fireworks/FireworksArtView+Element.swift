@@ -19,10 +19,10 @@ extension FireworksArtView {
         case rocketFireworkWhiteConcealmentRight
         case rocketFireworkWhiteConcealmentLeft
         case rocketFireworkWhiteTop
-        case buildingLarge
-        case buildingSmall
         case litBuildingLarge
         case litBuildingSmall
+        case buildingLarge
+        case buildingSmall
         case personRight
         case personLeft
         case personCenterRight
@@ -164,7 +164,7 @@ extension FireworksArtView {
                     symbolCountToWaitFor: 0
                 )
                 
-            case .buildingLarge:
+            case .litBuildingLarge:
                 SymbolArtElement(
                     symbol: "􀏄",
                     name: "rectangle.fill",
@@ -176,7 +176,8 @@ extension FireworksArtView {
                     verticalOffsetRatio: 0.434,
                     symbolCountToWaitFor: 0
                 )
-            case .buildingSmall:
+                
+            case .litBuildingSmall:
                 SymbolArtElement(
                     symbol: "􀏄",
                     name: "rectangle.fill",
@@ -188,7 +189,8 @@ extension FireworksArtView {
                     verticalOffsetRatio: 0.497,
                     symbolCountToWaitFor: 0
                 )
-            case .litBuildingLarge:
+                
+            case .buildingLarge:
                 SymbolArtElement(
                     symbol: "􀮆",
                     name: "building.fill",
@@ -200,7 +202,8 @@ extension FireworksArtView {
                     verticalOffsetRatio: 0.434,
                     symbolCountToWaitFor: 0
                 )
-            case .litBuildingSmall:
+                
+            case .buildingSmall:
                 SymbolArtElement(
                     symbol: "􀮆",
                     name: "building.fill",
@@ -212,6 +215,7 @@ extension FireworksArtView {
                     verticalOffsetRatio: 0.497,
                     symbolCountToWaitFor: 0
                 )
+                
             case .personRight:
                 SymbolArtElement(
                     symbol: "􀻸",
@@ -355,7 +359,6 @@ extension FireworksArtView {
                     fontWeight: .ultraLight,
                     widthRatio: 0.42,
                     heightRatio: 0.42,
-                    rotationDegrees: 90,
                     horizontalOffsetRatio: -0.17,
                     verticalOffsetRatio: -0.18,
                     symbolCountToWaitFor: 0
@@ -396,11 +399,9 @@ extension FireworksArtView {
                     name: "circle.dotted",
                     initialPosition: .none,
                     primaryColor: .yellow,
-                    secondaryColor: .white,
                     fontWeight: .ultraLight,
                     widthRatio: 0.42,
                     heightRatio: 0.42,
-                    rotationDegrees: 90,
                     horizontalOffsetRatio: 0.1,
                     verticalOffsetRatio: -0.34,
                     symbolCountToWaitFor: 0

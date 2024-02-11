@@ -83,6 +83,16 @@ struct ArtGalleryView: View {
                             }
                             
                             NavigationLink {
+                                FireworksArtView()
+                            } label: {
+                                FireworksArtView.CoverArt()
+                                    .galleryGridItemView(
+                                        backgroundColor: .midnightNavy,
+                                        length: model.galleryColumnLength
+                                    )
+                            }
+                            
+                            NavigationLink {
                                 AfroBoyArtView()
                             } label: {
                                 AfroBoyArtView.CoverArt()

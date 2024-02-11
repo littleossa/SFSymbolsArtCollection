@@ -45,7 +45,17 @@ struct FireworksArtView: View {
             }
         }
     }
+}
+
+#Preview {
+    NavigationStack {
+        FireworksArtView()
+            .environment(ArtWorkModel.preview)
+    }
+}
     
+// MARK: - Private components
+extension FireworksArtView {
     // MARK: - Background
     private var background: some View {
         Color.midnightNavy
@@ -777,12 +787,5 @@ struct FireworksArtView: View {
                 .frame(width: model.calculatingProportionalValue(withRatio: 0.42),
                        height: model.calculatingProportionalValue(withRatio: 0.42))
         }
-    }
-}
-
-#Preview {
-    NavigationStack {
-        FireworksArtView()
-            .environment(ArtWorkModel.preview)
     }
 }

@@ -11,14 +11,7 @@
 		973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */; };
 		973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */; };
 		9748BE2028939B04006DF0BE /* FlipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE1F28939B04006DF0BE /* FlipType.swift */; };
-		9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE56289DCBB0006DF0BE /* LargeFirework.swift */; };
-		9748BE59289DCE17006DF0BE /* Fireworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE58289DCE17006DF0BE /* Fireworks.swift */; };
-		9748BE5D289DD696006DF0BE /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5C289DD696006DF0BE /* Building.swift */; };
-		9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE5E289F194E006DF0BE /* RocketFirework.swift */; };
 		9748BE6628A395D5006DF0BE /* ArtWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE6528A395D5006DF0BE /* ArtWork.swift */; };
-		97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2928C2BC9A004E1720 /* MediumFirework.swift */; };
-		97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2B28C2DDAA004E1720 /* Buildings.swift */; };
-		97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C2E28C2E608004E1720 /* SmallFirework.swift */; };
 		97624C3328C4F43F004E1720 /* GeometryProxy+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97624C3228C4F43F004E1720 /* GeometryProxy+.swift */; };
 		9767DEFA2B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEF92B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift */; };
 		9767DF002B752E4700457DA1 /* WorldPeaceArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767DEFF2B752E4700457DA1 /* WorldPeaceArtView.swift */; };
@@ -78,15 +71,8 @@
 		973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithFont.swift; sourceTree = "<group>"; };
 		973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithWidthAndHeight.swift; sourceTree = "<group>"; };
 		9748BE1F28939B04006DF0BE /* FlipType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipType.swift; sourceTree = "<group>"; };
-		9748BE56289DCBB0006DF0BE /* LargeFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFirework.swift; sourceTree = "<group>"; };
-		9748BE58289DCE17006DF0BE /* Fireworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireworks.swift; sourceTree = "<group>"; };
-		9748BE5C289DD696006DF0BE /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
-		9748BE5E289F194E006DF0BE /* RocketFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFirework.swift; sourceTree = "<group>"; };
 		9748BE62289F4BFB006DF0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9748BE6528A395D5006DF0BE /* ArtWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtWork.swift; sourceTree = "<group>"; };
-		97624C2928C2BC9A004E1720 /* MediumFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumFirework.swift; sourceTree = "<group>"; };
-		97624C2B28C2DDAA004E1720 /* Buildings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
-		97624C2E28C2E608004E1720 /* SmallFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFirework.swift; sourceTree = "<group>"; };
 		97624C3228C4F43F004E1720 /* GeometryProxy+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryProxy+.swift"; sourceTree = "<group>"; };
 		9767DEF92B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorldPeaceArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		9767DEFF2B752E4700457DA1 /* WorldPeaceArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPeaceArtView.swift; sourceTree = "<group>"; };
@@ -196,33 +182,10 @@
 			path = DemonWrestler;
 			sourceTree = "<group>";
 		};
-		9748BE55289DCB82006DF0BE /* Fireworks */ = {
-			isa = PBXGroup;
-			children = (
-				9748BE58289DCE17006DF0BE /* Fireworks.swift */,
-				9748BE56289DCBB0006DF0BE /* LargeFirework.swift */,
-				97624C2928C2BC9A004E1720 /* MediumFirework.swift */,
-				97624C2E28C2E608004E1720 /* SmallFirework.swift */,
-				9748BE5E289F194E006DF0BE /* RocketFirework.swift */,
-				97624C2D28C2E43C004E1720 /* Buildings */,
-			);
-			path = Fireworks;
-			sourceTree = "<group>";
-		};
-		97624C2D28C2E43C004E1720 /* Buildings */ = {
-			isa = PBXGroup;
-			children = (
-				97624C2B28C2DDAA004E1720 /* Buildings.swift */,
-				9748BE5C289DD696006DF0BE /* Building.swift */,
-			);
-			path = Buildings;
-			sourceTree = "<group>";
-		};
 		97624C3628C74AA0004E1720 /* ArtWorks */ = {
 			isa = PBXGroup;
 			children = (
 				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
-				9748BE55289DCB82006DF0BE /* Fireworks */,
 				97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */,
 			);
 			path = ArtWorks;
@@ -538,9 +501,7 @@
 				97EF43932B72D3E2003648F5 /* ImWearingPantsArtView+CoverArt.swift in Sources */,
 				9778A4952B78C076001BF9E8 /* FireworksArtView+Element.swift in Sources */,
 				97EF439E2B744C4C003648F5 /* Color+.swift in Sources */,
-				97624C2F28C2E608004E1720 /* SmallFirework.swift in Sources */,
 				9767DF2B2B776D5800457DA1 /* DemonWrestlerArtView+CoverArt.swift in Sources */,
-				9748BE57289DCBB0006DF0BE /* LargeFirework.swift in Sources */,
 				9767DF2D2B776DA100457DA1 /* DemonWrestlerArtView+Element.swift in Sources */,
 				9767DF002B752E4700457DA1 /* WorldPeaceArtView.swift in Sources */,
 				9767DF132B75EDB700457DA1 /* CrayonBoyArtView+Element.swift in Sources */,
@@ -550,7 +511,6 @@
 				9778A4932B781DCE001BF9E8 /* FireworksArtView.swift in Sources */,
 				97AD53182B70DFF30034FB5D /* AnimationValues.swift in Sources */,
 				9767DF152B75F7BE00457DA1 /* WorldPeaceArtView+Element.swift in Sources */,
-				97624C2A28C2BC9A004E1720 /* MediumFirework.swift in Sources */,
 				97EF43982B733337003648F5 /* MagicianArtView.swift in Sources */,
 				9767DEFA2B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift in Sources */,
 				97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */,
@@ -558,9 +518,6 @@
 				9748BE2028939B04006DF0BE /* FlipType.swift in Sources */,
 				97AD531A2B70E0530034FB5D /* Font.Weight+.swift in Sources */,
 				97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */,
-				9748BE5F289F194E006DF0BE /* RocketFirework.swift in Sources */,
-				9748BE59289DCE17006DF0BE /* Fireworks.swift in Sources */,
-				9748BE5D289DD696006DF0BE /* Building.swift in Sources */,
 				97AD53312B71A5130034FB5D /* GalleryGridView.swift in Sources */,
 				97AD530C2B70DA2F0034FB5D /* ArtGalleryView.swift in Sources */,
 				9778A4972B78C0C2001BF9E8 /* FireworksArtView+CoverArt.swift in Sources */,
@@ -581,7 +538,6 @@
 				97EF43A52B74F27D003648F5 /* CrayonBoyArtView.swift in Sources */,
 				9767DF052B75AFE200457DA1 /* PartyAnimalsArtView.swift in Sources */,
 				9767DF1F2B762E9000457DA1 /* ImWearingPantsArtView+FaceElement.swift in Sources */,
-				97624C2C28C2DDAA004E1720 /* Buildings.swift in Sources */,
 				97AD53222B70E3FA0034FB5D /* AnimatableSymbolView.swift in Sources */,
 				9767DF032B759B2D00457DA1 /* PartyAnimalsArtView+CoverArt.swift in Sources */,
 				97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */,

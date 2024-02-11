@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		971D9DEA28C9731D00136A36 /* iOSDCJapan2022SymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971D9DE928C9731D00136A36 /* iOSDCJapan2022SymbolType.swift */; };
 		973B2CA128C2546C006ED5F0 /* ArrangeShapeWithFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */; };
 		973B2CA428C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */; };
 		9748BE2028939B04006DF0BE /* FlipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748BE1F28939B04006DF0BE /* FlipType.swift */; };
@@ -48,8 +47,6 @@
 		97AD532B2B71068B0034FB5D /* AfroBoyArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD532A2B71068B0034FB5D /* AfroBoyArtView.swift */; };
 		97AD532D2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD532C2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift */; };
 		97AD53312B71A5130034FB5D /* GalleryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53302B71A5130034FB5D /* GalleryGridView.swift */; };
-		97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */; };
-		97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */; };
 		97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */; };
 		97E11D542817381200B2AB32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D532817381200B2AB32 /* Assets.xcassets */; };
 		97E11D572817381200B2AB32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E11D562817381200B2AB32 /* Preview Assets.xcassets */; };
@@ -67,7 +64,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		971D9DE928C9731D00136A36 /* iOSDCJapan2022SymbolType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022SymbolType.swift; sourceTree = "<group>"; };
 		973B2CA028C2546C006ED5F0 /* ArrangeShapeWithFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithFont.swift; sourceTree = "<group>"; };
 		973B2CA328C25DAA006ED5F0 /* ArrangeShapeWithWidthAndHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangeShapeWithWidthAndHeight.swift; sourceTree = "<group>"; };
 		9748BE1F28939B04006DF0BE /* FlipType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipType.swift; sourceTree = "<group>"; };
@@ -109,8 +105,6 @@
 		97AD532A2B71068B0034FB5D /* AfroBoyArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfroBoyArtView.swift; sourceTree = "<group>"; };
 		97AD532C2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AfroBoyArtView+CoverArt.swift"; sourceTree = "<group>"; };
 		97AD53302B71A5130034FB5D /* GalleryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryGridView.swift; sourceTree = "<group>"; };
-		97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Symbol.swift; sourceTree = "<group>"; };
-		97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDCJapan2022Logo.swift; sourceTree = "<group>"; };
 		97E11D4C2817381100B2AB32 /* SFSymbolsArtCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsArtCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E11D4F2817381100B2AB32 /* SFSymbolsArtCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsArtCollectionApp.swift; sourceTree = "<group>"; };
 		97E11D532817381200B2AB32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,14 +141,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		971D9DEB28C973AD00136A36 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				971D9DE928C9731D00136A36 /* iOSDCJapan2022SymbolType.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
 		973B2CA228C2584F006ED5F0 /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				9748BE6528A395D5006DF0BE /* ArtWork.swift */,
-				97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */,
 			);
 			path = ArtWorks;
 			sourceTree = "<group>";
@@ -307,16 +292,6 @@
 				97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */,
 			);
 			path = AnimatableSymbolView;
-			sourceTree = "<group>";
-		};
-		97CD46E528BEF8A000919B65 /* iOSDCJapan2022 */ = {
-			isa = PBXGroup;
-			children = (
-				97CD46E828BF080200919B65 /* iOSDCJapan2022Logo.swift */,
-				97CD46E328BEF84100919B65 /* iOSDCJapan2022Symbol.swift */,
-				971D9DEB28C973AD00136A36 /* Entity */,
-			);
-			path = iOSDCJapan2022;
 			sourceTree = "<group>";
 		};
 		97E11D432817381100B2AB32 = {
@@ -507,13 +482,11 @@
 				9767DF132B75EDB700457DA1 /* CrayonBoyArtView+Element.swift in Sources */,
 				97AD532D2B717C950034FB5D /* AfroBoyArtView+CoverArt.swift in Sources */,
 				97EF438B2B725E02003648F5 /* NosebleedArtView.swift in Sources */,
-				971D9DEA28C9731D00136A36 /* iOSDCJapan2022SymbolType.swift in Sources */,
 				9778A4932B781DCE001BF9E8 /* FireworksArtView.swift in Sources */,
 				97AD53182B70DFF30034FB5D /* AnimationValues.swift in Sources */,
 				9767DF152B75F7BE00457DA1 /* WorldPeaceArtView+Element.swift in Sources */,
 				97EF43982B733337003648F5 /* MagicianArtView.swift in Sources */,
 				9767DEFA2B751C2C00457DA1 /* WorldPeaceArtView+CoverArt.swift in Sources */,
-				97CD46E928BF080300919B65 /* iOSDCJapan2022Logo.swift in Sources */,
 				97AD53242B70E48F0034FB5D /* PlayButton.swift in Sources */,
 				9748BE2028939B04006DF0BE /* FlipType.swift in Sources */,
 				97AD531A2B70E0530034FB5D /* Font.Weight+.swift in Sources */,
@@ -540,7 +513,6 @@
 				9767DF1F2B762E9000457DA1 /* ImWearingPantsArtView+FaceElement.swift in Sources */,
 				97AD53222B70E3FA0034FB5D /* AnimatableSymbolView.swift in Sources */,
 				9767DF032B759B2D00457DA1 /* PartyAnimalsArtView+CoverArt.swift in Sources */,
-				97CD46E428BEF84100919B65 /* iOSDCJapan2022Symbol.swift in Sources */,
 				9767DF0B2B75D1A100457DA1 /* SymbolArtElement.swift in Sources */,
 				97EF43A12B74CA38003648F5 /* CrayonBoyArtView+CoverArt.swift in Sources */,
 				97EF43902B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift in Sources */,

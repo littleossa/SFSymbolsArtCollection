@@ -19,7 +19,8 @@ struct AnimationValues {
         rotationDegrees: CGFloat = 0,
         rotationAxis: (x: CGFloat, y: CGFloat, z: CGFloat) = (x: 0, y: 0, z: 0),
         offsetX: CGFloat = 0,
-        offsetY: CGFloat = 0
+        offsetY: CGFloat = 0,
+        opacity: CGFloat = 1
     ) {
         self.primaryColor = primaryColor.resolve(in: .init())
         self.secondaryColor = secondaryColor.resolve(in: .init())
@@ -30,6 +31,7 @@ struct AnimationValues {
         self.rotationDegrees = rotationDegrees
         self.rotationAxis = rotationAxis
         self.offset = .init(width: offsetX, height: offsetY)
+        self.opacity = opacity
     }
     
     var primaryColor: Color.Resolved
@@ -41,6 +43,7 @@ struct AnimationValues {
     var rotationDegrees: CGFloat
     var rotationAxis: (x: CGFloat, y: CGFloat, z: CGFloat)
     var offset: CGSize
+    var opacity: CGFloat
     
     var fontWeight: Font.Weight {
         return .init(animatableValue: fontWeightValue)

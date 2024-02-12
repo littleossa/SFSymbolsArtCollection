@@ -93,6 +93,13 @@ struct ArtGalleryView: View {
                             }
                             
                             NavigationLink {
+                                SweetBeanBunManArtView()
+                            } label: {
+                                SweetBeanBunManArtView.CoverArt()
+                                    .galleryGridItemView(length: model.galleryColumnLength)
+                            }
+                            
+                            NavigationLink {
                                 AfroBoyArtView()
                             } label: {
                                 AfroBoyArtView.CoverArt()

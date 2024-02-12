@@ -33,6 +33,7 @@
 		9778A4932B781DCE001BF9E8 /* FireworksArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778A4922B781DCE001BF9E8 /* FireworksArtView.swift */; };
 		9778A4952B78C076001BF9E8 /* FireworksArtView+Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778A4942B78C076001BF9E8 /* FireworksArtView+Element.swift */; };
 		9778A4972B78C0C2001BF9E8 /* FireworksArtView+CoverArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778A4962B78C0C2001BF9E8 /* FireworksArtView+CoverArt.swift */; };
+		9778A49D2B7974E4001BF9E8 /* SweetBeanBunManArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778A49C2B7974E4001BF9E8 /* SweetBeanBunManArtView.swift */; };
 		97AD530C2B70DA2F0034FB5D /* ArtGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */; };
 		97AD53102B70DE230034FB5D /* SymbolNameFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */; };
 		97AD53122B70DEB60034FB5D /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AD53112B70DEB60034FB5D /* UIDevice+.swift */; };
@@ -87,6 +88,7 @@
 		9778A4922B781DCE001BF9E8 /* FireworksArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworksArtView.swift; sourceTree = "<group>"; };
 		9778A4942B78C076001BF9E8 /* FireworksArtView+Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FireworksArtView+Element.swift"; sourceTree = "<group>"; };
 		9778A4962B78C0C2001BF9E8 /* FireworksArtView+CoverArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FireworksArtView+CoverArt.swift"; sourceTree = "<group>"; };
+		9778A49C2B7974E4001BF9E8 /* SweetBeanBunManArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetBeanBunManArtView.swift; sourceTree = "<group>"; };
 		97AD530B2B70DA2F0034FB5D /* ArtGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryView.swift; sourceTree = "<group>"; };
 		97AD530F2B70DE230034FB5D /* SymbolNameFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolNameFrameView.swift; sourceTree = "<group>"; };
 		97AD53112B70DEB60034FB5D /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
@@ -183,6 +185,14 @@
 			path = Fireworks;
 			sourceTree = "<group>";
 		};
+		9778A49B2B7974A3001BF9E8 /* SweetBeanBunMan */ = {
+			isa = PBXGroup;
+			children = (
+				9778A49C2B7974E4001BF9E8 /* SweetBeanBunManArtView.swift */,
+			);
+			path = SweetBeanBunMan;
+			sourceTree = "<group>";
+		};
 		97AD530D2B70DBC70034FB5D /* ArtisticWorldOfSFSymbols */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +245,7 @@
 				9748BE4428980FE4006DF0BE /* DemonWrestler */,
 				9778A4912B781DA6001BF9E8 /* Fireworks */,
 				97AD531E2B70E2770034FB5D /* AfroBoy */,
+				9778A49B2B7974A3001BF9E8 /* SweetBeanBunMan */,
 				97EF43892B725DE7003648F5 /* Nosebleed */,
 				97EF43912B72D3AF003648F5 /* ImWearingPants */,
 			);
@@ -478,6 +489,7 @@
 				97EF43902B72D2E4003648F5 /* NosebleedArtView+CoverArt.swift in Sources */,
 				9767DF112B75E8FC00457DA1 /* MagicianArtView+Element.swift in Sources */,
 				9767DF0F2B75DFB400457DA1 /* SymbolArtDisplayView.swift in Sources */,
+				9778A49D2B7974E4001BF9E8 /* SweetBeanBunManArtView.swift in Sources */,
 				9767DF252B76C9BE00457DA1 /* ArmHairArtView.swift in Sources */,
 				97E11D502817381100B2AB32 /* SFSymbolsArtCollectionApp.swift in Sources */,
 				97AD53102B70DE230034FB5D /* SymbolNameFrameView.swift in Sources */,

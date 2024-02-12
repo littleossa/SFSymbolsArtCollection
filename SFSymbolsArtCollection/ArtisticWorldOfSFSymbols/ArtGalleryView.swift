@@ -18,113 +18,34 @@ extension ArtGalleryView {
 
 struct ArtGalleryView: View {
     
+    @State private var path = NavigationPath()
     private let model: ArtWorkModel
     private let columns: [GridItem]
     
     var body: some View {
         
-        VStack {
-            
-            // Navigation pathの状態によって、この部分の表示非表示を切り替えれるか？
-//            Spacer()
-//                .frame(height: 60)
-//            
-//            Text("SF Symbols Art")
-//                .font(.largeTitle)
-//                .bold()
-//            
-//            Text("is just the art created by combining SF Symbols")
-//            
-            NavigationStack {
-                ScrollView {
-                    LazyVGrid(columns: columns) {
-                        
-                        Group {
-                            NavigationLink {
-                                MagicianArtView()
-                            } label: {
-                                MagicianArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                CrayonBoyArtView()
-                            } label: {
-                                CrayonBoyArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                WorldPeaceArtView()
-                            } label: {
-                                WorldPeaceArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                PartyAnimalsArtView()
-                            } label: {
-                                PartyAnimalsArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                ArmHairArtView()
-                            } label: {
-                                ArmHairArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                DemonWrestlerArtView()
-                            } label: {
-                                DemonWrestlerArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                FireworksArtView()
-                            } label: {
-                                FireworksArtView.CoverArt()
-                                    .galleryGridItemView(
-                                        backgroundColor: .midnightNavy,
-                                        length: model.galleryColumnLength
-                                    )
-                            }
-                            
-                            NavigationLink {
-                                SweetBeanBunManArtView()
-                            } label: {
-                                SweetBeanBunManArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                AfroBoyArtView()
-                            } label: {
-                                AfroBoyArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                NosebleedArtView()
-                            } label: {
-                                NosebleedArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
-                            
-                            NavigationLink {
-                                ImWearingPantsArtView()
-                            } label: {
-                                ImWearingPantsArtView.CoverArt()
-                                    .galleryGridItemView(length: model.galleryColumnLength)
-                            }
+        NavigationStack(path: $path) {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    
+                    ForEach(ArtWorkPath.allCases) { path in
+                        NavigationLink(value: path) {
+                            path.coverArt
+                                .galleryGridItemView(
+                                    backgroundColor: path.coverArtBackground,
+                                    length: model.galleryColumnLength
+                                )
                         }
                     }
-                    .padding(.horizontal, 24)
                 }
-                .navigationTitle("Art Gallery")
+                .padding(.horizontal, 24)
+                .navigationDestination(for: ArtWorkPath.self) { path in
+                    path.destination
+                        .navigationTitle(path.rawValue)
+                        .navigationBarTitleDisplayMode(.inline)
+                }
             }
+            .navigationTitle("Art Gallery")
         }
         .environment(model)
     }
@@ -133,4 +54,80 @@ struct ArtGalleryView: View {
 #Preview {
     ArtGalleryView(screenSize: .init(width: 1024,
                                      height: 1024))
+}
+
+enum ArtWorkPath: String, CaseIterable, Identifiable {
+    case magician = "Magician"
+    case crayonBoy = "Crayon boy"
+    case worldPeace = "World peace"
+    case partyAnimals = "Party animals"
+    case armHair = "Arm hair"
+    case demonWrestler = "Demon wrestler"
+    case fireworks = "Fireworks"
+    case afroBoy = "Afro boy"
+    case sweetBeanBunMan = "Sweet bean bun man"
+    case nosebleed = "Nosebleed"
+    case imWearingPants = "ImWearingPants"
+    
+    var id: String { rawValue }
+    
+    @ViewBuilder
+    var coverArt: some View {
+        switch self {
+        case .magician:
+            MagicianArtView.CoverArt()
+        case .crayonBoy:
+            CrayonBoyArtView.CoverArt()
+        case .worldPeace:
+            WorldPeaceArtView.CoverArt()
+        case .partyAnimals:
+            PartyAnimalsArtView.CoverArt()
+        case .armHair:
+            ArmHairArtView.CoverArt()
+        case .demonWrestler:
+            DemonWrestlerArtView.CoverArt()
+        case .fireworks:
+            FireworksArtView.CoverArt()
+        case .afroBoy:
+            AfroBoyArtView.CoverArt()
+        case .sweetBeanBunMan:
+            SweetBeanBunManArtView.CoverArt()
+        case .nosebleed:
+            NosebleedArtView.CoverArt()
+        case .imWearingPants:
+            ImWearingPantsArtView.CoverArt()
+        }
+    }
+    
+    var coverArtBackground: Color {
+        self == .fireworks ? .midnightNavy : .white
+    }
+    
+    @ViewBuilder
+    var destination: some View {
+        switch self {
+        case .magician:
+            MagicianArtView()
+        case .crayonBoy:
+            CrayonBoyArtView()
+        case .worldPeace:
+            WorldPeaceArtView()
+        case .partyAnimals:
+            PartyAnimalsArtView()
+        case .armHair:
+            ArmHairArtView()
+        case .demonWrestler:
+            DemonWrestlerArtView()
+        case .fireworks:
+            FireworksArtView()
+        case .afroBoy:
+            AfroBoyArtView()
+        case .sweetBeanBunMan:
+            SweetBeanBunManArtView()
+        case .nosebleed:
+            NosebleedArtView()
+        case .imWearingPants:
+            ImWearingPantsArtView()
+        }
+    }
 }

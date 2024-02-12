@@ -23,8 +23,9 @@ extension SweetBeanBunManArtView {
         case eyeRight
         case eyeLeft
         case mouth
-        case mouthConcealment
         case centerNose
+        case eyeMinusRight
+        case eyeMinusLeft
         
         var id: String { rawValue }
         
@@ -109,7 +110,7 @@ extension SweetBeanBunManArtView {
                     primaryColor: .black,
                     widthRatio: 0.1,
                     heightRatio: 0.2,
-                    rotationDegrees: 90,
+                    rotationDegrees: 115,
                     horizontalOffsetRatio: 0.12,
                     verticalOffsetRatio: -0.19,
                     symbolCountToWaitFor: 3
@@ -123,7 +124,7 @@ extension SweetBeanBunManArtView {
                     primaryColor: .black,
                     widthRatio: 0.1,
                     heightRatio: 0.2,
-                    rotationDegrees: 90,
+                    rotationDegrees: 65,
                     horizontalOffsetRatio: -0.12,
                     verticalOffsetRatio: -0.19,
                     symbolCountToWaitFor: 3
@@ -134,8 +135,9 @@ extension SweetBeanBunManArtView {
                     name: "circle.fill",
                     initialPosition: .third(.first),
                     primaryColor: .paleOrange,
-                    widthRatio: 0.16,
+                    widthRatio: 0.18,
                     heightRatio: 0.1,
+                    rotationDegrees: 30,
                     horizontalOffsetRatio: 0.12,
                     verticalOffsetRatio: -0.17,
                     symbolCountToWaitFor: 4
@@ -146,8 +148,9 @@ extension SweetBeanBunManArtView {
                     name: "circle.fill",
                     initialPosition: .third(.first),
                     primaryColor: .paleOrange,
-                    widthRatio: 0.16,
+                    widthRatio: 0.18,
                     heightRatio: 0.1,
+                    rotationDegrees: -30,
                     horizontalOffsetRatio: -0.12,
                     verticalOffsetRatio: -0.17,
                     symbolCountToWaitFor: 4
@@ -178,27 +181,15 @@ extension SweetBeanBunManArtView {
                 )
             case .mouth:
                 SymbolArtElement(
-                    symbol: "􀼭",
-                    name: "rainbow",
+                    symbol: "􁕋",
+                    name: "stairs",
                     initialPosition: .third(.fourth),
                     primaryColor: .black,
-                    widthRatio: 0.4,
-                    heightRatio: 0.1,
-                    rotationDegrees: 180,
-                    verticalOffsetRatio: 0.2,
+                    widthRatio: 0.3,
+                    heightRatio: 0.2,
+                    rotationDegrees: 30,
+                    verticalOffsetRatio: 0.23,
                     symbolCountToWaitFor: 6
-                )
-            case .mouthConcealment:
-                SymbolArtElement(
-                    symbol: "􀀁",
-                    name: "circle.fill",
-                    initialPosition: .third(.first),
-                    primaryColor: .paleOrange,
-                    widthRatio: 0.3486,
-                    heightRatio: 0.135,
-                    horizontalOffsetRatio: 0.003,
-                    verticalOffsetRatio: 0.17,
-                    symbolCountToWaitFor: 7
                 )
             case .centerNose:
                 SymbolArtElement(
@@ -211,6 +202,30 @@ extension SweetBeanBunManArtView {
                     widthRatio: 0.2,
                     heightRatio: 0.2,
                     verticalOffsetRatio: 0.01,
+                    symbolCountToWaitFor: 7
+                )
+            case .eyeMinusRight:
+                SymbolArtElement(
+                    symbol: "􀅽",
+                    name: "minus",
+                    initialPosition: .third(.sixth),
+                    primaryColor: .black,
+                    widthRatio: 0.07,
+                    heightRatio: 0.01,
+                    horizontalOffsetRatio: 0.12,
+                    verticalOffsetRatio: -0.15,
+                    symbolCountToWaitFor: 8
+                )
+            case .eyeMinusLeft:
+                SymbolArtElement(
+                    symbol: "􀅽",
+                    name: "minus",
+                    initialPosition: .third(.sixth),
+                    primaryColor: .black,
+                    widthRatio: 0.07,
+                    heightRatio: 0.01,
+                    horizontalOffsetRatio: -0.12,
+                    verticalOffsetRatio: -0.15,
                     symbolCountToWaitFor: 8
                 )
             }

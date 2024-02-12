@@ -1,25 +1,33 @@
 # SFSymbolsArtCollection
 
-The Art collection made from SF Symbols
+The art collection of **SF Symbols art**.
 
-## Art works
+<img src="https://github.com/littleossa/SFSymbolsArtCollection/assets/67716751/2db56d47-b8c3-4bae-ae86-dd67a1c00ebf" width="400px">
 
-### Magician
-<img src="https://user-images.githubusercontent.com/67716751/189031487-7b1d7588-159c-4abd-b1fd-35481377f516.png" width="400">
+## What's SFSymbols art
 
-### WORLD PEACE
-<img src="https://user-images.githubusercontent.com/67716751/189031575-1aa95c69-ecfe-458b-830e-8125607d90a4.png" width="400">
+SF Symbols art is simply the art created by combining SF Symbols.
 
-### Party Animals
-<img src="https://user-images.githubusercontent.com/67716751/189031530-b086f16b-ca6a-456e-901e-e288807dd1c4.png" width="400">
+You can experience that through SwiftUI with variable color, symbol effects, and keyframe animations, advancing SF Symbols art even further.
 
-### Arm Hair
-<img src="https://user-images.githubusercontent.com/67716751/189031623-6ad6e971-4a1c-427e-b175-078ed2571dd9.png" width="400">
+## How amazing SFSymbols art is
 
-### Demon Wrestler
-<img src="https://user-images.githubusercontent.com/67716751/189249059-62309f6c-1816-4d2b-a4d2-16436388fe84.png" width="400">
+Check some previews below.
+
+### Nosebleed
+
+https://github.com/littleossa/SFSymbolsArtCollection/assets/67716751/e4ecc405-ea26-4bfd-a1b2-af02256c3d22
+
+### Arm hair
+
+https://github.com/littleossa/SFSymbolsArtCollection/assets/67716751/8775c0b8-851b-4607-9394-558d8479190f
 
 ### Fireworks
-<img src="https://user-images.githubusercontent.com/67716751/189031694-769478f2-5a5c-4fd2-bf43-97714b0cceb4.png" width="400">
 
-Let's enjoy SF Symbols Art.
+https://github.com/littleossa/SFSymbolsArtCollection/assets/67716751/ed369c58-0315-4123-bc64-2bd0237b369c
+
+Other wonderful SFSymbols' artworks are also here, so please feel free to check them out.
+
+I would be delighted if you could give it a star.
+
+Have a good day with SFSymbols art.

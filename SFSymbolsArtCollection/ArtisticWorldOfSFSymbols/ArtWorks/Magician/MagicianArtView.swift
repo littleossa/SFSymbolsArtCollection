@@ -18,8 +18,6 @@ struct MagicianArtView: View {
                                      isAnimating: isAnimating)
             }
         }
-        .navigationTitle("Magician")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

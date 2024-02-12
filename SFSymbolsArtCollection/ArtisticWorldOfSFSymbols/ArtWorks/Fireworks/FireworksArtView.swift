@@ -24,8 +24,6 @@ struct FireworksArtView: View {
             people
             fireworks
         }
-        .navigationTitle("Fireworks")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

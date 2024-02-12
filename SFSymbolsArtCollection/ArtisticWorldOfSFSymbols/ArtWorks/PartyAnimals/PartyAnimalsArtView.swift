@@ -18,8 +18,6 @@ struct PartyAnimalsArtView: View {
                 AnimatableSymbolView(element: $0.value, isAnimating: isAnimating)
             }
         }
-        .navigationTitle("Party animals")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

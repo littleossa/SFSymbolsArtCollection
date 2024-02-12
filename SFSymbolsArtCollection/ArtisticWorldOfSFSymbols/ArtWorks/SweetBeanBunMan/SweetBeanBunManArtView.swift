@@ -17,8 +17,6 @@ struct SweetBeanBunManArtView: View {
                 AnimatableSymbolView(element: $0.value, isAnimating: isAnimating)
             }
         }
-        .navigationTitle("Sweet bean bun man")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

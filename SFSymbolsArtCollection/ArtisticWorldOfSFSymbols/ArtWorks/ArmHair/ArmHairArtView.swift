@@ -150,8 +150,6 @@ struct ArmHairArtView: View {
                     }
             }
         }
-        .navigationTitle("Arm hair")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

@@ -41,8 +41,6 @@ struct ImWearingPantsArtView: View {
                     .symbolEffect(.bounce, value: $0.isMusic ? musicCount : 0)
             }
         }
-        .navigationTitle("I'm wearing pants")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

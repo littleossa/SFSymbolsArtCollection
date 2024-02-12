@@ -23,8 +23,6 @@ struct NosebleedArtView: View {
                                   isActive: $0.isNosebleed ? isEffectActivated : false)
             }
         }
-        .navigationTitle("Nosebleed")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

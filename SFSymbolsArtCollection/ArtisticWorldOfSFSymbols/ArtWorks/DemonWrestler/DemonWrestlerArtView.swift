@@ -17,8 +17,6 @@ struct DemonWrestlerArtView: View {
                 AnimatableSymbolView(element: $0.value, isAnimating: isAnimating)
             }
         }
-        .navigationTitle("Demon wrestler")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

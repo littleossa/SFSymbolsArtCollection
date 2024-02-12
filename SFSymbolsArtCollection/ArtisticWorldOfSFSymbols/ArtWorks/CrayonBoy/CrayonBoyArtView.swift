@@ -19,8 +19,6 @@ struct CrayonBoyArtView: View {
                                      isAnimating: isAnimating)
             }
         }
-        .navigationTitle("Crayon boy")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

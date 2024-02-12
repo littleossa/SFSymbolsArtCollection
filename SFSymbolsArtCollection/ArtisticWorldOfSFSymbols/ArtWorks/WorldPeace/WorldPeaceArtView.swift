@@ -18,8 +18,6 @@ struct WorldPeaceArtView: View {
                 AnimatableSymbolView(element: $0.value, isAnimating: isAnimating)
             }
         }
-        .navigationTitle("World Peace")
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar(content: {
             ToolbarItemGroup(placement: .bottomBar) {
                 Spacer()

@@ -178,9 +178,9 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: -0.34,
+                    horizontalOffsetRatio: -0.345,
                     verticalOffsetRatio: -0.4,
-                    symbolCountToWaitFor: 4
+                    symbolCountToWaitFor: 5
                 )
             case .characterO:
                 SymbolArtElement(
@@ -191,7 +191,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: -0.17,
+                    horizontalOffsetRatio: -0.175,
                     verticalOffsetRatio: -0.4,
                     symbolCountToWaitFor: 5
                 )
@@ -204,7 +204,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: 0,
+                    horizontalOffsetRatio: -0.005,
                     verticalOffsetRatio: -0.4,
                     symbolCountToWaitFor: 5
                 )
@@ -217,7 +217,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: 0.17,
+                    horizontalOffsetRatio: 0.165,
                     verticalOffsetRatio: -0.4,
                     symbolCountToWaitFor: 5
                 )
@@ -230,7 +230,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: 0.34,
+                    horizontalOffsetRatio: 0.335,
                     verticalOffsetRatio: -0.4,
                     symbolCountToWaitFor: 5
                 )
@@ -243,7 +243,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: -0.34,
+                    horizontalOffsetRatio: -0.345,
                     verticalOffsetRatio: 0.4,
                     symbolCountToWaitFor: 5
                 )
@@ -256,7 +256,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: -0.17,
+                    horizontalOffsetRatio: -0.175,
                     verticalOffsetRatio: 0.4,
                     symbolCountToWaitFor: 5
                 )
@@ -269,7 +269,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: 0,
+                    horizontalOffsetRatio: -0.005,
                     verticalOffsetRatio: 0.4,
                     symbolCountToWaitFor: 5
                 )
@@ -282,7 +282,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: 0.17,
+                    horizontalOffsetRatio: 0.165,
                     verticalOffsetRatio: 0.4,
                     symbolCountToWaitFor: 5
                 )
@@ -295,7 +295,7 @@ extension WorldPeaceArtView {
                     secondaryColor: .systemBackground,
                     widthRatio: 0.15,
                     heightRatio: 0.15,
-                    horizontalOffsetRatio: 0.34,
+                    horizontalOffsetRatio: 0.335,
                     verticalOffsetRatio: 0.4,
                     symbolCountToWaitFor: 5
                 )

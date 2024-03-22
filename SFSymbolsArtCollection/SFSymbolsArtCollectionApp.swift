@@ -2,16 +2,20 @@
 //  SFSymbolsArtCollectionApp.swift
 //  SFSymbolsArtCollection
 //
-//  Created by 平岡修 on 2022/04/26.
+//  Created by Lil Ossa
 //
 
 import SwiftUI
 
 @main
 struct SFSymbolsArtCollectionApp: App {
+        
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GeometryReader { geometry in
+                ArtGalleryView(screenSize: geometry.size)
+                    .preferredColorScheme(.light)
+            }
         }
     }
 }

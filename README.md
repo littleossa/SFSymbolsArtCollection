@@ -22,6 +22,10 @@ https://github.com/littleossa/SFSymbolsArtCollection/assets/67716751/e4ecc405-ea
 
 https://github.com/littleossa/SFSymbolsArtCollection/assets/67716751/8775c0b8-851b-4607-9394-558d8479190f
 
+### Pants
+
+https://github.com/littleossa/SFSymbolsArtCollection/assets/67716751/d4aaaa6d-1bc0-47fe-b5a3-a97d188773e4
+
 ### Fireworks
 
 https://github.com/littleossa/SFSymbolsArtCollection/assets/67716751/ed369c58-0315-4123-bc64-2bd0237b369c
